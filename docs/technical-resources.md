@@ -74,8 +74,6 @@ Substrate 让您可以通过制作及整合不同的模块来创建定制化的�
 
 ### 上一期黑客松的一些项目介绍
 
-- [Apron Network](https://github.com/ParityAsia/hackathon-2021-spring/blob/main/teams/09-Apron-Network) - 去中心化網絡基建。裡面包含了一個 DAO 的治理
-- [InkBridge](https://github.com/ParityAsia/hackathon-2021-spring/blob/main/teams/26-InkBridge) - 使用 Wasm 合约技术构建转接桥, 把多条公链(BTC, ETH等)的转接桥下沉为平台，而不是单一应用。
-- [Deeper Network](https://github.com/ParityAsia/hackathon-2021-spring/blob/main/teams/14-DeeperNetwork) - 致力于构建真正的去中心化因特网和安全网关。它旨在为每个家庭带来更好的互联网体验，并成为用户通往 Web 3.0 应用的入口。
-- [SkypePass](https://github.com/ParityAsia/hackathon-2021-spring/blob/main/teams/30-SkyePass) - 去中心化身份驗証 及 密碼管理工具
-- [Web3 Games](https://github.com/ParityAsia/hackathon-2021-spring/blob/main/teams/01-Web3Games) - 去中心化数字游戏集成平台，致力于为区块链 WEB3 游戏生态提供各种解决方案，为区块链游戏开发者提供了免费的开发工具和服务。
+- [Web3先锋队](https://github.com/ParityAsia/hackathon-2021-autumn/tree/main/teams/01-Web3Pioneer) - 创建一种抗审查的“推广即挖矿”平台，结合D-VPN、内容推荐等，促使引发裂变传播，成为用户通向WEB3的一座桥梁
+- [Web3go](https://github.com/ParityAsia/hackathon-2021-autumn/tree/main/teams/02-Web3go) - 开放的数据平台，专注于对 Polkadot, Ethereum等公链生态中产生的链上数据进行同步追踪,并进行筛选和格式化, 最终以可视化图表展示出来。
+- [Magic Farm](https://github.com/ParityAsia/hackathon-2021-autumn/tree/main/teams/03-Decoder) - 一款农场主题的NFT＋defi区块链游戏，可以合成生成稀有NFT，打造链上的田园元宇宙。
