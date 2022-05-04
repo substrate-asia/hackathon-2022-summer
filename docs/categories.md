@@ -141,7 +141,7 @@
 
 参考例子：
 
-- [Patrack Network](https://patract.network/?lang=zh-CN)
+- [Patract Network](https://patract.network/?lang=zh-CN)
 - [Moonbeam Network](https://moonbeam.network/)
 
 及如：
