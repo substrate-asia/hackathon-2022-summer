@@ -16,13 +16,13 @@ Substrate 让您可以通过制作及整合不同的模块来创建定制化的�
 
 ### 给 Substrate / Polkadot 前期初学者：
 
-- [官方 Substrate 文档](http://substrate.dev/)
+- [官方 Substrate 文档](https://docs.substrate.io)
 
   这里有着最全面的 Substrate 技术知识点讲解。涵盖从概念导论到具体代码实现的知识点。是最好的给初学者了解 Substrate 知识的地方
 
-- [Substrate 教程](https://substrate.dev/en/tutorials)
+- [Substrate 教程](https://docs.substrate.io/tutorials/v3/)
 
-  手把手的教程 教你如何使用 Substrate 制作出你自己的 dApp 及建造前端与之互动。可从打造这 [链上存证的应用开始](https://substrate.dev/docs/en/tutorials/build-a-dapp/)。
+  手把手的教程 教你如何使用 Substrate 制作出你自己的 dApp 及建造前端与之互动。可从打造这 [链上存证的应用开始](https://docs.substrate.io/tutorials/v3/proof-of-existence/)。
 
 - [Polkadot 官方文档](https://wiki.polkadot.network/docs/en/learn-launch)
 
@@ -40,17 +40,17 @@ Substrate 让您可以通过制作及整合不同的模块来创建定制化的�
 
   功能詳盡Substrate 区块链浏覧器
 
-- [Substrate Playground](https://playground.substrate.dev/)
+- [Substrate Playground](https://docs.substrate.io/playground/)
 
   不用安装开发环境，直接在云端编译 Substrate 的线上编辑器
 
 ### 给有经验的 Substrate 开发者：
 
-- [Substrate 开发食谱](https://substrate.dev/recipes)
+- [Substrate 开发指引](https://docs.substrate.io/how-to-guides/v3/)
 
   这里记录了在 Substrate 上如何完成某些特定的功能点
 
-- [Substrate API 文档](https://substrate.dev/rustdocs)
+- [Substrate API 文档](https://docs.substrate.io/rustdocs/)
 
   Substrate Rust API 文档
 
