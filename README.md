@@ -77,12 +77,12 @@
 
 ## 奖金
 
-- 一等奖：$40,000
-- 二等奖：$25,000
-- 三等奖：$12,500
-- 最佳潜力高校奖: $3,125
-- 最受社区喜爱奖: $3,125
-- PolkaHacker奖金池: $10,000
+- 一等奖：2,100 DOT
+- 二等奖：1,300 DOT
+- 三等奖：660 DOT
+- 最佳潜力高校奖: 160 DOT
+- 最受社区喜爱奖: 160 DOT
+- PolkaHacker奖金池: 520 DOT
 
 ## 额外报名资料
 
@@ -109,6 +109,18 @@
 * [Github 讨论区](https://github.com/ParityAsia/hackathon-2022-summer/discussions)
 
 * email: hackathon.asia@parity.io
+
+* [黑客松比赛 Discord](https://discord.gg/KsCEKvqU4p)
+
+   加入我们的「Discord服务器」后，你可以在：
+
+  【community-🤝｜introduce-yourself 频道】与社区成员打招呼！
+
+  【PolkadotHackathon频道】参与活动、社区聊天和了解最新公告！
+
+  【hacker-chat频道】随意交流讨论！
+
+  【🤝｜team-up 频道】做文字版自我介绍
 
 ## 其他
 
