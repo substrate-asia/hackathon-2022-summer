@@ -6,7 +6,7 @@
 
 ## 项目整体简介
 
-(logo image)
+![79065cb236bd6d0a18725bd864cc36a](https://user-images.githubusercontent.com/83746881/169981478-dd274207-a0ee-48a5-bdc1-94e46f938766.png)
 
 Dante Network 是Web3多生态协作的中间件。在 Dante Network 中，我们定义并实现Web3互联互操作的协议栈，这将为Web3带来颠覆性的体验，就像“Internet协议”之于当前的互联网一样。基于 Dante Network 所实现的协议栈实例，未来，多链生态之间不仅可以实现通证的流通，还将实现信息的全面感知以及智能合约的无障碍互操作。
 
