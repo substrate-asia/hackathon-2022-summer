@@ -55,4 +55,4 @@ Dante Network与Polkadot/Kusama的理念一致，我们将实现Polkadot/Kusama�
 
 - 参赛队员名称：Shawn 
 - github账号：shanellyy@126.com
-- 邮箱：nika@dantechain.com, xiyuzheng1984@gmail.com
+- 邮箱：nika@dantechain.com
