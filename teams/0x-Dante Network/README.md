@@ -39,7 +39,7 @@ Dante Network与Polkadot/Kusama的理念一致，我们将实现Polkadot/Kusama�
 - `Omnichain dApp SDK for Polkadot`
   - [ ] 多生态dApp开发SDK，`ink`智能合约技术栈；
   - [ ] 多生态dApp开发SDK，`solidity`智能合约技术栈；
-- `Demos`
+- `Demos`(在测试网部署)
   - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
   - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
   - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
