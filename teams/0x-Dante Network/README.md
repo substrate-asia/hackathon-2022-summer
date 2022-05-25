@@ -8,13 +8,12 @@
 
 ![79065cb236bd6d0a18725bd864cc36a](https://user-images.githubusercontent.com/83746881/169981478-dd274207-a0ee-48a5-bdc1-94e46f938766.png)
 
-Dante Network 是Web3多生态协作的中间件。在 Dante Network 中，我们定义并实现Web3互联互操作的协议栈，这将为Web3带来颠覆性的体验，就像“Internet协议”之于当前的互联网一样。基于 Dante Network 所实现的协议栈实例，未来，多链生态之间不仅可以实现通证的流通，还将实现信息的全面感知以及智能合约的无障碍互操作。
+Dante Network 是Web3多生态协作的中间件。在Dante Network中，我们定义并实现Web3互联互操作的协议栈，这将为Web3带来颠覆性的体验，就像“Internet协议”之于当前的互联网一样。基于Dante Network所提供的协议栈实例，未来，多链生态之间不仅可以实现通证的跨生态流通，还将实现信息的全面感知以及智能合约的无障碍协作。
 
-Dante Network将帮助Polkadot拓展其应用边界。
+Polkadot/Kusama开创了多链协作的生态范式，其生态系统中具有不同能力的各种公链可以相互连接与协作。我们非常认可这个理念，web3将是一个多元化协作的世界。当前的web3是一个多生态共存的世界，在Polkadot以外，有些生态已经非常有名（如Ethereum，BNB，Solana，Avalanche，Near等），有些生态则具备某种特殊的能力（如Flow，Arweave，Aleo，PlatON等）。
 
-Polkadot/Kusama开创了多链协作的生态范式，其生态系统中具有不同能力的各种公链可以相互连接与协作。我们非常认可这个理念，web3将是一个多元化协作的世界。当前的web3世界是一个多生态共存的世界，除了Polkadot生态以外，还共存着一些已经比较有名的公链（如Ethereum，Solana，Avalanche，Near等），当然还有一些具备某种特殊能力的公链（如Flow，Arweave，Platon等）。
+Dante Network与Polkadot/Kusama的理念非常一致，简言之，Dante Network将帮助Polkadot拓展其生态应用的边界。与跨生态的Token桥梁不同，Dante Network将提供的是一个通用的跨生态消息分发和合约调用协议栈。这将帮助Polkadot生态以外的用户也可以在他们熟悉的环境下访问Polkadot生态系统内的服务和资源，同时，Polkadot生态的每个参与者也可以借助Dante Network享受到整个web3世界所提供的更广泛的服务。
 
-Dante Network与Polkadot/Kusama的理念非常一致，我们将实现Polkadot/Kusama与web3世界的其他公链的互联与互操作。与从Polkadot到其他生态系统的Token桥梁不同，我们将提供的是一个通用的跨生态消息分发和合约调用协议栈。这将使得Polkadot生态以外的用户也可以在他们熟悉的环境下访问Polkadot生态系统内的服务和资源，同时，Polkadot的每个参与者都可以享受到整个web3世界所提供的更广泛的服务。
 
 以下是我们项目的一些更详细的信息：
 * [Github Organization](https://github.com/dantenetwork)
@@ -24,7 +23,7 @@ Dante Network与Polkadot/Kusama的理念非常一致，我们将实现Polkadot/K
 ## 黑客松期间计划完成的事项
 
 **区块链端**
-我们将在本次黑客松中同时提供`ink！`（支持未来大多数基于substrate的平行链）和`solidity`（支持现有的一些EVM智能合约平台平行链）版本的协议栈实现。
+我们将在本次黑客松中完成协议栈最基本的功能，提供可供dApp开发者试用的多生态智能合约开发SDK，并在测试网部署相关能力展示的Demo。我们将同时完成`ink！`（支持未来大多数基于substrate的平行链）和`solidity`（支持拥有EVM智能合约平台的平行链）版本的协议栈实现。
 
 - `Smart contracts`
   - [ ] 多生态交互底层消息协议（对用户透明）；
