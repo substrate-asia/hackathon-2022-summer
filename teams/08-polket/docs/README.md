@@ -23,7 +23,7 @@
 
 健身器材厂商通过**ToEarnFun**官方资质认证后，厂商每生产一件健身器材都把芯片公钥注册到区块链上。用户在商店购买**ToEarnFun**适配的健身器材，并在App完成激活，即可在链上免费获得一个**VFE**(**Virtual Fitness Equipment**，可理解为**NFT**的一个种类)。用户每日通过健身器材锻炼，系统根据链上**VFE**属性值计算出对应获得的奖励。
 
-相对STEPN要求用户使用加密货币购买**Sneaker**，**ToEarnFun**无需用户接触加密货币，在销售方式上更容易满足地区的合规要求。**ToEarnFun**社区是由真正有健身需求的用户群体组建，同时也是对Web3未来积极看好的群体，同时也为用户进入**Polkadot生态系统**打开了一道大门。
+相对STEPN要求用户使用加密货币购买**Sneaker**，**ToEarnFun**无需用户接触加密货币，在销售方式上更容易满足地区的合规要求。**ToEarnFun**社区是由真正有健身需求的用户群体组建，同时也是对Web3未来积极看好的群体。为Web2用户进入**Polkadot生态系统**打开了一道大门。
 
 ### 健身锻炼+GameFi
 
@@ -70,7 +70,7 @@
 **Polket**目标是以平行链方式连接到**Polkadot/Kusama**，使得**ToEarnFun**用户能够接触到**Polkadot**的其他平行链。通过跨链互操作，用户在**ToEarnFun**应用上能直接体验**DeFi**，**Staking**，**DEX**等等功能。
 
 > 关键字解析：
-> - `VFE`是`Virtual Fitness Equipment`的简写。可以理解为`NFT(non-fungible token)`的一个子类。我们将在链上创建`智能跳绳`、`智能呼啦圈`、`智能拳击`、`动感单车`等`VFE`。用户获得的是`VFE`铸造出来的独一无一的`VFE实例`。
+> - `VFE`是`Virtual Fitness Equipment`的简写。可以理解为`NFT(non-fungible token)`的一个子类。我们将在链上创建`智能跳绳`、`智能呼啦圈`、`智能拳击`、`动感单车`等`VFE`。用户获得的是`VFE`铸造出来的独一无二的`VFE实例`。
 > - `FUN`是`ToEarnFun官方`在`Polket`链发行的数字令牌，用于激励用户日常健身锻炼。
 
 ## What can ToEarnFun do?
