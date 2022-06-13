@@ -14,6 +14,11 @@ Polkadot/Kusama开创了多链协作的生态范式，其生态系统中具有�
 
 Dante Network与Polkadot/Kusama的理念非常一致，简言之，Dante Network将帮助Polkadot拓展其生态应用的边界。与跨生态的Token桥梁不同，Dante Network将提供的是一个通用的跨生态消息分发和合约调用协议栈。这将帮助Polkadot生态以外的用户也可以在他们熟悉的环境下访问Polkadot生态系统内的服务和资源，同时，Polkadot生态的每个参与者也可以借助Dante Network享受到整个web3世界所提供的更广泛的服务。
 
+在本次黑客松中，本项目所参加的赛道如下：
+
+* [类别 5：跨链，Bridge，Layer2，Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#%E7%B1%BB%E5%88%AB-5%E8%B7%A8%E9%93%BEbridgelayer2layer0)
+  
+  * [Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#layer0)
 
 以下是我们项目的一些更详细的信息：
 * [Github Organization](https://github.com/dantenetwork)
