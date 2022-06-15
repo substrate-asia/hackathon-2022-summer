@@ -6,7 +6,6 @@
 
 ## 项目整体简介
 
-项目简介：
 Establish a highly sticky DAO community, provide continuous and efficient collateral for pos public chain nodes, and provide community users with more pledge income and higher liquidity.
 Stafi DAO is a highly autonomous multi-chain community. Community users are divided into: pledge users, lease users and technical service providers.
 Pledge function: establish a swap trading pool of stkToken to solve the problem of depletion of liquidity for DAO Pool redemption; pledge users provide liquid collateral for DAO Pool, and users pledge native Token to obtain stkToken, a certificate for redeeming the pledge; community users Initiate proposals for governance and automatically change Pool operating parameters to achieve decentralized community autonomy;
