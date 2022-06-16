@@ -28,14 +28,12 @@ The project core topic is web3-based automatic triggers. You may have heard of I
   
 **Client**
 
-- web side
+- web side(react)
   - [ ] Triger/Action/Recipe create page
   - [ ] Triger/Action/Recipe list page
 
-- evm-proxy (react-native)
+- evm-proxy(rust)
   - [ ] pass action to DEP(a Distributed Task System)
-
-
 
 ## What was accomplished during the hackathon (submitted before the June 22nd trial)
 (todo)
