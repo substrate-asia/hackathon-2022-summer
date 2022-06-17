@@ -1,40 +1,35 @@
 ## 基本资料
-
+![Logo](assets/Logotype.jpg)
 项目名称：BootstrapNFT
 
-项目立项日期 (哪年哪月)：
+项目立项日期：2022-05
 
 ## 项目整体简介
 
-项目简介，英文提交。包括但不限于：
+BootstrapNFT is an NFT liquidity auction platform. By establishing a liquidity market for NFT projects and conducting a "Dutch auction", it can discover the healthy and stable value of NFT assets.
 
-- 项目背景/原由/要解决的问题 (如有其他附件，可放到 `docs` 目录内。英文提交)。
-- 项目介绍
-- 技术架构
-- 项目 logo (如有)，这 logo 会印制在文宣，会场海报或贴子上。
+BootstrapNFT tries to solve the problems of opaque pricing and robot race in the NFT market, so that people have enough opportunities to participate in transactions at a fair price.
+
+![Logo](docs/112.png)
 
 ## 黑客松期间计划完成的事项
 
-- 请团队在报名那一周 git clone 这个代码库并创建团队目录，在 readme 里列出黑客松期间内打算完成的代码功能点。并提交 PR 到本代码库。例子如下 (这只是一个 nft 项目的例子，请根据团队项目自身定义具体工作)：
-
 **区块链端**
 
-- `pallet-nft`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+- `smart-contract`
+  - [ ] NFT 碎片化工厂合约
+  - [ ] NFT mint
+  - [ ] NFT Redeem
+  - [ ] NFT Auction工厂
+  - [ ] NFT token Swap
+
 
 **客户端**
 
 - web 端
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
-
-- hybrid (react-native)
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+  - [ ] NFT 碎片化工厂合约创建与发布
+  - [ ] NFT mint erc20
+  - [ ] NFT 拍卖池创建
 
 
 ## 黑客松期间所完成的事项 (6月22日初审前提交)
