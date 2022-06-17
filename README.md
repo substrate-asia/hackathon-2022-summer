@@ -113,6 +113,8 @@
 
 * email: hackathon.asia@parity.io
 
+* wechat: Yuan1229 (15810880107)
+
 * [黑客松比赛 Discord](https://discord.gg/KsCEKvqU4p)
 
    加入我们的「Discord服务器」后，你可以在：
