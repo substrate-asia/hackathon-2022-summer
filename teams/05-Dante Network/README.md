@@ -48,7 +48,7 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
 - `off-chain routers` 
   - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
   - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
-  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust`技术栈间的消息编解码；
+  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust` technology stack
   - [ ] Message delivering.
 - `Omnichain dApp SDK for Polkadot`
   - [ ] Omnichain dev SDK for `ink`(Parachain AStar) smart contract
