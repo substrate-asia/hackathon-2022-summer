@@ -115,7 +115,7 @@ impl MessageItem {
 /// Message Payload
 /// @member items: a vector of `MessageItem`
 /// @member vecs: a vector of `MessageVec`
-#[derive(Debug, PartialEq, Eq, scale::Encode, scale::Decode)]
+#[derive(Debug, Clone, PartialEq, Eq, scale::Encode, scale::Decode)]
 // #[cfg_attr(feature = "std", derive())]
 pub struct MessagePayload{
     pub items: Option<ink_prelude::vec::Vec<MessageItem>>,

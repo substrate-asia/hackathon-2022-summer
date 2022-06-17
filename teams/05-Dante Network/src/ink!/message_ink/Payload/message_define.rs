@@ -1,7 +1,6 @@
-include!("message_protocol.rs");
+// include!("message_protocol.rs");
 
 use ink_prelude::{
-    vec::Vec,
     string::String,
 };
 
@@ -219,6 +218,18 @@ impl IReceivedMessage {
             data,
             session,
         }
+    }
+
+    pub fn into_bytes(&self) -> ink_prelude::vec::Vec<u8> {
+        let mut msg_code: ink_prelude::vec::Vec<u8> = ink_prelude::vec::Vec::<u8>::new();
+        scale::Encode::encode_to(self, &mut msg_code);
+        msg_code
+    }
+
+    pub fn into_hash(&self) -> <ink_env::hash::Sha2x256 as ink_env::hash::HashOutput>::Type {
+        let mut output = <ink_env::hash::Sha2x256 as ink_env::hash::HashOutput>::Type::default();
+        ink_env::hash_encoded::<ink_env::hash::Sha2x256, _>(&self, &mut output);
+        output
     }
 }
 

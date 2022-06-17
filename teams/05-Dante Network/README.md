@@ -44,6 +44,7 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
   - [ ] The implementation of the Message protocol for ink!.
   - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
   - [ ] Basic SQoS Items：Identity traceability as the default choice.
+  - [ ] On-chain simulations for some of the underlying algorithms.
 - `off-chain routers` 
   - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
   - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
