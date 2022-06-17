@@ -37,7 +37,7 @@ Details of our project are as below:
 
 ## Plan to Develop
 
-**In Web3**
+**In Blockchain**
 我们将在本次黑客松中完成协议栈最基本的功能，提供可供dApp开发者试用的多生态智能合约开发SDK，并在测试网部署相关能力展示的Demo。我们将同时完成`ink！`（支持未来大多数基于substrate的平行链）和`solidity`（支持拥有EVM智能合约平台的平行链）版本的协议栈实现。
 
 - `Smart contracts`
@@ -58,7 +58,7 @@ Details of our project are as below:
   - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
   - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+## Achievement in hackathon
 
 - 6月22日前，在本栏列出黑客松期间最终完成的功能点。
 - 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
