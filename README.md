@@ -108,7 +108,7 @@
 
 * email: hackathon.asia@parity.io
 
-* wechat: Yuan1229 (15810880107)
+* wechat: 15810880107
 
 * [黑客松比赛 Discord](https://discord.gg/KsCEKvqU4p)
 
