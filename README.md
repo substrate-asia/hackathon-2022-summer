@@ -95,14 +95,13 @@
 
 ## Workshop 及 Office Hour 时间表
 
-6次线上 Workshop & office hours 逢周五：19:00 - 20:15，45 分钟 workshop + 30 分钟 office hours (OH)
+5次线上 Workshop & office hours 每周五 workshop + office hours (OH)
 
-- **5月21日 19:00 - 20:15**: 黑客松开场/规则/注意 (Helena + Jimmy) + OH (Jimmy)
-- **5月28日 19:00 - 20:15**: Substrate 4.0 介绍 (Kaichao) + OH (Kaichao)
-- **6月4日 19:00 - 20:15**: 待定
-- **6月11日 19:00 - 20:15**: 待定
-- **6月18日 19:00 - 20:15**: 待定
-- **6月25日 19:00 - 20:15**: 待定
+- **5月21日 20:00 - 21:00**: 黑客松开场/规则/注意 (Helena + Jimmy) + OH (Jimmy)
+- **5月28日 15:00 - 17:00**: Substrate 4.0 介绍 (Kaichao + Roy + Sean) + OH (Kaichao)
+- **6月4日 15:00 - 18:00**: 智能合约概述 (Henry + Shelven + Shooter)
+- **6月11日 15:00 - 16:30**: 如何基于XCM构建资产桥 (Maggie + Wenfeng)
+- **6月18日 15:00 - 17:00**: Web3.0时代投资新方向：NFT,元宇宙 (TangYi + Ashley + Thomas)
 
 回看录播：https://space.bilibili.com/67358318
 
