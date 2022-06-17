@@ -38,25 +38,25 @@ Details of our project are as below:
 ## Plan to Develop
 
 **In Blockchain**
-我们将在本次黑客松中完成协议栈最基本的功能，提供可供dApp开发者试用的多生态智能合约开发SDK，并在测试网部署相关能力展示的Demo。我们将同时完成`ink！`（支持未来大多数基于substrate的平行链）和`solidity`（支持拥有EVM智能合约平台的平行链）版本的协议栈实现。
+We will complete the most basic functions of the stack, provide a multi-ecological smart contract development SDK for dApp developers to try out, and deploy demos in the test network to demonstrate the capabilities. We will provide both the technology stack of `ink!`(support for most future substrate-based parallel chains) and `solidity` (support for parallel chains with EVM smart contract platforms).
 
 - `Smart contracts`
-  - [ ] 多生态交互底层消息协议（对用户透明）；
-  - [ ] 消息分发、接收、验证基础功能智能合约簇；
-  - [ ] SQoS基本项：身份溯源、收发隔离；
+  - [ ] The implementation of the Message protocol for ink!.
+  - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
+  - [ ] Basic SQoS Items：Identity traceability as the default choice.
 - `off-chain routers` 
-  - [ ] `ink`与`solidity`技术栈间的消息编解码；
-  - [ ] `ink`与`NEAR Rust`技术栈间的消息编解码；
-  - [ ] `solidity`与`NEAR Rust`技术栈间的消息编解码；
-  - [ ] 多生态消息路由；
+  - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
+  - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
+  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust`技术栈间的消息编解码；
+  - [ ] Message delivering.
 - `Omnichain dApp SDK for Polkadot`
-  - [ ] 多生态dApp开发SDK，`ink`智能合约技术栈；
-  - [ ] 多生态dApp开发SDK，`solidity`智能合约技术栈；
-- `Demos`(在测试网部署)
-  - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
-  - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
-  - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
-  - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
+  - [ ] Omnichain dev SDK for `ink`(Parachain AStar) smart contract
+  - [ ] Omnichain dev SDK for `solidity`(Parachain Moonbeam) smart contract
+- `Demos`(Deployed on Testnet)
+  - [ ] Message communication between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Message communication between `solidity` smart contract platform(`Moonbase Alpha`) in Polkadot and Near
+  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
 
 ## Achievement in hackathon
 
