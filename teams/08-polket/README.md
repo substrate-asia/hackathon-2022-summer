@@ -6,7 +6,7 @@
 
 ## 项目整体简介
 
-ToEarnFun是一款fitness to earn的Web3的智能健身应用程序。相对于其它只有Social-Fi和Game-Fi元素的x-to-earn应用，它能够与真实的智能健身设备连接，依靠硬件芯片的加密技术，保证付出的汗水得到公平的回报。ToEarnFun的入门用户无需购买加密货币，只需要购买应用适配的智能健身设备，即可马上fitness to earn，大大降低普通用户进入web3世界的门槛。
+ToEarnFun是一款fit to earn的Web3的智能健身应用程序。相对于其它只有Social-Fi和Game-Fi元素的x-to-earn应用，它能够与真实的智能健身设备连接，依靠硬件芯片的加密技术，保证付出的汗水得到公平的回报。ToEarnFun的入门用户无需购买加密货币，只需要购买应用适配的智能健身设备，即可马上fit to earn，大大降低普通用户进入web3世界的门槛。
 
 ## 黑客松期间计划完成的事项
 
