@@ -8,11 +8,26 @@ Project initiation date (year and month): 2022-05
 
 Polkadot's blockchain applications are becoming more and more complex, and I am wondering what applications can use a common interface to make it easier for ordinary people to use blockchain applications.
 
-The project core topic is web3-based automatic triggers. You may have heard of IFTTT. The power-on point solved is greatly improve convenience, and reduce the threshold for users to enter the blockchain, and ensure the stability of execution and the privacy of trigger publishers and executors.serve as one of the infrastructures of web3. The targeted areas include life services, B-side office services, as well as the Internet of Things, smart home, cross-chain operations, and Defi.
+The project core topic is web3-based automatic triggers. You may have heard of IFTTT. The power-on point solved is greatly improve convenience, and reduce the threshold for users to enter the blockchain, and ensure the stability of execution and the privacy of trigger publishers and executors.serve as one of the infrastructures of web3. The targeted areas include life services, smart home, cross-chain operations, and Defi.
 
 
 ![logo](./logo.png)
 
+```
+    runtime 
+        ｜(get task info)
+        V
+   offchain worker
+        ｜(check triger condition, send task)
+        V
+     evm_proxy
+        ｜ (sign and send task )
+        V
+deeper-machine evm contract
+        ｜(race and run task )
+        V
+deeper-machine node
+```
 
 ## What to do during the hackathon
 
@@ -34,6 +49,10 @@ The project core topic is web3-based automatic triggers. You may have heard of I
 
 - evm-proxy(rust)
   - [ ] pass action to DEP(a Distributed Task System)
+
+**TaskImages**
+- [ ] email docker image
+- [ ] oracle docker image
 
 ## What was accomplished during the hackathon (submitted before the June 22nd trial)
 (todo)
