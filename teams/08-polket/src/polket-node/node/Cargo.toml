@@ -1,0 +1,67 @@
+[package]
+name = 'polket-node'
+version = '0.1.0'
+description = 'A fresh FRAME-based Substrate node, ready for hacking.'
+authors = ['Polket <https://www.polket.io>']
+homepage = 'https://www.polket.io'
+edition = '2018'
+license = "GPL-3.0-or-later"
+publish = false
+repository = 'https://github.com/polket/polket-node/'
+build = 'build.rs'
+
+[[bin]]
+name = 'polket-node'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[build-dependencies]
+substrate-build-script-utils = { git = "https://github.com/paritytech/substrate.git", tag = 'monthly-2021-11', version = '3.0.0' }
+
+[dependencies]
+jsonrpc-core = '18.0.0'
+structopt = '0.3.8'
+hex-literal = '0.3.1'
+hex = "0.4.2"
+
+frame-benchmarking = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+frame-benchmarking-cli = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+pallet-transaction-payment-rpc={ git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-basic-authorship = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-cli = { features = ['wasmtime'], git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-client-api = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-consensus = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-consensus = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-executor = { features = ['wasmtime'], git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-finality-grandpa = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-keystore = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-rpc = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-rpc-api = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-service = { features = ['wasmtime'], git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-telemetry = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-transaction-pool = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-transaction-pool-api = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-api = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-block-builder= { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-blockchain = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-consensus-babe = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sp-consensus-babe = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sp-core = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-finality-grandpa = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-runtime = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sp-timestamp = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+substrate-frame-rpc-system = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+sc-consensus-epochs = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sp-keystore = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '0.10.0-dev'}
+sc-consensus-babe-rpc = { git = "https://github.com/paritytech/substrate", tag = 'monthly-2021-11', version = '0.10.0-dev' }
+sc-finality-grandpa-rpc = { git = "https://github.com/paritytech/substrate", tag = 'monthly-2021-11', version = '0.10.0-dev' }
+sc-sync-state-rpc = { git = "https://github.com/paritytech/substrate", tag = 'monthly-2021-11', version = '0.10.0-dev' }
+sc-chain-spec = { git = "https://github.com/paritytech/substrate", tag = 'monthly-2021-11', version = '4.0.0-dev' }
+
+# local libraries
+polket-runtime = {path = '../runtime/testnet', version = '0.1.0'}
+
+[features]
+default = []
+runtime-benchmarks = ['polket-runtime/runtime-benchmarks']
