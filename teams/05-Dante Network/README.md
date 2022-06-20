@@ -1,56 +1,120 @@
-## 基本资料
+## Project
 
-项目名称：Dante Network
+Project Name: Dante Network
 
-项目立项日期：2022.2
+Start time: 2022.2
 
-## 项目整体简介
+## Introduction
 
 ![79065cb236bd6d0a18725bd864cc36a](https://user-images.githubusercontent.com/83746881/169981478-dd274207-a0ee-48a5-bdc1-94e46f938766.png)
 
-Dante Network 是Web3多生态协作的中间件。在Dante Network中，我们定义并实现Web3互联互操作的协议栈，这将为Web3带来颠覆性的体验，就像“Internet协议”之于当前的互联网一样。基于Dante Network所提供的协议栈实例，未来，多链生态之间不仅可以实现通证的跨生态流通，还将实现信息的全面感知以及智能合约的无障碍协作。
+In this hackathon we have chosen the following tracks:
+* [Category 5：cross-chain，Bridge，Layer2，Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#%E7%B1%BB%E5%88%AB-5%E8%B7%A8%E9%93%BEbridgelayer2layer0)
+  
+  * [Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#layer0)
 
-Polkadot/Kusama开创了多链协作的生态范式，其生态系统中具有不同能力的各种公链可以相互连接与协作。我们非常认可这个理念，web3将是一个多元化协作的世界。当前的web3是一个多生态共存的世界，在Polkadot以外，有些生态已经非常有名（如Ethereum，BNB，Solana，Avalanche，Near等），有些生态则具备某种特殊的能力（如Flow，Arweave，Aleo，PlatON等）。
+Dante Network is the middleware of Web3 for collaboration among multiple ecosystems.  In Dante Network, we define and implement a protocol stack for Web3 to realize the interconnection and the interoperability, which will bring innovative experience for Web3, just as an "Internet protocol stack" is for the current Internet. Based on Dante protocol stack, in the future, not only token circulation among multi-chain ecosystems could be easily achieved, but comprehensive information perception and barrier-free interoperability of smart contracts will also be seamlessly feasible. 
 
-Dante Network与Polkadot/Kusama的理念非常一致，简言之，Dante Network将帮助Polkadot拓展其生态应用的边界。与跨生态的Token桥梁不同，Dante Network将提供的是一个通用的跨生态消息分发和合约调用协议栈。这将帮助Polkadot生态以外的用户也可以在他们熟悉的环境下访问Polkadot生态系统内的服务和资源，同时，Polkadot生态的每个参与者也可以借助Dante Network享受到整个web3世界所提供的更广泛的服务。
+Polkadot/Kusama pioneered the ecological paradigm of multi-chain collaboration, where various public chains with different capabilities in the ecosystem can connect and collaborate with each other. We strongly endorse this idea that web3 will be a world of diverse collaborations. The current web3 is a multi-ecological coexistence world, outside of Polkadot, some ecologies are already very famous (e.g. Ethereum, BNB, Solana, Avalanche, Near, etc.), and some have some special capabilities (e.g. Flow, Arweave, Aleo, PlatON, etc.).
 
+Dante Network is very much in line with Polkadot/Kusama's philosophy; in short, Dante Network will help Polkadot expand the boundaries of its eco-applications. More than a cross-ecology Token bridge, Dante Network will provide a common cross-ecology message communication and smart contract invocation infrastructure. This will help users outside the Polkadot ecosystem to access services and resources within the Polkadot ecosystem in their familiar environment, while every participant in the Polkadot ecosystem can enjoy a wider range of services offered by the entire web3 world with Dante Network.
 
-以下是我们项目的一些更详细的信息：
+### Product
+Contretely, Dante protocol stack is implemented as the following:
+
+* Firstly, Dante protocol stack will be implemented as smart contracts deployed on multi-chains including more than one smart contract platform parachains in the Polkadot ecosystem, through which DApps' in the Polkadot ecosystem can send or receive general messages, to or from contracts deployed on chains outside(EVM chains, Near, Flow, etc.). Besides, smart contracts deployed on different chains can call each other as convenient as they did in the same chain.
+* Secondly, we will build off-chain routers called "Adaption nodes" to make the underlying information routing. Anyone can participate in Dante Network by deploying an "Adaption node" with their own private key.
+* Thirdly, we will provide SDKs covering multiple technology stacks for DApp developers to make multi-chain interoperations more convenient and easier. The technology stacks will include Rust (ink!, Near, Solana, etc.), Solidity (EVM chains like Ethereum, BNB, Avalanche, etc.), Cadence (Flow), etc.
+
+### Architecture
+![image](https://user-images.githubusercontent.com/83746881/174229468-cfbddd60-fb31-4477-bbd8-9f4e99ccc81e.png)
+
+### Details
+Details of our project are as below: 
 * [Github Organization](https://github.com/dantenetwork)
 * [Pitch deck  & white paper](https://github.com/dantenetwork/Pitch-Deck)
 * [Video](https://www.youtube.com/watch?v=CYXx4O8Xgcs)
 
-## 黑客松期间计划完成的事项
+## Plan to Develop
 
-**区块链端**
-我们将在本次黑客松中完成协议栈最基本的功能，提供可供dApp开发者试用的多生态智能合约开发SDK，并在测试网部署相关能力展示的Demo。我们将同时完成`ink！`（支持未来大多数基于substrate的平行链）和`solidity`（支持拥有EVM智能合约平台的平行链）版本的协议栈实现。
+**In Blockchain**
+We will complete the most basic functions of the stack, provide a multi-ecological smart contract development SDK for dApp developers to try out, and deploy demos in the test network to demonstrate the capabilities. We will provide both the technology stack of `ink!`(support for most future substrate-based parallel chains) and `solidity` (support for parallel chains with EVM smart contract platforms).
 
 - `Smart contracts`
-  - [ ] 多生态交互底层消息协议（对用户透明）；
-  - [ ] 消息分发、接收、验证基础功能智能合约簇；
-  - [ ] SQoS基本项：身份溯源、收发隔离；
+  - [ ] The implementation of the Message protocol for ink!.
+  - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
+  - [ ] Basic SQoS Items：Identity traceability as the default choice.
+  - [ ] On-chain simulations for some of the underlying algorithms.
 - `off-chain routers` 
-  - [ ] `ink`与`solidity`技术栈间的消息编解码；
-  - [ ] `ink`与`NEAR Rust`技术栈间的消息编解码；
-  - [ ] `solidity`与`NEAR Rust`技术栈间的消息编解码；
-  - [ ] 多生态消息路由；
+  - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
+  - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
+  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust`技术栈间的消息编解码；
+  - [ ] Message delivering.
 - `Omnichain dApp SDK for Polkadot`
-  - [ ] 多生态dApp开发SDK，`ink`智能合约技术栈；
-  - [ ] 多生态dApp开发SDK，`solidity`智能合约技术栈；
-- `Demos`(在测试网部署)
-  - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
-  - [ ] Polkadot上`ink`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
-  - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的通用消息传输；
-  - [ ] Polkadot上`solidity`智能合约平台上的应用智能合约与BNB/Rinkeby上应用智能合约之间的跨生态合约调用；
+  - [ ] Omnichain dev SDK for `ink`(Parachain AStar) smart contract
+  - [ ] Omnichain dev SDK for `solidity`(Parachain Moonbeam) smart contract
+- `Demos`(Deployed on Testnet)
+  - [ ] Message communication between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Message communication between `solidity` smart contract platform(`Moonbase Alpha`) in Polkadot and Near
+  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
 
-## 黑客松期间所完成的事项 (7月5日初审前提交)
+## Achievement in hackathon
 
-- 7月5日前，在本栏列出黑客松期间最终完成的功能点。
+- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
 - 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
 - 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
 
-## 队员信息
+## Technology Team
+Jason(CEO)
+* Master degree. Major in software enginering
+* Over 10 years of working experience; senior practitioner in blockchain/information security
+* Responsible for participating in a number of national information security research projects
+* Head of node service provider
+* Experienced in operating nodes of many large projects
+* Rich experience in blockchain project incubating and operation
+* Mail: chengjingxx@gmail.com
 
-- 参赛队员名称：Shawn 
-- github账号：shanellyy@126.com
-- 邮箱：nika@dantechain.com, xiyuzheng1984@gmail.com
+Shawn Z (Tech leader)
+* Master degree. Major in Information Security
+* Expert in privacy computing, blockchain, and artificial intelligence
+* Responsible for or participated in a number of national information security research projects
+* Worked for a State-owned enterprise (Fortune 500) engaged in the security business for 10+ years
+* Full-stack engineer in information security, AI, blockchain, etc
+* Hackathon winner as a team tech leader: [Near MetaBuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge ), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676 )
+* [Github](https://github.com/xiyu1984) 
+* Mail: xiyuzheng1984@gmail.com
+
+Zack W (Full-stack Dev in web3, core dev in Dante Network)
+* Master degree. Major in Computer Science & PM
+* EOS, PlatON technical community senior participant (output around 40 technical articles, help EOS and PlatON fix many bugs).
+* Technical mentor for EOS 1st Hong Kong Hackathon Live.
+* Technical leader of EOS Genesis node ‘eosiomeetone’ which was the largest node in Asia in terms of traffic when the main network was launched, with QPS 8k+.
+* Senior full-stack engineer (worked in Qunar, Snowball).
+* [Github](https://github.com/wuyahuang).
+* [Technical articles](https://github.com/meet-one/documentation) .
+
+George H (Full-stack Dev in web3, core dev in Dante Network)
+* Major in Software Engineering
+* Senior participant of PlatON technical community ported Chainlink project for PlatON and exported several technical articles.
+* Built and maintained Polkadot, Kusama, PlatON, Ethereum2.0, ChainX, and other project nodes
+* Crust, Phala project node data center leader, responsible for project operations and maintenance, and the development of operations and maintenance-related tools.
+* 10 years as a full-stack engineer in finance, games, education, etc.
+* [Github](https://github.com/virgil2019) .
+* Mail: hht2015ily@gmail.com
+
+Kay L (Full-stack Dev in web3, core dev in Dante Network)
+* Major in Software Engineering
+* Development of a State-owned enterprise medical alliance chain, as well as the construction and maintenance of a distributed storage network and related SDK.
+* Years of blockchain experience, an active participant in EOS, PlatON, and other communities, publishing technical articles and fixing bugs.
+* Participate in EOS node maintenance, and EOS DAPP development.
+* [GitHub](https://github.com/kay404) .
+* Mail: kay20475@gmail.com
+
+James F (Full-stack Dev in web3, core dev in Dante Network)
+* Major in Computer Science
+* Over 10 years of working experience in various aspects of computer programming, analysis, development, and testing.
+* EOS, Fluence, Nervos technical community participant.
+* Full-stack engineer (worked in Go/Rust/C++/Javascript)
+* Hackathon winner: [FluenceLabs gitcoin hackathon](https://gitcoin.co/issue/fluencelabs/sovereign-data-hackathon/1/100026738 ), [nervos gitcoin hackathon](https://www.nervos.org/blog/nervos-gitcoin-hackathon-winners-announced ).
+* [Github](https://github.com/fsy412) 
