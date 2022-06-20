@@ -1,0 +1,26 @@
+{
+  "name": "solidity-contract-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantenetwork/solidity-contract-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantenetwork/solidity-contract-template/issues"
+  },
+  "homepage": "https://github.com/dantenetwork/solidity-contract-template#readme",
+  "dependencies": {
+    "@hthuang/contracts": "0.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "fs": "^0.0.1-security",
+    "web3": "^1.7.1"
+  }
+}
