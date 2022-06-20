@@ -94,7 +94,7 @@ Participants: **Fitness Users**, **Equipment Producer**, **ToEarnFun Official**.
 
 This business model not only helps traditional fitness equipment producers enter the Web3 world, expands the user base, and promotes industrial development, but also brings stable income to **ToEarnFun** and motivates **FUN** on **GameFi** in the future. Modules provide the foundation.
 
-### Fitness+GameFi
+### Fitness + GameFi
 
 ![Fitness+GameFi](../assets/toearnfun-gamefi-model-en.png)
 
