@@ -165,37 +165,7 @@ The use of blockchain to realize competition events is a very suitable applicati
 | Product Price    | Skipping Rope≈$29.99      | Sneaker≈$156          | Skipping Rope: Est. $69.99    |
 | Income Source    | Equipment sales           | Sneaker sales         | VFE minting-fee & VFE sales   |
 
-
 ## Future planning
-
-- 0️⃣阶段：参加Polkadot黑客松，时间2022-06。
-    - 编写相关技术开发文档。
-    - 完成产品Demo，实现fit to earn。
-    - 寻找市场运营合伙人和天使投资人。
-- 1️⃣阶段：发布测试版，时间预估**2022-Q2**内完成。
-    - 实现**健身器材生产销售场景**，完成首批**智能跳绳**器材生产。
-    - 实现**健身锻炼+GameFi场景**的第一个类别**跳绳**，组建**ToEarnFun跳绳爱好者社区**，邀请内测用户。
-    - 部署**Polket**的**POA**测试网络，发布**ToEarnFun App Beta**。
-- 2️⃣阶段：平行链竞拍，时间预估**2022-Q3**内完成。
-    - **Polket**参与**Kusama**平行链竞拍，公开众贷计划。
-    - 实现平行链接入，发布主网。
-    - 在**合规地区**正式发售首批ToEarnFun智能跳绳器材。
-    - 实现FUN回购池功能。
-    - 实现社区互动功能。
-- 3️⃣阶段：VFE交易市场，时间预估**2022-Q4**内完成。
-    - 实现**VFE交易市场**功能并上线主网。
-    - 开启**FUN回购计划**。
-    - 扩大跳绳器材的销售地区。
-- 4️⃣阶段：公益赛事，时间预估**2023-Q1**内完成。
-    - 实现**公益赛事**功能并上线主网。
-    - 组建公益DAO，寻找公益机构合作。
-    - 实现XCMP，与其他平行链实现跨链互操作。
-- 🗓未来计划：
-    - 官方定期销售稀有款VFE。
-    - 官方定期举办公益赛事。
-    - 支持更多**智能健身器材**连接。
-    - 实现自主制作订阅付费形式的训练计划课程。
-    - 实现商城模块，建立更多商业合作。
 
 - 0️⃣Stage: Participate in the Polkadot Hackathon, 2022-06.
     - Write technical development documents.
