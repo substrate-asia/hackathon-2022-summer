@@ -60,10 +60,14 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
   - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
 
 ## Achievement in hackathon
+- Complated:
+  - Complete all content of the `smart contracts` part.
+  - Complete all content of the `off-chain routers` part.
+  - Complete all content of the `Omnichain dApp SDK for Polkadot` part.
+  - Complete all content of the `Demos` part.
+- Videos:
+  - To Do...
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
 
 ## Technology Team
 Jason(CEO)
