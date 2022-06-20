@@ -22,10 +22,10 @@ We can see in the picture above, that the theoretical value of probability distr
 
 #### Usage
 ##### Deploy
-Try the following operations with [polkadot,js/app](https://polkadot.js.org/apps/#/explorer). On the `Shibuya Testnet` or deploy the smart contract *`./bin/algorithm_prototype.contract`* on a local substrate node.
+Try the following operations with [polkadot,js/app](https://polkadot.js.org/apps/#/explorer). On the `Shibuya Testnet` or deploy the smart contract `algorithm_prototype.contract` in *./bin* on a local substrate node.
 
 * You can launch a [local substrate node](https://github.com/paritytech/substrate-contracts-node) and deploy the `algorithm_prototype.contract` on it to try. 
-* Or use the deployed `algorithm_prototype.contract` on the Testnet of AStar, that is `Shibuya Testnet`. The address is *`aX8aZK9Pt9HTgywWYBdskDSdJ9yq6TzLJMDah7vZxfBsYko`*, and the related *`./bin/metadata.json`*.
+* Or use the deployed `algorithm_prototype.contract` on the Testnet of AStar, that is `Shibuya Testnet`. The address is *`aiNehN39tGVVtJyWCkWNWBEWQJjftLafCUzKVxG9tqvzPGx`*, and the related `metadata.json` is in *./bin*.
 
 ##### Operation
 * Call `randomRegisterRouters` to register simulation off-chain routers. To make this test simple, you can register enough at a time with any credibilities you want in the parameter vector. The id of the routers will be dynamically created. The registered routers can be checked by calling `getRegisteredRouters `. The result will be something like this:
@@ -47,9 +47,26 @@ And the number determines how many routers one message needs to be delivered par
 
 #### Usage
 * Call `setSysinfo` to set message-verification related system paremeters and `getSysinfo` to check the value.
+  * `1` is the number of the message copies needed for one message to be verified
+  * `2` is the credibility threshold, a factor of 10,000 was multiplied in order to calculate on-chain. `7000` means that one message copy will be accepted only if it has at least 70% of the aggregated weight according to credibilities.
+
+![1655716365972](https://user-images.githubusercontent.com/83746881/174568231-9529d91a-8cd5-4510-b191-64e7e4360462.png)
 
 * Call `simuSubmitMessage` to submite message copies manually. Note that message copies belong to the same message only if they have the same `IReceivedMessage::id` and `IReceivedMessage::from_chain`. 
 
+![1655718496147](https://user-images.githubusercontent.com/83746881/174575620-555750dd-5e84-47fb-8225-9d91c2c20efa.png)
+
+* The submitted message copies can be checked by `simuGetMessage `.
+
+
+
+
 *  When enough message copies are submitted, `simu_message_verification` will be called internally. The result will be cached in order to be checked manually and an event `VerifiedMessage` will be emitted to show the result, but the result event need to be decoded by `Polkadot.js`. 
 
+
+
 * Check the cached verification result by `getVerifiedResults`.
+
+![1655721713779](https://user-images.githubusercontent.com/83746881/174584850-ed1cc4d8-42d6-4844-98f0-f4b75b3872b1.png)
+
+There are three contents of the submitted message copies. The first one is submitted by routers `0`, `1`, and `2`. The second one is submitted by router `3`. And the third one is submitted by router `4`. The aggregated credibility weights are `240`, `60`, and `50` respectively. As `240` is only 60% of the total `240 + 60 + 50 = 350`, the verification, in this case, does not pass, so none of these three copies is accepted.
