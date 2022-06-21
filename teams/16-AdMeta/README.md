@@ -1,10 +1,10 @@
-## 基本资料
+## About
 
-项目名称：AdMeta
+Project Name: AdMeta
 
-项目立项日期 (哪年哪月)：2021.12
+Started in 12.2021
 
-## 项目整体简介
+## Project Details
 
 ### Overview
 
@@ -28,40 +28,53 @@ Unlike traditional ad platforms, who collect users sensitive data(e.g. location,
 
 ![AdMeta Logo](https://raw.githubusercontent.com/AdMetaNetwork/hackathon-2022-summer/main/teams/16-AdMeta/docs/logo_square_whitebg.png)
 
-## 黑客松期间计划完成的事项
+## Code Structure
 
-**区块链端**
+**Blockchain**
 
 - `pallet-ad`
 
-  - [ ] 广告商创建广告 (`fn propose_ad()`)
-  - [ ] 议会审核通过广告 (`fn approve_ad()`)
-  - [ ] 议会审核否决广告 (`fn reject_ad()`)
-  - [ ] 为用户匹配广告 (`fn match_ad_for_user()`)
-  - [ ] 用户申请获得广告收益 (`fn claim_reward_for_user()`)
+  - [x] Propose ads (`fn propose_ad()`)
+  - [x] Approve ads by council (`fn approve_ad()`)
+  - [x] Reject ads by council (`fn reject_ad()`)
+  - [x] Match ads for users (`fn match_ad_for_user()`)
+  - [x] Claim rewards (`fn claim_reward_for_user()`)
 
 - `pallet-user-mock`
-  - [ ] 添加用户个人信息 (`fn add_profile()`)
-  - [ ] 设置广告显示开关 (`fn set_ad_display()`)
-  - [ ] 申请获得广告收益 (`fn claim_reward()`)
-  - [ ] 匹配广告 (`fn do_matching()`)
+  - [x] Add/Update user profile (`fn add_profile()`)
+  - [x] Set/Update ad display option (`fn set_ad_display()`)
+  - [x] Claim rewards by user (`fn claim_reward()`)
+  - [x] Do ads and users matching (`fn do_matching()`)
 
-**客户端**
+**Client**
 
-- web 端
-  - [ ] 连接钱包
-  - [ ] 广告展示
-  - [ ] 广告交互
-  - [ ] 申请获得收益
-  - [ ] 添加用户信息
+- Web application
+  - [x] Connecting to Polkadot JS extension
+  - [x] Update/Add user profile
+  - [x] Ads display
+  - [x] Ads interaction (clicking and tracking)
+  - [x] Claim ad rewards
 
-## 黑客松期间所完成的事项 (6 月 22 日初审前提交)
+## Tasks done during Hackathon
 
-- 6 月 22 日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
+### Implementation
 
-## 队员信息
+- Blockchain
+  - Code refactoring for hackathon
+  - Add cargo doc in CI for documentation
+  - Add clippy check & amendments
+- Web application
+  - Connecting to Polkadot JS extension
+  - Update/Add user profile
+  - Ads display
+  - Ads interaction (clicking and tracking)
+  - Claim ad rewards
+- DevOps
+  - Deploy Blockchain testnet
+  - Deploy Web app testnet and connect with the blockchain testnet
+  - Misc. debugging and refinements
+
+## Members
 
 Han - Team Lead & Substrate Dev\
 Will - Backend Dev\

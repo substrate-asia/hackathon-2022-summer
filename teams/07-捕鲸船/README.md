@@ -1,46 +1,63 @@
-## 基本资料
+## BASE INFO
 
-项目名称：
+PROJECT NAME: SAFEMINT
 
-项目立项日期 (哪年哪月)：
+TEAM: WHALER
 
-## 项目整体简介
+INITIATION DATE: 2022.4.15
 
-项目简介，中文提交。包括：
+## INTRODUCTION
 
-- 项目背景/原由/要解决的问题 (如有其他附件，可放到 `docs` 目录内。中文提交)。
-- 项目 logo (如有)，这 logo 会印制在文宣，会场海报或贴子上。
+* INSPIRATION
+  NFT has attracted a high level of attention from blockchain users as the trading volume of NFT is getting higher and higher, and the trading volume of platforms like OPENSEA is rising exponentially. Countless funds and users who do not know much about NFT are eager to give it a try. This certainly creates endless room for scammers and thieves to exploit. Scam projects and contract vulnerabilities exploit again and again to stimulate the user's fragile nerves, it is foreseeable that with the growth of the market size such strange events will also appear more.
 
-## 黑客松期间计划完成的事项
+For such an exponentially growing emerging market, a standard, a certification system, or a decentralized platform is needed to audit the newly added NFT project contracts, so that everyone can safely and securely MINT their own NFT,  without worrying about the scams, smart contract exploits, and other malicious events. 
 
-- 请团队在报名那一周 git clone 这个代码库并创建团队目录，在 readme 里列出黑客松期间内打算完成的代码功能点。并提交 PR 到本代码库。例子如下 (这只是一个 nft 项目的例子，请根据团队项目自身定义具体工作)：
+Introducing SAFEMINT!
 
-**区块链端**
+* WHAT IT DOES
+  The ultimate effect is to create a new decentralized contract auditing platform, where community members perform their own duties, relying on economic means, and positively encourage community members to audit contracts, thereby reducing all the system risk of Dapp, NFT project, and other projects that join the community.
 
-- `pallet-nft`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+* PROJECT LOGO
 
-**客户端**
+![logo1](https://user-images.githubusercontent.com/3646667/174471179-32c7e1f8-6e7d-4a7b-aef0-94aff15d5b76.png)
 
-- web 端
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+![logo2](https://user-images.githubusercontent.com/3646667/174471187-0e67a0eb-e42a-48ce-8220-8cdc6d05cc30.png)
+![logo-small](https://user-images.githubusercontent.com/3646667/174471192-033ade1b-9155-44fe-bb65-5a442d81e5d6.png)
 
-- hybrid (react-native)
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+## Plan to accomplish during the hackathon
+
+* The product delivered this time is v 0.1 MVP, which only covers the most basic core functions of this platform: project information is submitted to the platform (safemint), and the platform reviews the project information and verifies whether there are vulnerabilities or frauds in the NFT contract. If there is fraudulent behavior, it will not be displayed on the SAFEMINT platform. If the project is audited by the platform without contract vulnerabilities and fraudulent behavior, the project will be allowed to be listed on the platform, and get a separate display page.
+* Users can view project information on the display page, which also provides buttons with functions such as one-click MINT (depending on the contract interface provided by the project party, the type and number of buttons may change). Therefore, in the v 0.1 version, the main core content is : (1) NFT display; (2) Submit; (3) Contract audit and launch
+  **Contract**
+
+* `pallet-nft`
+  *  function saveProject(string calldata name, string calldata ipfsAddress) external;
+  *  function saveProject(string calldata name, string calldata ipfsAddress) external;
+  *  function audit(string calldata name) external;
+  *  function projectName(string calldata name) public view returns (bool);
+  *  function projectIndex(bytes32 nameHash) public view returns(uint256);
+     **Client**
+
+* web 
+  * NFT project submission page (including preview page)
+  * NFT project review page
+  * SAFE MINT Home page
+  * NFT project display page (including direct mint button)
+  * NFT project feed
+
+## Team members
+
+| No   | nickname   | github                                                       | mail address               | Personal profile                                             | responsibility         |
+| :--- | :--------- | :----------------------------------------------------------- | :------------------------- | :----------------------------------------------------------- | :--------------------- |
+| 1    | Master-Cui | [https://github.com/Fankouzu](https://github.com/Fankouzu)   | 1046166@qq.com             | youtuber, and a bilibili uploader, focused in blockchain education | Initiator              |
+| 2    | Jodis      | [https://github.com/JodisW](https://github.com/JodisW)       | wjy8888840@163.com         | Web3 builder，cofunded a Content Social E-commercecompany worth 200 mill usd in Southeast Asia | PM/design              |
+| 3    | Eric       | [https://github.com/bluesky0sky](https://github.com/bluesky0sky) | standingboy@qq.com         | web3er                                                       | backend                |
+| 4    | ben        | [https://github.com/xiaofeizhang2020](https://github.com/xiaofeizhang2020) | xiaofeizhang2020@gmail.com | web3er                                                       | frontend               |
+| 5    | chomper    | [https://github.com/zwq652997](https://github.com/zwq652997/) | oplejon7@gmail.com         | Web3er with the skill of react next typescript node.js       | frontend               |
+| 6    | Andy       | [https://github.com/quicklearnpro](https://github.com/quicklearnpro) | abapalv@gmail.com          | web3er                                                       | contract auditor       |
+| 7    | Panda      | [https://github.com/wujunze](https://github.com/wujunze)     | 14jzcom@gmail.com          | Solidity / Golang / System Architect                         | System Architect & PMO |
+| 8    | heisenberg | [https://github.com/bingowrt](https://github.com/bingowrt)   | bingowrt@gmail.com         | ex petroleum engineer,menber of Conflux technical oversight committee | PM                     |
 
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
-
-## 队员信息
-
-包含参赛者名称 及 github 帐号。(工作人员此时应有团队联络人微信)
