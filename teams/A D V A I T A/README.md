@@ -80,7 +80,7 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 
 **Backstage**
 
-- PHP && JAVA
+- PHP and JAVA
   - [ ] TCM report uploaded to ipfs
   - [ ] TCM report result smart contract interaction
   - [ ] User profile
