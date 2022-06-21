@@ -1,0 +1,1290 @@
+{
+  "source": {
+    "hash": "0x07ebd51a76df7b8faae377d7f81d47335fd7f780f43387bc028cfcb0775e12ab",
+    "language": "ink! 3.2.0",
+    "compiler": "rustc 1.62.0-nightly"
+  },
+  "contract": {
+    "name": "algorithm",
+    "version": "0.1.0",
+    "authors": [
+      "[your_name] <[your_email]>"
+    ]
+  },
+  "V3": {
+    "spec": {
+      "constructors": [
+        {
+          "args": [
+            {
+              "label": "init_value",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [
+            "Constructor that initializes the `bool` value to the given `init_value`."
+          ],
+          "label": "new",
+          "payable": false,
+          "selector": "0x9bae9d5e"
+        }
+      ],
+      "docs": [],
+      "events": [
+        {
+          "args": [
+            {
+              "docs": [],
+              "indexed": false,
+              "label": "vf_passed",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            },
+            {
+              "docs": [],
+              "indexed": false,
+              "label": "submitted",
+              "type": {
+                "displayName": [
+                  "ink_prelude",
+                  "vec",
+                  "Vec"
+                ],
+                "type": 22
+              }
+            }
+          ],
+          "docs": [],
+          "label": "VerifiedMessage"
+        }
+      ],
+      "messages": [
+        {
+          "args": [
+            {
+              "label": "msg_copy_count",
+              "type": {
+                "displayName": [
+                  "u16"
+                ],
+                "type": 4
+              }
+            },
+            {
+              "label": "vf_t",
+              "type": {
+                "displayName": [
+                  "u128"
+                ],
+                "type": 5
+              }
+            }
+          ],
+          "docs": [
+            " Set the system parameters"
+          ],
+          "label": "set_sysinfo",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0xdddd6f08"
+        },
+        {
+          "args": [],
+          "docs": [
+            " Simply returns the current system setting."
+          ],
+          "label": "get_sysinfo",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [],
+            "type": 24
+          },
+          "selector": "0x00a1ffea"
+        },
+        {
+          "args": [
+            {
+              "label": "just_for_test",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [
+            " Simulation to the simplest version of the routers selection algoritm in Dante protocol",
+            " ",
+            " Call `random_register_routers` to add some simulation routers with fixed credibility, ",
+            " which will be dynamically adjusted by *router evaluation* algorithm in product implementation.",
+            " ",
+            " `create_intervals` is part of router selection algorithm",
+            " ",
+            " `selection_test` will randomly choose `n` routers according to their credibility",
+            " ",
+            " `selection_statistic` provides an intuitive validation of the 'Probability distribution' results of the router selection algorithm",
+            " parameter `n` is the number of select times"
+          ],
+          "label": "create_intervals",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "ink_prelude",
+              "vec",
+              "Vec"
+            ],
+            "type": 25
+          },
+          "selector": "0x1c2fc434"
+        },
+        {
+          "args": [
+            {
+              "label": "routers",
+              "type": {
+                "displayName": [
+                  "ink_prelude",
+                  "vec",
+                  "Vec"
+                ],
+                "type": 27
+              }
+            }
+          ],
+          "docs": [
+            " Test selection algorithm",
+            " test interface for register"
+          ],
+          "label": "random_register_routers",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0x64703ab4"
+        },
+        {
+          "args": [
+            {
+              "label": "flag",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [],
+          "label": "get_registered_routers",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "ink_prelude",
+              "vec",
+              "Vec"
+            ],
+            "type": 28
+          },
+          "selector": "0x5397dcb9"
+        },
+        {
+          "args": [],
+          "docs": [],
+          "label": "clear_routers",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0x7787f524"
+        },
+        {
+          "args": [
+            {
+              "label": "n",
+              "type": {
+                "displayName": [
+                  "u16"
+                ],
+                "type": 4
+              }
+            }
+          ],
+          "docs": [
+            " selection statistic",
+            " This provides an intuitive validation of the 'Probability distribution' results of the router selection algorithm",
+            " Prameter@n: Sampling times"
+          ],
+          "label": "selection_statistic",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "Option"
+            ],
+            "type": 29
+          },
+          "selector": "0x00449e11"
+        },
+        {
+          "args": [
+            {
+              "label": "n",
+              "type": {
+                "displayName": [
+                  "u16"
+                ],
+                "type": 4
+              }
+            }
+          ],
+          "docs": [
+            " Test selection algorithm",
+            " this will randomly choose `n` routers according to their credibility"
+          ],
+          "label": "selection_test",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "Option"
+            ],
+            "type": 30
+          },
+          "selector": "0xa6feb487"
+        },
+        {
+          "args": [
+            {
+              "label": "recv_msg",
+              "type": {
+                "displayName": [
+                  "super",
+                  "IReceivedMessage"
+                ],
+                "type": 31
+              }
+            },
+            {
+              "label": "router_id",
+              "type": {
+                "displayName": [
+                  "u16"
+                ],
+                "type": 4
+              }
+            }
+          ],
+          "docs": [
+            " simulation of message verification",
+            " ",
+            " In this simulation, we do not limit the number of message copies to verify a message. ",
+            " And the number determines how many routers one message needs to be delivered parallelly, ",
+            " this will be configured by users through SQoS settings in the product implementation.",
+            " At that time, when enough copies have been delivered, `simu_message_verification` will be called dynamically.",
+            " ",
+            " `simu_submit_message` simulates the submittion of delivered message copies",
+            " Message copies belong to the same message only if they have the same `IReceivedMessage::id` and `IReceivedMessage::from_chain` ",
+            " ",
+            " #param@router_id: this is a parameter just for test. In product implementation, this will be `Self::env().caller()`",
+            " "
+          ],
+          "label": "simu_submit_message",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0x17e9d5a1"
+        },
+        {
+          "args": [
+            {
+              "label": "flag",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [
+            " Clear submitted messages manually"
+          ],
+          "label": "simu_clear_message",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0x9cc5ea08"
+        },
+        {
+          "args": [
+            {
+              "label": "flag",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [
+            " Get submitted messages"
+          ],
+          "label": "simu_get_message",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "ink_prelude",
+              "vec",
+              "Vec"
+            ],
+            "type": 38
+          },
+          "selector": "0x5216f02a"
+        },
+        {
+          "args": [
+            {
+              "label": "flag",
+              "type": {
+                "displayName": [
+                  "bool"
+                ],
+                "type": 0
+              }
+            }
+          ],
+          "docs": [],
+          "label": "get_verified_results",
+          "mutates": false,
+          "payable": false,
+          "returnType": {
+            "displayName": [
+              "ink_prelude",
+              "vec",
+              "Vec"
+            ],
+            "type": 39
+          },
+          "selector": "0x9f1d3af8"
+        },
+        {
+          "args": [],
+          "docs": [],
+          "label": "clear_verified_cache",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0xf4ce0417"
+        }
+      ]
+    },
+    "storage": {
+      "struct": {
+        "fields": [
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "ty": 0
+              }
+            },
+            "name": "value"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0100000000000000000000000000000000000000000000000000000000000000",
+                "ty": 1
+              }
+            },
+            "name": "account"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0200000000000000000000000000000000000000000000000000000000000000",
+                "ty": 4
+              }
+            },
+            "name": "msg_copy_count"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0300000000000000000000000000000000000000000000000000000000000000",
+                "ty": 5
+              }
+            },
+            "name": "vf_threshold"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0400000000000000000000000000000000000000000000000000000000000000",
+                "ty": 6
+              }
+            },
+            "name": "sim_router_keys"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0500000000000000000000000000000000000000000000000000000000000000",
+                "ty": 7
+              }
+            },
+            "name": "sim_routers"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0600000000000000000000000000000000000000000000000000000000000000",
+                "ty": 11
+              }
+            },
+            "name": "msg_v_keys"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0700000000000000000000000000000000000000000000000000000000000000",
+                "ty": 14
+              }
+            },
+            "name": "msg_2_verify"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0800000000000000000000000000000000000000000000000000000000000000",
+                "ty": 19
+              }
+            },
+            "name": "cache_verified_keys"
+          },
+          {
+            "layout": {
+              "cell": {
+                "key": "0x0900000000000000000000000000000000000000000000000000000000000000",
+                "ty": 20
+              }
+            },
+            "name": "cache_verified"
+          }
+        ]
+      }
+    },
+    "types": [
+      {
+        "id": 0,
+        "type": {
+          "def": {
+            "primitive": "bool"
+          }
+        }
+      },
+      {
+        "id": 1,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "type": 2,
+                  "typeName": "[u8; 32]"
+                }
+              ]
+            }
+          },
+          "path": [
+            "ink_env",
+            "types",
+            "AccountId"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "type": {
+          "def": {
+            "array": {
+              "len": 32,
+              "type": 3
+            }
+          }
+        }
+      },
+      {
+        "id": 3,
+        "type": {
+          "def": {
+            "primitive": "u8"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "type": {
+          "def": {
+            "primitive": "u16"
+          }
+        }
+      },
+      {
+        "id": 5,
+        "type": {
+          "def": {
+            "primitive": "u128"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 4
+            }
+          }
+        }
+      },
+      {
+        "id": 7,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "offset_key",
+                  "type": 10,
+                  "typeName": "Key"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "K",
+              "type": 4
+            },
+            {
+              "name": "V",
+              "type": 8
+            }
+          ],
+          "path": [
+            "ink_storage",
+            "lazy",
+            "mapping",
+            "Mapping"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "type": 4,
+                  "typeName": "u16"
+                },
+                {
+                  "type": 9,
+                  "typeName": "u32"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "SimNode"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "type": {
+          "def": {
+            "primitive": "u32"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "type": 2,
+                  "typeName": "[u8; 32]"
+                }
+              ]
+            }
+          },
+          "path": [
+            "ink_primitives",
+            "Key"
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 12
+            }
+          }
+        }
+      },
+      {
+        "id": 12,
+        "type": {
+          "def": {
+            "tuple": [
+              13,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "id": 13,
+        "type": {
+          "def": {
+            "primitive": "str"
+          }
+        }
+      },
+      {
+        "id": 14,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "offset_key",
+                  "type": 10,
+                  "typeName": "Key"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "K",
+              "type": 12
+            },
+            {
+              "name": "V",
+              "type": 15
+            }
+          ],
+          "path": [
+            "ink_storage",
+            "lazy",
+            "mapping",
+            "Mapping"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "msg_id",
+                  "type": 5,
+                  "typeName": "u128"
+                },
+                {
+                  "name": "msg_vec",
+                  "type": 16,
+                  "typeName": "ink_prelude::vec::Vec<MessageInfo>"
+                },
+                {
+                  "name": "processed",
+                  "type": 0,
+                  "typeName": "bool"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "RecvedMessage"
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 17
+            }
+          }
+        }
+      },
+      {
+        "id": 17,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "msg_hash",
+                  "type": 2,
+                  "typeName": "[u8; 32]"
+                },
+                {
+                  "name": "msg_detail",
+                  "type": 18,
+                  "typeName": "ink_prelude::vec::Vec<u8>"
+                },
+                {
+                  "name": "submitters",
+                  "type": 6,
+                  "typeName": "ink_prelude::vec::Vec<u16>"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "MessageInfo"
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 3
+            }
+          }
+        }
+      },
+      {
+        "id": 19,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 5
+            }
+          }
+        }
+      },
+      {
+        "id": 20,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "offset_key",
+                  "type": 10,
+                  "typeName": "Key"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "K",
+              "type": 5
+            },
+            {
+              "name": "V",
+              "type": 21
+            }
+          ],
+          "path": [
+            "ink_storage",
+            "lazy",
+            "mapping",
+            "Mapping"
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "msg_id",
+                  "type": 5,
+                  "typeName": "u128"
+                },
+                {
+                  "name": "submitted",
+                  "type": 22,
+                  "typeName": "ink_prelude::vec::Vec<VerifyInfo>"
+                },
+                {
+                  "name": "vf_passed",
+                  "type": 0,
+                  "typeName": "bool"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "VerifiedCache"
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 23
+            }
+          }
+        }
+      },
+      {
+        "id": 23,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "cred_sum",
+                  "type": 5,
+                  "typeName": "u128"
+                },
+                {
+                  "name": "submitters",
+                  "type": 6,
+                  "typeName": "ink_prelude::vec::Vec<u16>"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "VerifyInfo"
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "type": {
+          "def": {
+            "tuple": [
+              0,
+              4,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "id": 25,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 26
+            }
+          }
+        }
+      },
+      {
+        "id": 26,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "id",
+                  "type": 4,
+                  "typeName": "u16"
+                },
+                {
+                  "name": "cre",
+                  "type": 9,
+                  "typeName": "u32"
+                },
+                {
+                  "name": "low",
+                  "type": 9,
+                  "typeName": "u32"
+                },
+                {
+                  "name": "high",
+                  "type": 9,
+                  "typeName": "u32"
+                },
+                {
+                  "name": "selected",
+                  "type": 4,
+                  "typeName": "u16"
+                }
+              ]
+            }
+          },
+          "path": [
+            "algorithm_prototype",
+            "algorithm",
+            "SelectionInterval"
+          ]
+        }
+      },
+      {
+        "id": 27,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 9
+            }
+          }
+        }
+      },
+      {
+        "id": 28,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 8
+            }
+          }
+        }
+      },
+      {
+        "id": 29,
+        "type": {
+          "def": {
+            "variant": {
+              "variants": [
+                {
+                  "index": 0,
+                  "name": "None"
+                },
+                {
+                  "fields": [
+                    {
+                      "type": 25
+                    }
+                  ],
+                  "index": 1,
+                  "name": "Some"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "T",
+              "type": 25
+            }
+          ],
+          "path": [
+            "Option"
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "type": {
+          "def": {
+            "variant": {
+              "variants": [
+                {
+                  "index": 0,
+                  "name": "None"
+                },
+                {
+                  "fields": [
+                    {
+                      "type": 6
+                    }
+                  ],
+                  "index": 1,
+                  "name": "Some"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "T",
+              "type": 6
+            }
+          ],
+          "path": [
+            "Option"
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "id",
+                  "type": 5,
+                  "typeName": "u128"
+                },
+                {
+                  "name": "from_chain",
+                  "type": 13,
+                  "typeName": "String"
+                },
+                {
+                  "name": "sender",
+                  "type": 13,
+                  "typeName": "String"
+                },
+                {
+                  "name": "signer",
+                  "type": 13,
+                  "typeName": "String"
+                },
+                {
+                  "name": "sqos",
+                  "type": 32,
+                  "typeName": "ink_prelude::vec::Vec<ISQoS>"
+                },
+                {
+                  "name": "contract",
+                  "type": 2,
+                  "typeName": "[u8;32]"
+                },
+                {
+                  "name": "action",
+                  "type": 36,
+                  "typeName": "[u8;4]"
+                },
+                {
+                  "name": "data",
+                  "type": 18,
+                  "typeName": "ink_prelude::vec::Vec<u8>"
+                },
+                {
+                  "name": "session",
+                  "type": 37,
+                  "typeName": "ISession"
+                }
+              ]
+            }
+          },
+          "path": [
+            "payload",
+            "message_define",
+            "IReceivedMessage"
+          ]
+        }
+      },
+      {
+        "id": 32,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 33
+            }
+          }
+        }
+      },
+      {
+        "id": 33,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "t",
+                  "type": 34,
+                  "typeName": "ISQoSType"
+                },
+                {
+                  "name": "v",
+                  "type": 35,
+                  "typeName": "Option<String>"
+                }
+              ]
+            }
+          },
+          "path": [
+            "payload",
+            "message_define",
+            "ISQoS"
+          ]
+        }
+      },
+      {
+        "id": 34,
+        "type": {
+          "def": {
+            "variant": {
+              "variants": [
+                {
+                  "index": 0,
+                  "name": "Reveal"
+                },
+                {
+                  "index": 1,
+                  "name": "Challenge"
+                },
+                {
+                  "index": 2,
+                  "name": "Threshold"
+                },
+                {
+                  "index": 3,
+                  "name": "Priority"
+                },
+                {
+                  "index": 4,
+                  "name": "ExceptionRollback"
+                },
+                {
+                  "index": 5,
+                  "name": "Anonymous"
+                },
+                {
+                  "index": 6,
+                  "name": "Identity"
+                },
+                {
+                  "index": 7,
+                  "name": "Isolation"
+                },
+                {
+                  "index": 8,
+                  "name": "CrossVerify"
+                }
+              ]
+            }
+          },
+          "path": [
+            "payload",
+            "message_define",
+            "ISQoSType"
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "type": {
+          "def": {
+            "variant": {
+              "variants": [
+                {
+                  "index": 0,
+                  "name": "None"
+                },
+                {
+                  "fields": [
+                    {
+                      "type": 13
+                    }
+                  ],
+                  "index": 1,
+                  "name": "Some"
+                }
+              ]
+            }
+          },
+          "params": [
+            {
+              "name": "T",
+              "type": 13
+            }
+          ],
+          "path": [
+            "Option"
+          ]
+        }
+      },
+      {
+        "id": 36,
+        "type": {
+          "def": {
+            "array": {
+              "len": 4,
+              "type": 3
+            }
+          }
+        }
+      },
+      {
+        "id": 37,
+        "type": {
+          "def": {
+            "composite": {
+              "fields": [
+                {
+                  "name": "msg_type",
+                  "type": 3,
+                  "typeName": "u8"
+                },
+                {
+                  "name": "id",
+                  "type": 5,
+                  "typeName": "u128"
+                }
+              ]
+            }
+          },
+          "path": [
+            "payload",
+            "message_define",
+            "ISession"
+          ]
+        }
+      },
+      {
+        "id": 38,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 15
+            }
+          }
+        }
+      },
+      {
+        "id": 39,
+        "type": {
+          "def": {
+            "sequence": {
+              "type": 21
+            }
+          }
+        }
+      }
+    ]
+  }
+}
