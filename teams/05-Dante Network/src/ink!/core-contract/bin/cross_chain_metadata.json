@@ -1,0 +1,46 @@
+{
+  "source": {
+    "hash": "0x5ec5c97cfe622610fb75bddf6e1647ad429b17af499487ce8cdae1a741b7b1cc",
+    "language": "ink! 3.2.0",
+    "compiler": "rustc 1.62.0-nightly"
+  },
+  "contract": {
+    "name": "ink_sdk",
+    "version": "0.1.0",
+    "authors": [
+      "Dante Network <danten0402@gmail.com>"
+    ]
+  },
+  "V3": {
+    "spec": {
+      "constructors": [
+        {
+          "args": [],
+          "docs": [],
+          "label": "new",
+          "payable": false,
+          "selector": "0x9bae9d5e"
+        }
+      ],
+      "docs": [],
+      "events": [],
+      "messages": [
+        {
+          "args": [],
+          "docs": [],
+          "label": "placeholder",
+          "mutates": true,
+          "payable": false,
+          "returnType": null,
+          "selector": "0xf5bb963e"
+        }
+      ]
+    },
+    "storage": {
+      "struct": {
+        "fields": []
+      }
+    },
+    "types": []
+  }
+}
