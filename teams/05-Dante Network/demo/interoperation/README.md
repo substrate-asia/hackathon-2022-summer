@@ -49,13 +49,14 @@ Prepare related ink! smart contracts:
 - [ink! demo contracts]() including `greeting.contract` and `oscomputing.contract`
 ![image](https://user-images.githubusercontent.com/83757490/174795732-3c83f06d-938c-4510-915c-1d0642af4009.png)
 
-- We have deployed these smart contracts on `AStar Testnet`(But we need to check the Testnet is OK before we start)
+- We have deployed these smart contracts on `AStar Testnet`
     - `cross_chain.contract`: 
     - `greeting.contract`: 
     - `oscomputing.contract`: 
 
+**Note: if the testnet of `Astar(Shibuya)` doesn't work, the ink! related demo may not work. Check it in [Demo vedios](). But you still can try the [Moonbeam](#interoperation-between-moonbeam-and-near) demo manually.**
 
-**Interoperation between ink! and Rinkeby**
+##### **Interoperation between ink! and Rinkeby**
 
 - Send greeting from `Rinkeby` to `Astar Testnet`
 ```
@@ -85,7 +86,7 @@ node rinkebyToAstar.js --query <ID>
 
 ![59c7213e1cdd7535e3d43c8779231a8d_](https://user-images.githubusercontent.com/83757490/174797727-982feea8-89cd-4020-9d47-496a55b31706.jpg)
 
-**Interoperation between `Moonbeam` and `NEAR`**
+##### **Interoperation between `Moonbeam` and `NEAR`**
 
 - Send greeting from Moonbeam to NEAR
 ```
