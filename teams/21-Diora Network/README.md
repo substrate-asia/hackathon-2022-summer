@@ -7,6 +7,9 @@ Started in 5.2022
 ### Logo
 
 
+![logo_1](https://user-images.githubusercontent.com/49777543/174741226-cdcc8fe0-0196-49c5-96ed-7acbd7e799fa.png) 
+
+![dioralogo](https://user-images.githubusercontent.com/49777543/174741354-fdf784bf-1b38-4d33-bd8e-dca0bf1e7d7f.png)
 
 
 ## Project Details
