@@ -1,40 +1,50 @@
-## 基本资料
 
-项目名称：ink!智能合约安全审计工具
+![tommy-logo](./tiny.png)
 
-项目立项日期：2022年6月
+## Information
 
-## 项目整体简介
+Project Name: 墨痕 - ink marks（ink! Smart Contract Security Audit Tool）
 
-ink!智能合约安全审计工具。随着Polkadot社区的不断发展，ink!合约俨然成为社区主流，同时智能合约总是伴随一些特有的安全风险，为了减轻这些风险，有必要对ink！智能合约进行安全审计，同时为社区和投资者提供透明度，然而安全审计门槛极高，ink!智能合约审计工具可以帮助降低门槛以及节省成本。
+Project Start date: June 2022
 
-## 黑客松期间计划完成的事项
+## Introduction
 
+ink! Smart contract audit tool. With the continuous development of the Polkadot community, the ink! contract has become the mainstream of the community. At the same time, smart contracts are always accompanied by some unique security risks. In order to mitigate these risks, it is necessary to deal with ink! Smart contracts perform security audits while providing transparency for the community and investors. However, the threshold for security audits is extremely high. The ink! smart contract audit tool can help reduce the threshold and save costs.
 
-**区块链端**
+## Technology Architecture
 
-- `pallet-contracts`
-- `pallet-contracts-primitives`
-- `pallet-contracts-rpc-runtime-api`
-- `pallet-contracts-rpc`
++ Front-end: Vue.js ElementUI
++ Back-end: Ruby on Rails
++ Blockchain: substrate-contracts-node
 
-**客户端**
-
-- web C 端
-  - [ ] 用户注册页面
-  - [ ] 用户提交合约审计
-  - [ ] 用户查询审计结果
-
-- web B 端
-  - [ ] 审计列表
-  - [ ] 人工审计
+## What to plan to accomplish during the hackathon
 
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+**Blockchain**
 
-TODO
+- `substrate-contracts-node --dev`
+- `cargo +nightly contract build`
+- `cargo +nightly test`
 
-## 队员信息
+**Client**
 
-参赛者名称：Tommy
-Github： memorycancel
+- Web Side
+  - [ ] Signup
+  - [ ] Login
+  - [ ] Audit
+  - [ ] Contracts
+
+## Things Done During the Hackathon( before 22, June )
+
+**Client**
+
+- Web Side
+  - [ ] Signup
+  - [ ] Login
+  - [ ] Audit
+  - [ ] Contracts
+
+## Player information
+
++ Name: Tommy
++ Github: memorycancel
