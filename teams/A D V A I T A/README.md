@@ -67,7 +67,7 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 
 	2. Transfer function:
 
-		ERC20Token transfer functionERC20Token transfer function：`fn transferERC20()`
+		ERC20Token transfer function：`fn transferERC20()`
 		Balance query function：`fn getBalance()`
 
 **Client**
@@ -79,6 +79,8 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 
 
 **Backstage**
+
+- PHP && JAVA
   - [ ] TCM report uploaded to ipfs
   - [ ] TCM report result smart contract interaction
   - [ ] User profile
