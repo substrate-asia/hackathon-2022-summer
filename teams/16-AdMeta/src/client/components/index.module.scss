@@ -1,0 +1,180 @@
+.topWrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p.logoLabel {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .btnC {
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 16px;
+    border-radius: 50px;
+    .btnLabel {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .address {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+.emptyLabel {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.modalTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.modalText {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.modalContentLogo {
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  opacity: 0.5;
+}
+.selectAccount {
+  position: relative;
+  z-index: 1;
+  .accountList {
+    .accountItem {
+      display: flex;
+      border: 2px solid #fff;
+      padding: 8px 12px;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      cursor: pointer;
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .accountInfo {
+          p {
+            margin-bottom: 0;
+            margin-left: 20px;
+          }
+          .name {
+            font-size: 14px;
+            color: #ffffff;
+          }
+          .address {
+            font-size: 14px;
+            color: #8f9bba;
+          }
+        }
+      }
+    }
+  }
+  .footerBtns {
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+.formWrp {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  padding: 32px;
+  border-radius: 20px;
+}
+.formInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  .inpuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    .left {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-right: 20px;
+      min-width: 30%;
+    }
+    .right {
+      flex: 1;
+      height: 60px;
+      font-size: 20px;
+      background: #000;
+      border-radius: 30px;
+      color: #ffffff;
+      padding-left: 20px;
+    }
+  }
+}
+.ad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.claimText {
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
