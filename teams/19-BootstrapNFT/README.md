@@ -32,15 +32,12 @@ BootstrapNFT tries to solve the problems of opaque pricing and robot race in the
   - [ ] NFT 拍卖池创建
 
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
-
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
-
 ## 队员信息
 
-包含参赛者名称及介绍
-在团队中担任的角色
-GitHub 帐号
-微信账号（如有请留下，方便及时联系）
+poeticboat: 10 years development experience, proficient in public chain and cross chain development. **Wechat**:`m200909001`
+
+zzm-Zhong: 10 years of work experience in IoT software development and management, familiar with contract and DAPP development.
+
+qwwind: More than 10 years of software development experience, proficient in /Java/Golang/node, etc. engaged in blockchain research and development, familiar with eos/eth
+
+erheng: Front end development, proficient in react and Vue, familiar with Web3 and polkadotjs API.
