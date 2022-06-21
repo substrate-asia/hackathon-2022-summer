@@ -22,6 +22,7 @@ Baked into the network itself, Diora rewards developers based on the value and i
 
 Diora Network proposes the Proof of Stake Masternode (PoSM) consensus, which is a PoS/PoW hybrid consensus protocol with a fair voting mechanism, rigorous security guarantees, and uniform probability eventually. we apply PoSM with voting and Double Validation to create, verify and vote for blocks smoothly and efficiently.
 
+https://user-images.githubusercontent.com/49777543/168764160-121147ce-78c3-4e77-a020-5e03df8e6e06.mp4
 
 ### Official Links
 
