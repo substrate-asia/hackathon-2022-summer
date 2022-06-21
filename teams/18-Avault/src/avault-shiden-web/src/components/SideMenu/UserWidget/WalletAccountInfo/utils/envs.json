@@ -1,0 +1,14 @@
+{
+  "local": {
+    "chainEndpoint": "ws://127.0.0.1:9944",
+    "contractsEndpoint": "ws://127.0.0.1:9988"
+  },
+  "staging": {
+    "chainEndpoint": "wss://node-6769173380176625664.jm.onfinality.io/ws",
+    "contractsEndpoint": "ws://127.0.0.1:9988"
+  },
+  "production": {
+    "chainEndpoint": "wss://rpc.plasmnet.io/",
+    "contractsEndpoint": "ws://127.0.0.1:9988"
+  }
+}

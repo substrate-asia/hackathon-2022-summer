@@ -1,0 +1,23 @@
+{
+  "short_name": "Avault",
+  "name": "Avault",
+  "description": "Farm avault with Avault LP Tokens",
+  "homepage_url": "https://www.avault.finance",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#030222",
+  "background_color": "#030222",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon_beta.svg",
+      "type": "image/svg",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ]
+}

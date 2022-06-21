@@ -1,0 +1,84 @@
+{
+  "data": {
+    "address": "0x232d2464211903b045a09414f47be4c826a25cd0",
+    "updated_at": "2021-09-20T16:52:16.044314052Z",
+    "next_update_at": "2021-09-20T16:57:16.044314532Z",
+    "quote_currency": "USD",
+    "chain_id": 97,
+    "items": [
+      {
+        "contract_decimals": 0,
+        "contract_name": "KACO NFT",
+        "contract_ticker_symbol": "KAKA",
+        "contract_address": "0xdd7698b02213eb713c183e03e82ff1a66af6c17e",
+        "supports_erc": ["erc20", "erc721"],
+        "logo_url": "https://logos.covalenthq.com/tokens/97/0xdd7698b02213eb713c183e03e82ff1a66af6c17e.png",
+        "last_transferred_at": "2021-09-14T13:31:13Z",
+        "type": "nft",
+        "balance": "1",
+        "balance_24h": null,
+        "quote_rate": 0.0,
+        "quote_rate_24h": null,
+        "quote": 0.0,
+        "quote_24h": null,
+        "nft_data": [
+          {
+            "token_id": "2",
+            "token_balance": "1",
+            "token_url": "https://graphigo.prd.galaxy.eco/metadata/0x46F36F9FE211600417D9d24c014a154052ABC960/2.json",
+            "supports_erc": ["erc20", "erc721"],
+            "token_price_wei": null,
+            "token_quote_rate_eth": null,
+            "original_owner": "0xfb83a67784f110dc658b19515308a7a95c2ba33a",
+            "external_data": {
+              "name": "Green KACO monkey",
+              "description": "The green KACO monkey is created for the top supporters of each KACO’s community activity.\n",
+              "image": "https://dashboard.mypinata.cloud/ipfs/QmSzHmbgBgHZm4KNpzbeUZMisEFSqyEUVT3kVXXbhiEK2m",
+              "image_256": "https://image-proxy.svc.prod.covalenthq.com/256,fit,png,smLuUHRB2O-9qwtl_GENL9PQr-nTOkNdX6VKULQTHFOM=/https://dashboard.mypinata.cloud/ipfs/QmSzHmbgBgHZm4KNpzbeUZMisEFSqyEUVT3kVXXbhiEK2m",
+              "image_512": "https://image-proxy.svc.prod.covalenthq.com/512,fit,png,sLqr1F3CWn3xRFas_ZIeqPDpiYmML7g2rqamOJFjw0hE=/https://dashboard.mypinata.cloud/ipfs/QmSzHmbgBgHZm4KNpzbeUZMisEFSqyEUVT3kVXXbhiEK2m",
+              "image_1024": "https://image-proxy.svc.prod.covalenthq.com/1024,fit,png,sDYyTslx4dYnf_Qzf1Qf8mz_iTJtOxR51d0j6f-E-8NQ=/https://dashboard.mypinata.cloud/ipfs/QmSzHmbgBgHZm4KNpzbeUZMisEFSqyEUVT3kVXXbhiEK2m",
+              "animation_url": "",
+              "external_url": null,
+              "attributes": [
+                {
+                  "display_type": "date",
+                  "trait_type": "birthday",
+                  "value": 1629255550
+                },
+                {
+                  "trait_type": "category",
+                  "value": "Green KACO monkey"
+                }
+              ],
+              "owner": "0xFB83a67784F110dC658B19515308A7a95c2bA33A"
+            },
+            "owner": "0x232d2464211903b045a09414f47be4c826a25cd0",
+            "owner_address": null,
+            "burned": null
+          }
+        ]
+      },
+      {
+        "contract_decimals": 18,
+        "contract_name": "Binance Testnet Coin",
+        "contract_ticker_symbol": "BNBT",
+        "contract_address": "",
+        "supports_erc": null,
+        "logo_url": "https://logos.covalenthq.com/tokens/97/.png",
+        "last_transferred_at": null,
+        "type": "cryptocurrency",
+        "balance": "0",
+        "balance_24h": "0",
+        "quote_rate": 0.0,
+        "quote_rate_24h": null,
+        "quote": 0.0,
+        "quote_24h": null,
+        "nft_data": null
+      }
+    ],
+    "pagination": null
+  },
+  "error": false,
+  "error_message": null,
+  "error_code": null
+}
