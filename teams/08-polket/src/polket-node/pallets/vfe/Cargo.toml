@@ -1,0 +1,70 @@
+[package]
+name = 'pallet-vfe'
+version = '0.1.0'
+description = 'This module providesmerchants to create coupons for use in their sales activities.'
+authors = ['Polket <https://www.polket.io>']
+homepage = 'https://www.polket.io'
+edition = '2018'
+license = "GPL-3.0-or-later"
+publish = false
+repository = 'https://github.com/polket/polket-node/'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[dev-dependencies]
+hex = "0.4.2"
+blake2-rfc = "0.2.18"
+frame-support = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+frame-support-test = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11' }
+
+[dependencies]
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '2.0.0' }
+bitcoin_hashes = { default-features = false,  version = '0.10.0' }
+scale-info = { default-features = false, features = ['derive'], version = '1.0'}
+frame-benchmarking = { default-features = false, git = 'https://github.com/paritytech/substrate.git', optional = true, tag = 'monthly-2021-11', version = '4.0.0-dev' }
+frame-support = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+frame-system = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-core = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-io = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-runtime = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-std = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+num-integer = { default-features = false, version = "0.1.45"}
+rust_decimal = "1.25"
+rust_decimal_macros = "1.25"
+
+
+pallet-assets = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+pallet-balances = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+pallet-uniques = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+
+# local libraries
+pallet-support = { default-features = false, path='../support' }
+pallet-unique-id = { default-features = false, path='../unique-id' }
+
+[features]
+default = ['std']
+runtime-benchmarks = [
+    "frame-benchmarking",
+	"sp-runtime/runtime-benchmarks",
+	"frame-support/runtime-benchmarks",
+	"frame-system/runtime-benchmarks",
+]
+std = [
+    'codec/std',
+    'scale-info/std',
+    'frame-support/std',
+    'frame-system/std',
+    'frame-benchmarking/std',
+    'sp-runtime/std',
+    'sp-core/std',
+    'sp-io/std',
+    'sp-std/std',
+	'bitcoin_hashes/std',
+    'pallet-assets/std',
+    'pallet-balances/std',
+    'pallet-uniques/std',
+    'pallet-support/std',
+
+]
+try-runtime = ['frame-support/try-runtime']
