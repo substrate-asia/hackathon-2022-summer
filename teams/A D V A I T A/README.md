@@ -9,12 +9,9 @@ The Matrix Reloaded
 
 Users collect pulse wave data by wearing pulse diagnosis watches to quantify the physiological, psychological and emotional indicators of each cardiac cycle, and use gamified digital therapy to build a Web3.0 metaverse of health insurance, services and finance. Here, users discover unhealthy lifestyles by observing the relationship between each data and behavior, reshaping the future by optimizing their lifestyles, recording every moment of change in the metaverse, and reloading life Matrix in Advaita Metaverse. A D V A I T A is a project that combines wearables, gamified digital therapy and earning concepts into practice.
 
-The WHO defines health broadly as: "Health is not merely the elimination of disease or infirmity, but a state of complete physical, mental and social health." 
-We divide health into two dimensions, six quadrants:
-Inner Dimensions of Health: Body Mental and Spiritual  
-External dimensions of health: love (desire) wealth (meaning) honor (morality)  
+The WHO defines health broadly as: "Health is not merely the elimination of disease or infirmity, but a state of complete physical, mental and social health." In yogic philosophy there are four goals in life: moksha (enlightenment, liberation), Dharma (virtuous, righteous, moral life), Artha (material prosperity, income security, means of living) and Kama (pleasure, sensory and emotional satisfaction).The definition of health and the four goals of life make up the whole meaning of our life.  
 
-The island effect of medical data and the lack of lifestyle medical systems and assessment tools. We have almost zero health data, and the only heart rate and blood pressure data can not directly reflect our health status.  
+However, due to the island effect of medical data, the lack of lifestyle medical systems and assessment tools, and the lack of methods to quantify psychology, we have almost zero physical and mental health data, and the only heart rate and blood pressure data can not directly reflect our health and mental state. As a result, our pursuit of health and life can only be qualitative, not quantitative.  
 
 TCM(Traditional Chinese Medicine) pulse diagnosis can diagnose our physical, psychological and social adaptability, but TCM practitioners can only understand them but not quantify it. PPG sensor  can obtain heart rate, blood pressure and pulse wave data through luminous flux, but it cannot directly represent the health status.  
 
@@ -42,20 +39,43 @@ With the token incentive system, community participants can enjoy the rewards af
 
 As AI diagnostic systems and digital therapeutics thrive in ADVAITA, a health metaverse of health insurance, services and finance has naturally formed.  
 
+May all be happy and enjoy a life without suffering  
+May all be happy and see the bright side of affairs  
+May no one in the metaverse suffer from physical and mental suffering  
+Everything is sweet as honey everything is sweet as honey  
+
+Let the metaverse to have emotion and let web3.0 to have soul.  
+
 
 ## Planned to complete during the hackathon
 
 **Blockchain side**
-  
-待补充
+
+- `pallet-token`
+  - [ ] Query balance function (`fn totalSupply()`)
+  - [ ] Authorization function (`fn approve()`)
+  - [ ] Transfer function (`fn transfer()`)
+  - [ ] Transfer function (`fn transferFrom()`)
+
+
+- `transfer contract`
+
+	1. Data structure: used to ensure that a report can only receive a reward once
+
+		`mapping(string => bool) public user_is_reward;`
+		
+
+	2. Transfer function:
+
+		ERC20Token transfer functionERC20Token transfer function：`fn transferERC20()`
+		Balance query function：`fn getBalance()`
 
 **Client**
 
-- Html 5
+- hybrid (react-native)
   - [ ] User registration page
   - [ ] wallet Smart Contract Interaction(balance+transfer+record)
   - [ ] game interactive page
-
 
 
 **Backstage**
@@ -66,7 +86,8 @@ As AI diagnostic systems and digital therapeutics thrive in ADVAITA, a health me
 
 ## Things Done During the Hackathon (Submitted before the first trial on June 22)
   
-待补充
+Product demo video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4
+PPT : [To be perfected]
 
 
 ## Team information
@@ -93,3 +114,9 @@ Graduated from Guangzhou Academy of Fine Arts.
 
 Product manager : Zendo  
 software product manager, graduated from Zhongkai University of Agriculture and Engineering, engaged in SaaS software product design.
+
+Algorithm researcher : Fengwei HAO
+South China Normal University,Undergraduate major in software engineering
+
+Overseas operations : SADHU CHEN  
+Madison USA Community Operations
