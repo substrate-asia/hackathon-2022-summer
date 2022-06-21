@@ -10,6 +10,17 @@ Polkadot's blockchain applications are becoming more and more complex, and I am 
 
 The project core topic is web3-based automatic triggers. You may have heard of IFTTT. The power-on point solved is greatly improve convenience, and reduce the threshold for users to enter the blockchain, and ensure the stability of execution and the privacy of trigger publishers and executors.serve as one of the infrastructures of web3. The targeted areas include life services, smart home, cross-chain operations, and Defi.
 
+DIFTTT has partnerships with different service providers that supply event notifications to DIFTTT and execute commands that implement the responses. Some event and command interfaces are simply public APIs, Some Action May be a blockchain opration, or Docker Task.
+
+DIFTTT employs the following concepts:
+- [ ] Triggers are the "this" part of an recipes. They are the items that trigger the action. 
+- [ ] Actions are the "that" part of an recipes. They are the output that results from the input of the trigger.
+- [ ] Recipes are the predicates made from Triggers and Actions. For example, if you like a token indicator (trigger), an DIFTTT app can buy token base the indicator conditions (action).
+
+### Planning for the last few months
+- [ ] Improve code stability
+- [ ] Improve the defi application (purchase tokens according to the indicators)
+- [ ] Passed the security review and launched the beta version
 
 ![logo](./logo.png)
 
@@ -55,10 +66,10 @@ deeper-machine node
 - [ ] oracle docker image
 
 ## What was accomplished during the hackathon (submitted before the June 22nd trial)
-(todo)
-- Before June 22, list the finalized feature points during the hackathon in this column.
-- Put the relevant code in the `src` directory and list the development work/feature points completed during the hackathon in this column. We will conduct a focused technical review of these catalogs/archives.
-- Put a product demo video no longer than **5 minutes**, named `team directory/docs/demo.mp4`. This video is optional during the first review, and demo day is a scoring item.
+the Demo program has some interesting example:
+- [ ] price greate then/price less than triger -> email
+- [ ] timer triger -> price oracle
+- [ ] token indicator triger-> buy token
 
 ## Player information
 
