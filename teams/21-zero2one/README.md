@@ -7,24 +7,40 @@ Echo DAO (2022.5.22)
 
 Echo DAO is a platform for knowledge sharing and content consumption in Web 3.0. We pioneered the concept of Knowledge as NFT, allowing it to protect the ownership of high-quality Q&A in the form of NFT and enabling those content producers who have made witty repartee to gain continuous revenue.
 
+can checkout more detail in:
+
+dapp:
+https://echodao.io
+
+code, chart, demo: 
+https://drive.google.com/drive/folders/1B0UsstPiEoAudPEu5CUG23szdZcQ6e9S?usp=sharing
+
 
 ## 黑客松期间计划完成的事项
-
-
-
-**链端**
-
-
-**前端**
-
-
-**后端**
-
-
+- 前端mvp
+- 后端mvp
+- 链端mvp
+- 三端联调
 
 ## 黑客松期间所完成的事项 (6月22日初审前提交)
 
+**链端**
+- solidity智能合约
+- moonbeam预编译
 
+**前端**
+- homepage
+- profile
+- kol console
+
+**后端**
+- voiceanswer api
+
+**devops**
+- Google workspace
+- 前端cicd
+- 前端prod部署
+- cdn
 
 ## 队员信息
 
