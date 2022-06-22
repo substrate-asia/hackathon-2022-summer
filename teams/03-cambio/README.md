@@ -57,12 +57,11 @@ The advantage of DNRS is that, for traditional Web2, it can effectively deal wit
 
 ## Our Team
 
-We are a fresh new team founded on Jun.1.2022, right now we have 4 members:
+We are a fresh new team founded on Jun.1.2022, right now we have 4 members and 1 adviser:
 
 ### Aaron Peng
 
 Co-founder, a senior system architect, a Substrate Evangelist, and a rustacean.
-
 
 ### Geoger Li
 
