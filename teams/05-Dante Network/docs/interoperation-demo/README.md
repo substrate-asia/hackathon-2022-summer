@@ -103,7 +103,7 @@ You can use the default private key file `.secret`. If the amount is not enough 
 
 - Send computing task from `Contracts on Rococo` to `Rinkeby`
 
-  Here, we have registered the destination chain contract and address to the **OSComputing** contract with the method `multiDestContracts::registerDestContract`, so the method `sendComputingTask` just needs the destination chain name and numbers to be computed as parameters.
+  Here, we have registered the destination chain contract address and method name to the **OSComputing** contract with the method `multiDestContracts::registerDestContract`, so the method `sendComputingTask` just needs the destination chain name and numbers to be computed as parameters.
 
   You can query the destination contract and method name with the method `multiDestContracts::getDestContractInfo`.
 
