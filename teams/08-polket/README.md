@@ -1,43 +1,94 @@
-## 基本资料
+## Project
 
-项目名称：ToEarnFun
+Project Name: ToEarnFun
 
-项目立项日期：2022年5月
+Project Start Date: May 2022
 
-## 项目整体简介
+## Introduction
 
-ToEarnFun是一款fitness to earn的Web3的智能健身应用程序。相对于其它只有Social-Fi和Game-Fi元素的x-to-earn应用，它能够与真实的智能健身设备连接，依靠硬件芯片的加密技术，保证付出的汗水得到公平的回报。ToEarnFun的入门用户无需购买加密货币，只需要购买应用适配的智能健身设备，即可马上fitness to earn，大大降低普通用户进入web3世界的门槛。
+![logo](./assets/toearnfun-log.svg)
 
-## 黑客松期间计划完成的事项
+**ToEarnFun** is a **fit to earn** Web3 smart fitness application. Compared with other **x-to-earn** applications that only have **SocialFi** and **GameFi** elements, it can be connected with real smart fitness equipment. It relies on the encryption technology of the hardware chip to ensure that the sweat is paid fairly. The entry-level users of **ToEarnFun** do not need to purchase cryptocurrencies, but only need to purchase smart fitness equipment adapted to the application, and they can **fit to earn** immediately, greatly reducing the difficulty for ordinary users to enter the web3 world.
 
-- 请团队在报名那一周 git clone 这个代码库并创建团队目录，在 readme 里列出黑客松期间内打算完成的代码功能点。并提交 PR 到本代码库。例子如下 (这只是一个 nft 项目的例子，请根据团队项目自身定义具体工作)：
+### Architecture
 
-**区块链端**
+![Architecture](./assets/toearnfun-architecture.png)
 
-- `pallet-sport`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+### Why ToEarnFun?
 
-**客户端**
+- Easy To Use.
+- Fitness + GameFi.
+- Hardware-level Anti-cheating Technology.
+- Completely Decentralized Implementation.
+- Sustainable Monetization.
+- Flexible Fee Mode.
+- Community Driven Development.
+- Interoperability Of Cross-chains.
 
-- 智能硬件 端
-  - [ ] 加密算法接口
+### What can ToEarnFun do?
 
-- App 端 (flutter)
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+- Promote the production and sales of fitness equipment.
+- Fitness + GameFi
+- VFE Market.
+- Competition Challenge.
 
+For more details, please [click here](./docs/README.md).
+We also made a Chinese version of the PPT, [click here](./docs/toearnfun-ppt.pdf).
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+## What to plan to accomplish during the hackathon
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
+**Blockchain**
 
-## 队员信息
+- `pallet-currencies`
+  - [x] Support transfer multi-currencies (`fn transfer()`)
+  - [x] Support specific origin transfer multi-currencies (`fn force_transfer()`)
+  - [x] support transfer native token (`fn transfer_native()`)
+  - [x] implemented `frame_support::traits::tokens::fungibles::{Inspect, Mutate, Transfer}`
 
-| 名字    | github  |
-|---------|---------|
-| aexkobe | aexkobe |
+- `pallet-vfe`
+  - [x] Create VFE type (`fn device_type_create()`)
+  - [x] Equipment producer Registration (`fn producer_register()`)
+  - [x] Change of owner of the producer ledger (`fn producer_owner_change()`)
+  - [x] Producer deposit (`fn producer_charge()`)
+  - [x] Producer withdraw (`fn producer_withdraw()`)
+  - [x] Register fitness equipment (`fn register_device()`)
+  - [x] VFE binding equipment (`fn bind_device()`)
+  - [x] VFE unbinding equipment (`fn unbind_device()`)
+  - [x] VFE instance minting (`fn do_mint()`)
+  - [x] VFE instance transfer (`fn transfer()`)
+  - [x] Training report (`fn sport_upload()`)
+  - [ ] Energy recovery
+
+**Client**
+
+- Smart skipping rope
+  - [x] Encryption Algorithm Interface
+  - [x] Bluetooth communication protocol
+
+- App 端
+  - [ ] Initialize account and wallet
+  - [ ] Bind fitness equipment
+  - [ ] My VFE
+  - [ ] Training report
+  - [ ] My wallet
+
+## What was accomplished during the hackathon (submitted before the June 22nd trial)
+
+- Completed the project concept documentation, in `docs/README.md`.
+- The `smart skipping rope` product has integrated an encryption algorithm and adds a hardware-level anti-cheating algorithm.
+- Created the substrate project and completed the development of `pallet-vfe`, in `src/polket-node`.
+- Completed the UI design of the App, in `src/ui`.
+
+## Demo Video
+
+https://drive.google.com/file/d/1hpaKNFYQhYxkj0dNOEaRD81jcSrm66h3/view?usp=sharing
+
+## Team members
+
+| Name                                         | Role                 | Introduction                                                                                                                                                                                                                          |
+|----------------------------------------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Mai zhiquan](https://github.com/zhiquan911) | Project Manager      | Engaged in the development of open source blockchain technology for many years, and created excellent frameworks such as [openwallet](https://github.com/blocktree/openwallet/). Currently fully devoted to the construction of Web3. |
+| [Doxin Liang](https://github.com/metadex003) | Blockchain Developer | Excellent graduate of the Substrate advanced course, with 6 years of blockchain-related development experience.                                                                                                                       |
+| [Arrom](https://github.com/shenzhen-arrom)   | Mobile Developer     | Participated in several hackathons organized by Polkadot and Ethereum.                                                                                                                                                                |
+| [Fany](https://github.com/fanyinghao)        | Front-end developer  | Has many years of Dapp development experience.                                                                                                                                                                                        |
+

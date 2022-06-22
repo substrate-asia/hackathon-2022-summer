@@ -1,0 +1,322 @@
+{
+  "ASTR": {
+    "name": "KacoSwap Default List",
+    "timestamp": "2021-08-13T07:15:47.764Z",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "patch": 0
+    },
+    "logoURI": "",
+    "keywords": [
+      "KAC",
+      "default"
+    ],
+    "tokens": [
+      {
+        "name": "Tether USDC",
+        "symbol": "USDC",
+        "address": "0xfa9343c3897324496a05fc75abed6bac29f8a40f",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0xfa9343c3897324496a05fc75abed6bac29f8a40f.svg"
+      },
+      {
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "address": "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73.svg"
+      },
+      {
+        "name": "Binance-Peg Ethereum Token",
+        "symbol": "ETH",
+        "address": "0x765277eebeca2e31912c9946eae1021199b39c61",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0x765277eebeca2e31912c9946eae1021199b39c61.svg"
+      },
+      {
+        "name": "Binance BTC",
+        "symbol": "WBTC",
+        "address": "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b.svg"
+      },
+      {
+        "name": "Binance USD",
+        "symbol": "BUSD",
+        "address": "0x65e66a61d0a8f1e686c2d6083ad611a10d84d97a",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0x65e66a61d0a8f1e686c2d6083ad611a10d84d97a.svg"
+      },
+      {
+        "name": "WASTR Token",
+        "symbol": "ASTR",
+        "address": "0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/astr/0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720.svg"
+      },
+      {
+        "name": "Kaco Token",
+        "symbol": "KAC",
+        "address": "0xb12c13e66AdE1F72f71834f2FC5082Db8C091358",
+        "chainId": 592,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xb12c13e66AdE1F72f71834f2FC5082Db8C091358.svg"
+      }
+    ]
+  },
+  "SDN": {
+    "name": "KacoSwap Default List",
+    "timestamp": "2021-08-13T07:15:47.764Z",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "patch": 0
+    },
+    "logoURI": "",
+    "keywords": [
+      "KAC",
+      "default"
+    ],
+    "tokens": [
+      {
+        "name": "SDN Token",
+        "symbol": "WSDN",
+        "address": "0x0f933Dc137D21cA519ae4C7E93f87a4C8EF365Ef",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0x0f933Dc137D21cA519ae4C7E93f87a4C8EF365Ef.svg"
+      },
+      {
+        "name": "Kaco Token",
+        "symbol": "KAC",
+        "address": "0xb12c13e66ade1f72f71834f2fc5082db8c091358",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0xb12c13e66ade1f72f71834f2fc5082db8c091358.svg"
+      },
+      {
+        "name": "ETH",
+        "symbol": "ETH",
+        "address": "0x765277eebeca2e31912c9946eae1021199b39c61",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.svg"
+      },
+      {
+        "name": "JPYCoin",
+        "symbol": "JPYC",
+        "address": "0x735abe48e8782948a37c7765ecb76b98cde97b0f",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0x735abe48e8782948a37c7765ecb76b98cde97b0f.svg"
+      },
+      {
+        "name": "USDC Token",
+        "symbol": "USDC",
+        "address": "0xfa9343c3897324496a05fc75abed6bac29f8a40f",
+        "chainId": 336,
+        "decimals": 6,
+        "logoURI": "/images/tokens/SDN/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.svg"
+      },
+      {
+        "name": "DAI",
+        "symbol": "DAI",
+        "address": "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3.svg"
+      },
+      {
+        "name": "BUSD",
+        "symbol": "BUSD",
+        "address": "0x65e66a61d0a8f1e686c2d6083ad611a10d84d97a",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.svg"
+      },
+      {
+        "name": "WBTC",
+        "symbol": "WBTC",
+        "address": "0x922d641a426dcffaef11680e5358f34d97d112e1",
+        "chainId": 336,
+        "decimals": 18,
+        "logoURI": "/images/tokens/SDN/0x922d641a426dcffaef11680e5358f34d97d112e1.svg"
+      }
+    ]
+  },
+  "BSC": {
+    "name": "KacoSwap Default List",
+    "timestamp": "2021-08-13T07:15:47.764Z",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "patch": 0
+    },
+    "logoURI": "",
+    "keywords": [
+      "KAC",
+      "default"
+    ],
+    "tokens": [
+      {
+        "name": "Kaco Token",
+        "symbol": "KAC",
+        "address": "0xf96429A7aE52dA7d07E60BE95A3ece8B042016fB",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xf96429A7aE52dA7d07E60BE95A3ece8B042016fB.svg"
+      },
+      {
+        "name": "Binance USD",
+        "symbol": "BUSD",
+        "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.svg"
+      },
+      {
+        "name": "DOT Token",
+        "symbol": "DOT",
+        "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402.svg"
+      },
+      {
+        "name": "KSM Token",
+        "symbol": "KSM",
+        "address": "0x2aa69e8d25c045b659787bc1f03ce47a388db6e8",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x2aa69e8d25c045b659787bc1f03ce47a388db6e8.svg"
+      },
+      {
+        "name": "Reef Token",
+        "symbol": "REEF",
+        "address": "0xf21768ccbc73ea5b6fd3c687208a7c2def2d966e",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e.svg"
+      },
+      {
+        "name": "LIT Token",
+        "symbol": "LIT",
+        "address": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723.svg"
+      },
+      {
+        "name": "CLV Token",
+        "symbol": "CLV",
+        "address": "0x09e889bb4d5b474f561db0491c38702f367a4e4d",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x09e889bb4d5b474f561db0491c38702f367a4e4d.svg"
+      },
+      {
+        "name": "WBNB Token",
+        "symbol": "WBNB",
+        "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.svg"
+      },
+      {
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "address": "0x55d398326f99059fF775485246999027B3197955",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x55d398326f99059fF775485246999027B3197955.svg"
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "address": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63.svg"
+      },
+      {
+        "name": "PolkastarterToken",
+        "symbol": "POLS",
+        "address": "0x7e624FA0E1c4AbFD309cC15719b7E2580887f570",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x7e624FA0E1c4AbFD309cC15719b7E2580887f570.svg"
+      },
+      {
+        "name": "Phala Network",
+        "symbol": "PHA",
+        "address": "0x0112e557d400474717056C4e6D40eDD846F38351",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x0112e557d400474717056C4e6D40eDD846F38351.svg"
+      },
+      {
+        "name": "Kaco NFT",
+        "symbol": "KKAC",
+        "address": "0x65aDc52BfD0E3d9Df80Be6E36F330E757862e2Bd",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x65aDc52BfD0E3d9Df80Be6E36F330E757862e2Bd.svg"
+      },
+      {
+        "name": "Pancake NFT",
+        "symbol": "KCAKE",
+        "address": "0xa70c4580F1e00C1d7A9D0280832c0D513a6D530F",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xa70c4580F1e00C1d7A9D0280832c0D513a6D530F.svg"
+      },
+      {
+        "name": "Pancake",
+        "symbol": "CAKE",
+        "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg"
+      },
+      {
+        "name": "Alpaca NFT",
+        "symbol": "KALPACA",
+        "address": "0xBd6D17123Ec731adFf1cE2F9f7Af1aBC26E5EBfd",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xBd6D17123Ec731adFf1cE2F9f7Af1aBC26E5EBfd.svg"
+      },
+      {
+        "name": "Alpaca",
+        "symbol": "ALPACA",
+        "address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F.svg"
+      },
+      {
+        "name": "Alpie NFT",
+        "symbol": "KALPIE",
+        "address": "0xc799B336f15A42AD506b0a792543907245c81110",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xc799B336f15A42AD506b0a792543907245c81110.svg"
+      },
+      {
+        "name": "Moonpot NFT",
+        "symbol": "KPOT",
+        "address": "0xA0263dB7d3858B7bc17ddD4C3000F9E10CAfdf2C",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "/images/tokens/0xA0263dB7d3858B7bc17ddD4C3000F9E10CAfdf2C.svg"
+      }
+    ]
+  }
+}

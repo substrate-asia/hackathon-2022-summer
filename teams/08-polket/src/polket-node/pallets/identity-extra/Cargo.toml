@@ -1,0 +1,62 @@
+[package]
+name = 'pallet-identity-extra'
+version = '0.1.0'
+description = 'FRAME pallet template for defining custom runtime logic.'
+authors = ['Polket <https://www.polket.io>']
+homepage = 'https://www.polket.io'
+edition = '2018'
+license = "GPL-3.0-or-later"
+publish = false
+repository = 'https://github.com/polket/polket-node/'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[dependencies]
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '2.0.0' }
+scale-info = { default-features = false, features = ['derive'], version = '1.0'}
+frame-benchmarking = { default-features = false, git = 'https://github.com/paritytech/substrate.git', optional = true, tag = 'monthly-2021-11', version = '4.0.0-dev' }
+frame-support = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+frame-system = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-core = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-io = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-runtime = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+sp-std = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+
+
+
+# substrate pallets
+pallet-identity = { default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev' }
+
+# local
+primitives = { package = "polket-primitives", path = "../../primitives", default-features = false }
+# local libraries
+pallet-support = { default-features = false, path='../support' }
+
+[dev-dependencies]
+pallet-balances = { git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-11', version = '4.0.0-dev'}
+
+
+[features]
+default = ['std']
+runtime-benchmarks = [
+    "frame-benchmarking",
+	"sp-runtime/runtime-benchmarks",
+	"frame-support/runtime-benchmarks",
+	"frame-system/runtime-benchmarks",
+]
+std = [
+    'codec/std',
+    'scale-info/std',
+    'frame-support/std',
+    'frame-system/std',
+    'frame-benchmarking/std',
+    'sp-runtime/std',
+    'sp-core/std',
+    'sp-io/std',
+    'sp-std/std',
+    'pallet-identity/std',
+	'pallet-support/std',
+    'primitives/std',
+]
+try-runtime = ['frame-support/try-runtime']
