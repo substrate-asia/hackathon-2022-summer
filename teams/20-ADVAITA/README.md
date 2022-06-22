@@ -89,7 +89,7 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 ## Things Done During the Hackathon (Submitted before the first trial on June 22)
   
 Product demo video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4  
-Detailed PPT introduction(EN) : https://i.2fei2.com/ADVAITA-EN.pdf
+Detailed PPT introduction(EN) : https://i.2fei2.com/ADVAITA-EN.pdf  
 Detailed PPT introduction(CN) : https://i.2fei2.com/ADVAITA-CN.pdf  
 
 ## Team information
