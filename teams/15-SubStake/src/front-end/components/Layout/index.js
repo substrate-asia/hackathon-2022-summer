@@ -1,13 +1,24 @@
-import { View, StyleSheet, Image, SafeAreaView } from 'react-native';
+import { View, StyleSheet, Image, SafeAreaView, ScrollView } from 'react-native';
 import background_1 from '../../assets/background_1.png';
 import background_2 from '../../assets/background_2.png';
+import { StatusBar } from 'expo-status-bar';
 
-export default function Layout({ children }) {
+export default function Layout({ children, white, noPadding }) {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.wrapper}>
-        <Image style={styles.background_1} source={background_1} />
-        <Image style={styles.background_2} source={background_2} />
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: white ? 'white' : 'black',
+      }}
+    >
+      <StatusBar style={white ? 'dark' : 'light'} />
+      <View style={noPadding ? { flex: 1 } : styles.wrapper}>
+        {!white && (
+          <>
+            <Image style={styles.background_1} source={background_1} />
+            <Image style={styles.background_2} source={background_2} />
+          </>
+        )}
         {children}
       </View>
     </SafeAreaView>
@@ -15,11 +26,6 @@ export default function Layout({ children }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'black',
-    flexDirection: 'row',
-  },
   wrapper: {
     flex: 1,
     paddingHorizontal: 20,

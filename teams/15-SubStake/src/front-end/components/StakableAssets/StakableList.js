@@ -4,6 +4,10 @@ import moonbase from '../../assets/moonbase.png';
 import StakableItem from './StakableItem';
 import { useState } from 'react';
 import StakableModal from './Modals';
+import { useUserBalance } from '../../query';
+import { BigNumber } from 'ethers';
+import { formatUnits } from 'ethers/lib/utils';
+import { formatBalanceToString } from '../utils';
 
 const westendDetailContent = [
   {
@@ -23,7 +27,7 @@ const westendDetailContent = [
 const westendButtonContent = [
   { desc: 'Nominator', path: 'WestendNominator' },
   { desc: 'Nomination Pool', path: 'WestendNominationPool' },
-  { desc: 'Validator', path: 'WestendValidator' },
+  // { desc: 'Validator', path: 'WestendValidator' },
 ];
 
 const westendTitleContent = {
@@ -31,46 +35,49 @@ const westendTitleContent = {
   main: 'Westend is the testnet relaychain of Polkadot',
 };
 
-const moonbaseDetailContent = [
-  {
-    header: 'Delegator: Stake to curated collator nodes as a voter.',
-    main: 'TOP 300 delegators on a collator are eligible for the staking reward.',
-  },
-  {
-    header: 'Collator: Mainly collect parachain TXs and report to relaychain.',
-    main: 'If ones are in either Active or Waiting list, users may choose this option.',
-  },
-];
+// const moonbaseDetailContent = [
+//   {
+//     header: 'Delegator: Stake to curated collator nodes as a voter.',
+//     main: 'TOP 300 delegators on a collator are eligible for the staking reward.',
+//   },
+//   {
+//     header: 'Collator: Mainly collect parachain TXs and report to relaychain.',
+//     main: 'If ones are in either Active or Waiting list, users may choose this option.',
+//   },
+// ];
 
-const moonbaseButtonContent = [
-  { desc: 'Delagator', path: 'MoonbaseDelegator' },
-  { desc: 'Collator', path: 'MoonbaseCollator' },
-];
+// const moonbaseButtonContent = [
+//   { desc: 'Delagator', path: 'MoonbaseDelegator' },
+//   { desc: 'Collator', path: 'MoonbaseCollator' },
+// ];
 
-const moonbaseTitleContent = {
-  header: 'Welcome to Moonbase Alpha.',
-  main: 'Moonbase is the testnet parachain of Moonbeam Network.',
-};
+// const moonbaseTitleContent = {
+//   header: 'Welcome to Moonbase Alpha.',
+//   main: 'Moonbase is the testnet parachain of Moonbeam Network.',
+// };
 
 export default function StakableList({ navigation }) {
   const [westendModalVisible, setWestendModalVislble] = useState(false);
   const [moonbaseModalVisible, setMoonbaseModalVislble] = useState(false);
+  const { data, isSuccess } = useUserBalance();
 
   const lists = [
     {
       img: westend,
       network: 'Westend',
-      stakeAmount: 150,
+      balance: data?.westendBalance?.transferrableBalance
+        ? formatBalanceToString(data?.westendBalance?.transferrableBalance)
+        : 0,
       symbol: 'WND',
       setModalVisible: setWestendModalVislble,
     },
-    {
-      img: moonbase,
-      network: 'Moonbase Alpha',
-      stakeAmount: 253,
-      symbol: 'DEV',
-      setModalVisible: setMoonbaseModalVislble,
-    },
+    // {
+    //   img: moonbase,
+    //   network: 'Moonbase Alpha',
+    //   balance: isSuccess ? data.moonbeamBalance : 0,
+    //   symbol: 'DEV',
+    //   setModalVisible: setMoonbaseModalVislble,
+    // },
   ];
 
   return (
@@ -84,7 +91,7 @@ export default function StakableList({ navigation }) {
         buttonContent={westendButtonContent}
         icon={westend}
       />
-      <StakableModal
+      {/* <StakableModal
         isVisible={moonbaseModalVisible}
         setModalVisible={setMoonbaseModalVislble}
         navigation={navigation}
@@ -92,7 +99,7 @@ export default function StakableList({ navigation }) {
         detailContent={moonbaseDetailContent}
         buttonContent={moonbaseButtonContent}
         icon={moonbase}
-      />
+      /> */}
       {lists.map((el, i) => (
         <StakableItem key={i} index={i + 1} {...el} />
       ))}

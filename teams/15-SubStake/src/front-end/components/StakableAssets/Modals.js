@@ -1,7 +1,4 @@
 import { View, StyleSheet, Text, Modal, Pressable, Image } from 'react-native';
-import westend from '../../assets/westend.png';
-import moonbase from '../../assets/moonbase.png';
-import { Nunito400, Nunito700 } from '../constant';
 
 export default function StakableModal({
   isVisible,
@@ -71,21 +68,17 @@ const styles = StyleSheet.create({
   },
   modalTitleHeader: {
     fontSize: 18,
-    fontFamily: Nunito700,
   },
   modalTitleMain: {
     fontSize: 10,
-    fontFamily: Nunito400,
     color: '#7E7794',
   },
   modalDetailHeader: {
     fontSize: 10,
-    fontFamily: Nunito700,
     color: '#7E7794',
   },
   modalDetailMain: {
     fontSize: 10,
-    fontFamily: Nunito400,
     color: '#7E7794',
   },
   button: {

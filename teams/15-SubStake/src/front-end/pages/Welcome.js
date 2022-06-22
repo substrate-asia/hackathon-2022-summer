@@ -1,4 +1,4 @@
-import Layout from '../Layout';
+import Layout from '../components/Layout';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from '@rneui/base';
 

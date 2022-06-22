@@ -1,4 +1,4 @@
-import psycopg2
+
 import time as time
 import requests, json
 import logging
@@ -18,6 +18,35 @@ header = {
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
+
+#Moonbase-Aphal blocks per round
+blocks_per_round = 600
+
+def get_avg_block_from_db(collator_addr, round_count):
+    
+#    final_block = get_max_block()
+
+    conn = db_con.get_connection()
+    with conn:
+        cur = conn.cursor()
+        cur.execute(f"SELECT MAX(blocknum) FROM dev_block_collator")
+        final_block = cur.fetchone()[0]
+
+    remain_block = final_block % blocks_per_round
+    last_end_block = final_block - remain_block    
+    last_start_block = last_end_block - (blocks_per_round * round_count)
+        
+
+
+   
+    with conn:
+        cur = conn.cursor()
+        cur.execute(f"SELECT count(*) FROM dev_block_collator WHERE blocknum >= {last_start_block} AND blocknum < {last_end_block} AND collator_addr = '{collator_addr}'")
+
+    block_count = cur.fetchone()[0]
+
+
+    return block_count / round_count
 
 def insert_top_nominator_status():
     try:
@@ -132,18 +161,20 @@ def insert_collator_list():
             )
             #print(collator_info)
             total_bonded = collator_info['total_counted'].value / 10**18
+            
             minimun_bond = collator_info['highest_bottom_delegation_amount'].value / 10**18
             count_nominstors = collator_info['delegation_count']
             bonded_owner = collator_info['bond'].value / 10**18
             bonded_nominators = total_bonded - bonded_owner
+            average_bpr_week = get_avg_block_from_db(collator_address, 12 * 7)
             if collator_address in active_collator_list:
                 active_status = True
             else:
                 active_status = False
 
             query_string = f'INSERT INTO dev_collator_list ' \
-                f'(collator_address, display_name, count_nominstors, bonded_nominators, bonded_owner, bonded_total, active_status, minimun_bond ) ' \
-                f'VALUES(\'{collator_address}\', \'{display_name}\', {count_nominstors}, {bonded_nominators}, {bonded_owner}, {total_bonded}, {active_status}, {minimun_bond})'
+                f'(collator_address, display_name, count_nominstors, bonded_nominators, bonded_owner, bonded_total, active_status, minimun_bond, average_bpr_week ) ' \
+                f'VALUES(\'{collator_address}\', \'{display_name}\', {count_nominstors}, {bonded_nominators}, {bonded_owner}, {total_bonded}, {active_status}, {minimun_bond}, {average_bpr_week})'
             logging.info(query_string)
             cur.execute(query_string) 
              
@@ -156,40 +187,42 @@ def insert_collator_list():
  
 def insert_dev_block_data(max_page:int):
     logging.info("get_dev_block_data()")
-    
-    conn = db_con.get_connection()
-    cur = conn.cursor()
-        
-
-    page = 0
-    while page < max_page:
-        logging.info("page :: " + str(page))
-        data_row = {'row': 100, 'page': page}
-
-        response = requests.post("https://moonbase.api.subscan.io/api/scan/blocks", headers=header, data=json.dumps(data_row))
-        jsonObject = response.json()
-        jsonArray = jsonObject.get("data").get("blocks")
-
-        for list in jsonArray:
-            block_num = list.get("block_num")
+    try:
+        conn = db_con.get_connection()
+        cur = conn.cursor()
             
-            #cur.execute(f"select count(*) from dev_block_collator WHERE blocknum = {block_num}")
-            #count = cur.fetchone()[0]
-            validator = list.get("validator")
-            auth_name = list.get("validator_name")
-            #logging.info(count)
-            #if count == 0 and block_num > 212355: ## author info after #212355 block height on Subscan
-            logging.info(str(block_num) + ":::" + list.get("validator")+":::"+auth_name)
-            auth_name = auth_name.replace("'","''")
-            cur.execute(f"INSERT INTO dev_block_collator (blocknum, collator_addr, auth_name)" \
-                f"VALUES({block_num}, '{validator}', '{auth_name}' ) ON " \
-                f"CONFLICT (blocknum) DO NOTHING")
 
-        page = page + 1
-        conn.commit()
-        time.sleep(0.2)
+        page = 0
+        while page < max_page:
+            logging.info("page :: " + str(page))
+            data_row = {'row': 100, 'page': page}
 
-    conn.close()
+            response = requests.post("https://moonbase.api.subscan.io/api/scan/blocks", headers=header, data=json.dumps(data_row))
+            jsonObject = response.json()
+            jsonArray = jsonObject.get("data").get("blocks")
+
+            for list in jsonArray:
+                block_num = list.get("block_num")
+                
+                #cur.execute(f"select count(*) from dev_block_collator WHERE blocknum = {block_num}")
+                #count = cur.fetchone()[0]
+                validator = list.get("validator")
+                auth_name = list.get("validator_name")
+                #logging.info(count)
+                #if count == 0 and block_num > 212355: ## author info after #212355 block height on Subscan
+                logging.info(str(block_num) + ":::" + list.get("validator")+":::"+auth_name)
+                auth_name = auth_name.replace("'","''")
+                cur.execute(f"INSERT INTO dev_block_collator (blocknum, collator_addr, auth_name)" \
+                    f"VALUES({block_num}, '{validator}', '{auth_name}' ) ON " \
+                    f"CONFLICT (blocknum) DO NOTHING")
+
+            page = page + 1
+            conn.commit()
+            time.sleep(0.2)
+    except Exception as e:
+        conn.rollback()
+    finally:
+        conn.close()
 
 def main():
     max_page = 3
