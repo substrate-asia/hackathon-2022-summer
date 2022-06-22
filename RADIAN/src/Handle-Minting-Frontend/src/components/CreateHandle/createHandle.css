@@ -1,0 +1,59 @@
+.rd-addon-item {
+  margin: 0 0 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rd-input-root {
+  --handle-size: 20px;
+  margin-top: 10px;
+}
+
+.rd-input-root .ant-input {
+  background-color: transparent;
+  height: 60px;
+  border-top-left-radius: var(--input-radius);
+  border-bottom-left-radius: var(--input-radius);
+  border-right: none !important;
+  color: var(--font-white);
+  font-weight: 700;
+  padding-left: 15px;
+  font-size: var(--handle-size) !important;
+}
+
+.rd-input-root .ant-input:active,
+.rd-input-root .ant-input:focus,
+.rd-input-root .ant-input:hover
+{
+  border-color: var(--font-white) !important;
+  border-right: none !important;
+  box-shadow: none;
+}
+
+.rd-input-root .ant-input-group {
+  max-width: 500px;
+}
+
+.rd-input-root .ant-input-group-addon {
+  background-color: transparent;
+  border-left: none !important;
+  border-top-right-radius: var(--input-radius);
+  border-bottom-right-radius: var(--input-radius);
+  font-weight: 700;
+  padding-right: 0px !important;
+}
+
+.rd-addon-item .ant-typography {
+  color: var(--font-grey) !important;
+  font-size: var(--handle-size) !important;
+}
+
+.rd-addon-item .ant-btn {
+  font-size: 16px !important;
+  height: 58px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.5; /* Firefox */
+}

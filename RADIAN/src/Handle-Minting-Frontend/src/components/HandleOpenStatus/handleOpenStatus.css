@@ -1,0 +1,28 @@
+.rd-openStatus li {
+    font-size: 18px;
+    color: var(--font-white);
+    margin-bottom: 1rem;
+}
+
+.rd-openStatus li.rd-disabled {
+    color: var(--font-grey);
+}
+
+.rd-openStatus {
+    list-style: none;
+    margin: 0px;
+    margin-inline-start: 10px;
+    padding-inline-start: 10px;
+    margin-bottom: 30px;
+}
+
+.rd-openStatus li::before {
+    content: "\2022"; 
+    color: var(--theme-purple-light); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    line-height: 20px;
+    font-size: 25px; 
+    margin-left: -1em; 
+}
