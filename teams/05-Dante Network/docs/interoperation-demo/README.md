@@ -98,7 +98,7 @@ You can use the default private key file `.secret`. If the amount is not enough 
   ```
   `<ID>` is the id queryed above. 
   
-  - Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/)
+  - Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e)
 
 
 - Send computing task from `Contracts on Rococo` to `Rinkeby`
