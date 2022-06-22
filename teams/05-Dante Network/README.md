@@ -42,7 +42,7 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
 
 - `Smart contracts`
   - [ ] The implementation of the Message protocol for ink!.
-  - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
+  - [ ] Message communication smart contracts deployed on `Contracts on Rococo`, `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
   - [ ] Basic SQoS Items：Identity traceability as the default choice.
   - [ ] On-chain prototypes for some of the underlying algorithms.
 - `off-chain routers` 
