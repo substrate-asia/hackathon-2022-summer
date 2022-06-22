@@ -1,5 +1,9 @@
 ## 基本资料
 
+logo:
+
+![image-20220622110833152](https://tva1.sinaimg.cn/large/e6c9d24egy1h3gugke0ndj203x03xwed.jpg)
+
 项目名称：SoulCard
 
 项目立项日期 (哪年哪月)：2022年4月
@@ -18,24 +22,21 @@
 
 - 请团队在报名那一周 git clone 这个代码库并创建团队目录，在 readme 里列出黑客松期间内打算完成的代码功能点。并提交 PR 到本代码库。例子如下 (这只是一个 nft 项目的例子，请根据团队项目自身定义具体工作)：
 
-**区块链端**
+- [x] Register
+  - [x] Individual User Register
+  - [x] DAO Founder Register
+- [x] For DAO Founder
+  - [x] SoulCardContract
+  - [x] SoulCard DAO Homepage
+- [x] For Individual User
+  - [x] See Preview SoulCard
+  - [x] Upload SoulCard to Arweave Netwrok as permaWeb
+  - [x] Mint SoulCard as an NFT according to a DAO contract
+- [x] Whitepaper V1
 
-- `pallet-nft`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+- [ ] More...
 
-**客户端**
-
-- web 端
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
-
-- hybrid (react-native)
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+## 
 
 
 ## 黑客松期间所完成的事项 (6月22日初审前提交)
