@@ -89,22 +89,22 @@ node rinkebyToAstar.js --query <ID>
 
 - Send greeting from Moonbeam to NEAR
 ```
-node MoonbeamToNear.js --greet
+node moonbeamToNear.js --greet
 ```
 
 - Send outsourcing computing task from Moonbeam to NEAR
 ```
-node MoonbeamToNear.js --compute 9,9,8
+node moonbeamToNear.js --compute 9,9,8
 ```
 
 - Send greeting from NEAR to Moonbeam
 ```
-node NearToMoonbeam.js --greet
+node nearToMoonbeam.js --greet
 ```
 
 - Send outsourcing computing task from NEAR to Moonbeam 
 ```
-node NearToMoonbeam.js --compute 9,9,8
+node nearToMoonbeam.js --compute 9,9,8
 ```
 
 ### Other Demos
