@@ -4,14 +4,21 @@ import Layout from '../components/Layout';
 import { useAsyncStorage } from '../components/Context/AsyncStorage';
 import westend from '../assets/westend.png';
 import { useEffect, useState } from 'react';
+import LoadingModal from '../components/LoadingModal';
+import { BigNumber } from 'ethers';
+import { bignumber, subtract } from 'mathjs';
+import { Divider } from '@rneui/base';
 
 export default function CurrentStakes({ navigation, route }) {
-  const [bonds, setBonds] = useState(null);
+  const [bond, setBond] = useState(0);
+  const [unBond, setUnBond] = useState(0);
+  const [pending, setPending] = useState(false);
+
   const { accounts, currentIndex } = useAsyncStorage();
 
-  // TODO: unlock랑 bonding이랑 나누어서 state로 저장하기
   useEffect(() => {
     const getAssets = async () => {
+      setPending(true);
       if (!accounts) return;
 
       const response = await fetch('https://rest-api.substake.app/api/request/dev/asset', {
@@ -26,36 +33,66 @@ export default function CurrentStakes({ navigation, route }) {
       console.log(response);
       const result = await response.json();
       console.log(result);
-      setBonds(result);
+
+      if (result[0].is_bonding === 'False') {
+        setBond(0);
+        setUnBond(0);
+      } else {
+        if (result[0].unlock.length > 0) {
+          setBond(subtract(bignumber(result[0].total), bignumber(result[0].unlock[0].value)).toString());
+          setUnBond(result[0].unlock[0].value);
+        } else setBond(result[0].total);
+      }
+
+      setPending(false);
     };
 
     getAssets();
   }, [accounts, route]);
 
-  // TODO: Unlock과 Bonding을 나누어서 map으로 보여주기
   return (
     <Layout white={true}>
+      {pending && <LoadingModal />}
       <TopBar white={true} title="Current Stakes" navigation={navigation} path="Home" hideIcon={true} />
       <View style={styles.container}>
-        {bonds &&
-          bonds.map(
-            (el, i) =>
-              el.is_bonding === 'True' && (
-                <Pressable
-                  key={i}
-                  onPress={() => navigation.navigate('CurrentStakeDetails', { bond: bonds[i] })}
-                  style={styles.content}
-                >
-                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                    <Image source={westend} style={{ marginRight: 15, width: 36, height: 36 }} />
-                    <View style={{ marginRight: 15 }}>
-                      <Text style={styles.network}>Westend</Text>
-                      <Text style={styles.balance}>You nomination : {el.total} WND</Text>
-                    </View>
-                  </View>
-                </Pressable>
-              )
-          )}
+        {bond > 0 && (
+          <>
+            <Pressable
+              onPress={() => navigation.navigate('CurrentStakeDetails', { amount: bond, isBonding: true })}
+              style={styles.content}
+            >
+              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <Image source={westend} style={{ marginRight: 15, width: 36, height: 36 }} />
+                <View style={{ marginRight: 15 }}>
+                  <Text style={styles.network}>Westend</Text>
+                  <Text style={styles.balance}>You nomination : {bond} WND</Text>
+                </View>
+              </View>
+              <View style={{ backgroundColor: '#E5E5E5', padding: 10, borderRadius: 5 }}>
+                <Text style={{ fontSize: 12 }}>Bonding</Text>
+              </View>
+            </Pressable>
+            <Divider />
+          </>
+        )}
+        {unBond > 0 && (
+          <Pressable
+            onPress={() => navigation.navigate('CurrentStakeDetails', { amount: unBond, isBonding: false })}
+            style={styles.content}
+          >
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Image source={westend} style={{ marginRight: 15, width: 36, height: 36 }} />
+              <View style={{ marginRight: 15 }}>
+                <Text style={styles.network}>Westend</Text>
+                <Text style={styles.balance}>You nomination : {unBond} WND</Text>
+              </View>
+            </View>
+            <View style={{ backgroundColor: '#E5E5E5', padding: 10, borderRadius: 5 }}>
+              <Text style={{ fontSize: 12 }}>UnBonding</Text>
+            </View>
+          </Pressable>
+        )}
+        {bond === 0 && unBond === 0 && <Text>No current stakes</Text>}
       </View>
     </Layout>
   );
@@ -67,6 +104,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
+    marginVertical: 20,
   },
   network: {
     color: 'black',

@@ -46,6 +46,7 @@ export default function NominatorSwitchModal({
           is_curate: 'False',
         }),
       });
+      console.log(response);
       const result = await response.json();
       console.log(result);
       const filteredResult = result.filter((i) => !validatorList.map((el) => el.public_key).includes(i.validator));
@@ -115,7 +116,10 @@ export default function NominatorSwitchModal({
               style={pressed ? styles.confirmButton : styles.closeButton}
               onPress={() => {
                 setModalVisible(false);
-                setValidatorList([...validatorList.filter((el) => el.public_key !== selectedValidator), pressed]);
+                setValidatorList([
+                  ...validatorList.filter((el) => el.public_key !== selectedValidator.public_key),
+                  pressed,
+                ]);
               }}
             >
               <Text style={{ color: pressed ? '#ffffff' : 'black' }}>{pressed ? 'Confirm' : 'Close'}</Text>
