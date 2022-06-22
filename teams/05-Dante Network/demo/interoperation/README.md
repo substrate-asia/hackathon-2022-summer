@@ -28,10 +28,13 @@ We provide two situations:
 npm install -d
 ```
 
-### Prepare secret key
-- Create a evm-compatible account(private key is neccessary), so MetaMask will be ok
-- Create a key file named `.secret` at the root path
-- Paste private key into the file `.secret`, you can refer to `.secret-example`
+### Prepare private key
+The private key is used to sign transations which will be sent to Rinkeby and Moonbeam.  
+You can use the default private key file `.secret`. If the amount is not enough to pay gas fee, you can contact us.  
+
+**If you do not want to use default private key file, you can create it yourself**
+- Create a evm-compatible account(private key is neccessary), MetaMask will be ok
+- Paste private key into the file `.secret`
 - Get token for test, faucets are shown below
   - Moonbeam: https://docs.moonbeam.network/learn/platform/networks/moonbase/#moonbase-alpha-faucet
   - Rinkeby: https://rinkebyfaucet.com/
