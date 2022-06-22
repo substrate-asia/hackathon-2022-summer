@@ -2,12 +2,12 @@
 
 ## Project Info
 
-* Project Name: Web3NFT.Social
-* Project Start Time: 2022-05-20
-* Online Demo: [Online Link](https://moonbasealpha.web3nft.social/0xC6E58fb4aFFB6aB8A392b7CC23CD3feF74517F6C)
-* Video Demo: [video Link](https://github.com/NftTopBest/moonbasealpha-for-polka)
-* Source code: [code Link](https://github.com/NftTopBest/moonbasealpha-for-polka)
-* Keynote(pdf version): [keynote Link](https://github.com/NftTopBest/moonbasealpha-for-polka/keynote.pdf)
+* Project name: Web3NFT.Social
+* Project start time: 2022-05-20
+* Online demo: [Online link](https://moonbasealpha.web3nft.social/0xC6E58fb4aFFB6aB8A392b7CC23CD3feF74517F6C)
+* Video demo: [Video link](https://github.com/NftTopBest/moonbasealpha-for-polka)
+* Source code: [Code link](https://github.com/NftTopBest/moonbasealpha-for-polka)
+* Keynote(pdf version): [Keynote link](https://github.com/NftTopBest/moonbasealpha-for-polka/keynote.pdf)
 
 Web3NFT.Social arm to make every web2 creator easily create products and earn on web3.
 AKA: Web3 NFT Creator Economic.
@@ -34,8 +34,9 @@ That's why I believe in the Web3 Social track, which makes everyone own their as
 ## Product Highlight && relative tech
 
 * Build a platform to help users connect to their NFT-based members
-* Create blog/PFP/forum with NFT gating (IPFS, moonbeam)
-* Publish to moonbeam
+* Create blog/PFP/forum with NFT gating (IPFS, moonbeam, rinkeby)
+* contract Publish to moonbeam
+* Readers can donate monthly (PolkaDotJS, OAK: TURING STAGING NETWORK)
 * Marketing with Profile Project Home page (Vue3, IPFS)
 * Manager members easily
 * Connecting users through more channels
@@ -46,7 +47,6 @@ That's why I believe in the Web3 Social track, which makes everyone own their as
   * Readers pay by NFT
   * Users can follow/unfollow
   * Follower/following list
-  * Readers can donate monthly (PolkaDotJS, OAK: TURING STAGING NETWORK)
 * LinkTree for marketing
 * Chat with powerfully on-chain Gating (CyberConnect, Litprotocol, NFT on Moonbeam Chain)
   * Filtering with CyberConnect
@@ -172,8 +172,9 @@ Web3NFT.Social 目标是让每个 web2 创作者都能轻松创建产品并在 w
 ## 产品亮点及相关技术
 
 * 建立一个平台来帮助用户连接到他们基于 NFT 的成员
-* 使用 NFT 门控创建博客/PFP/论坛 (IPFS, Moonbeam)
-* 发布 Moonbeam 链
+* 使用 NFT 门控创建博客/PFP/论坛 (IPFS, Moonbeam, rinkeby)
+* 合约发布到 Moonbeam 链
+* 用户可以每月捐款 (PolkaDotJS, OAK: TURING STAGING NETWORK)
 * 带个人资料项目主页的营销 (Vue3, IPFS)
 * 轻松管理成员
 * 通过更多渠道连接用户
@@ -184,7 +185,6 @@ Web3NFT.Social 目标是让每个 web2 创作者都能轻松创建产品并在 w
   * 读者通过 NFT 付费
   * 用户可以关注/取消关注
   * 关注者/关注者列表
-  * 用户可以每月捐款 (PolkaDotJS, OAK: TURING STAGING NETWORK)
 * 用于营销的 LinkTree
 * 与强大的链上 Gating 聊天 (CyberConnect, Litprotocol, NFT on Moonbeam Chain)
   * 使用 Cyber​​Connect 过滤
