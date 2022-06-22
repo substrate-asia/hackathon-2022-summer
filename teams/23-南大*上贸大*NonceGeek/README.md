@@ -210,4 +210,8 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 
 **周颖**
 
-- 南京大学研究生，区块链技术探索者
+- 南京大学信息管理学院图书情报专业研究生，致力于区块链技术研究探索。
+
+**鳄鱼小张**
+
+- 南京大学学生，区块链开发
