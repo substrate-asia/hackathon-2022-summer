@@ -1,50 +1,88 @@
-## 基本资料
+## Basic Infomation
 
-项目名称：melody
+Project: Melody
 
-项目立项日期 (哪年哪月)：2022/06
+Start Date：2022/06
 
-## 项目整体简介
+## Overview
+- Background
+  
+  Nowadays Nft Markets are based in jpg, but lack of sound or music Nfts.
 
-项目简介，英文提交。包括但不限于：
+  Music spend more time in leisure time, but lack of intellectual ownership.
 
-- 项目背景/原由/要解决的问题
-  目前主要还是jpg形态NFT，音乐NFT还比较少
-- 项目介绍
-  做一个波卡生态音乐NFT平台，以对音乐版权的确权，衍生，和发行
-- 技术架构
-  后端 pallet-melody
-  前端 melody frontend
-- 项目 logo (如有)，这 logo 会印制在文宣，会场海报或贴子上。
+  Nft can be much more multi-media.
 
-## 黑客松期间计划完成的事项
+- Introduction
 
-- https://github.com/skyh24/Hackathon-DOT
+  Step:
+  1. A basic nft and market place (50%)
+  2. Mint and breed music with jpg, enable crowdfund, encourage secondary creation
+  3. dao token to govern and motivate sharing
+  4. Develop a algorithm to check duplication, comfirmation copyright
+  5. Develop a encrypted method, to play music with certification
 
-**区块链端**
+- Architecture
+  
+  backend: 
+  1. pallet-melody: a music market place
+  2. pallet-music: a music nft base
 
-- `pallet-nft`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+  fronend:
+  1. market place
 
-**客户端**
+## Done during hackathon
 
-- web 端
-  - [ ] 用户登录钱包
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+With 3 days coding, we only create a simple NFT and market place
+Work:
+- read uniques pallet and other nft project
+- music nft pallet that can create collection and items, `mint`, `transfer` and add outer properties and resources
+- melody marketplace pallet that can `list` nfts and `buy` nfts 
+- test in polkadot.js and connect frontend with substrate pallets
+- marketplace and personal page, a order matching backend are much to be done 
+  
 
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+**Blockchain**
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
+- `pallet-music`
+  - [ ] collection creation (`fn create_collections()`)
+  - [ ] music nft mint (`fn mint_nft()`)
+  - [ ] music nft mint (`fn burn_nft()`)
+  - [ ] music trasfer (`fn send()`)
+  - [ ] add outer resource (`fn add_basic_resource()`)
+  
+  TODO：
+  - [ ] mix music with jpeg (`fn bounded_jpeg()`)
+  - [ ] secodary creation (`fn create_children()`)
 
-## 队员信息
+- `pallet-melody`
+  - [ ] list nfts (`fn list_nft()`)
+  - [ ] buy nfts(`fn buy_nft()`)
+  - [ ] make offer (`fn make_offer()`)
+  - [ ] accept offer (`fn accept_offer()`)
+  
+  TODO：
+  - [ ] crowdfund (`fn crowdfund()`)
+  - [ ] share links (`fn share_links()`)
 
-包含参赛者名称及介绍
-在团队中担任的角色
-GitHub 帐号
-微信账号（如有请留下，方便及时联系）
+**Web Client**
+
+- web
+  - [ ] substrate-fronend-template
+  - [ ] melody market place list
+  - [ ] melody market buy nfts
+
+
+## Other infomation
+
+github: https://github.com/skyh24/Hackathon-DOT
+docs: https://docs.google.com/presentation/d/1gk9jJAYNp0nq0zw7rwagsEPgSUzj3nsagvWhuVXFaP4/edit?usp=sharing
+presentation: ./docs/presentation.mp4
+demo: ./docs/domo.mp4
+
+## Team
+
+Skyhigh (github: skyh24)
+Rui Li (github: gittruili)
+Lora
