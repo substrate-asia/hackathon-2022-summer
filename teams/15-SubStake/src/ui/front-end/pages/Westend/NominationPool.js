@@ -65,10 +65,11 @@ export default function WestendNominationPool({ navigation }) {
           amount: bondAmount,
           isNominate: 'False',
           isPool: 'True',
+          isBoth: 'False',
           poolId: poolId ? poolId : selectedValidator.selectedIndex,
         }),
       });
-
+      console.log(response);
       const result = await response.json();
       console.log(result);
       if (result.Status === 'Success') setTxMessage(result.Message);

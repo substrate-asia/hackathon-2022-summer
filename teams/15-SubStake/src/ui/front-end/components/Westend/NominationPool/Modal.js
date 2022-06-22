@@ -17,6 +17,7 @@ export function NominationPoolModal({ setModalVisible, modalVisible, selectedVal
           which: 'nomination_pool',
         }),
       });
+      console.log(response);
       const result = await response.json();
       console.log(result);
       setNominationPoolList(result);

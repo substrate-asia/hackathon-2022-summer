@@ -2,12 +2,14 @@ import { View, StyleSheet } from 'react-native';
 import westend from '../../assets/westend.png';
 import moonbase from '../../assets/moonbase.png';
 import StakableItem from './StakableItem';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import StakableModal from './Modals';
 import { useUserBalance } from '../../query';
 import { BigNumber } from 'ethers';
 import { formatUnits } from 'ethers/lib/utils';
 import { formatBalanceToString } from '../utils';
+import { useQueryClient } from 'react-query';
+import { useAsyncStorage } from '../Context/AsyncStorage';
 
 const westendDetailContent = [
   {
@@ -56,10 +58,16 @@ const westendTitleContent = {
 //   main: 'Moonbase is the testnet parachain of Moonbeam Network.',
 // };
 
-export default function StakableList({ navigation }) {
+export default function StakableList({ navigation, route }) {
   const [westendModalVisible, setWestendModalVislble] = useState(false);
   const [moonbaseModalVisible, setMoonbaseModalVislble] = useState(false);
   const { data, isSuccess } = useUserBalance();
+  const { currentIndex } = useAsyncStorage();
+  const queryClient = useQueryClient();
+
+  useEffect(() => {
+    queryClient.invalidateQueries(['userBalance', currentIndex]);
+  }, [route]);
 
   const lists = [
     {

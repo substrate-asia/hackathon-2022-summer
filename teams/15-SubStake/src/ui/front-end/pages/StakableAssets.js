@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import TopBar from '../components/TopBar/TopBar';
 import StakableList from '../components/StakableAssets/StakableList';
 
-export default function StakableAssets({ navigation }) {
+export default function StakableAssets({ navigation, route }) {
   return (
     <Layout>
       <View style={styles.container}>
@@ -12,7 +12,7 @@ export default function StakableAssets({ navigation }) {
           <Text style={styles.headerText}>Stakable Assets</Text>
           <Text style={styles.content}>Stakable Networks corresponding to your assets in hold</Text>
         </View>
-        <StakableList navigation={navigation} />
+        <StakableList navigation={navigation} route={route} />
       </View>
     </Layout>
   );

@@ -27,7 +27,7 @@ export default function ReRegister({ navigation }) {
 
       if (accounts.find((el) => el.bip39 === result.bip39.address)) throw new Error('Account already exist');
 
-      await fetch('https://rest-api.substake.app//api/request/dev/set-key', {
+      await fetch('https://rest-api.substake.app/api/request/dev/set-key', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export default function ReRegister({ navigation }) {
         }),
       });
 
-      await fetch('https://rest-api.substake.app//api/request/dev/set-key', {
+      await fetch('https://rest-api.substake.app/api/request/dev/set-key', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

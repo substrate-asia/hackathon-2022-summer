@@ -26,6 +26,7 @@ class Staking(Base):
         amount=None, 
         payee=None,
         is_nominate=None,
+        is_both=None,
         is_pool=None,
         pool_id=None,
     ):
@@ -81,7 +82,52 @@ class Staking(Base):
         elif self.name == 'substrate':
             
             assert is_nominate is not None, "SUBSTAKE-STAKING(STAKE): Is_nominate must be provided"
+            assert is_both is not None, "SUBSTAKE-STAKING(STAKE): is_both must be provided"
             is_nominate = str_to_bool(is_nominate)
+            is_both = str_to_bool(is_both)
+            
+            if is_both: 
+                
+                assert validators is not None, "SUBSTAKE-STAKING(STAKE): Validators must be provided for Substrate"
+                assert is_nominate is True, "SUBSTAKE_STAKING(STAKE): is_nominate must be True"
+                assert amount is not None, "SUBSTAKE-STAKING(STAKE): Amount must be provided"
+                assert payee is not None, "SUBSTAKE-STAKING(STAKE): Payee must be provided"
+
+                amount = float(amount)
+                amount = amount * 10**SUBSTRATE_DECIMALS
+
+                calls = []
+                generic_call = Helper.get_generic_call(
+                                    api=self.api,
+                                    module="Staking",
+                                    function="bond",
+                                    params={'controller': user_address, 'value': amount, 'payee': payee}
+                                )
+                calls.append(generic_call)
+                generic_call = Helper.get_generic_call(
+                                    api=self.api,
+                                    module="Staking",
+                                    function="nominate",
+                                    params={
+                                        'targets': validators
+                                    }
+                                )
+                calls.append(generic_call)
+
+                generic_call = Helper.get_generic_call(
+                    api=self.api,
+                    module='Utility',
+                    function='batch',
+                    params={'calls': calls}
+                )
+
+                (is_success, message) = Helper.send_extrinsic(
+                                            api=self.api,
+                                            generic_call=generic_call,
+                                            user_address=user_address    
+                                        )
+
+                return {'Status': is_success, 'Message': message}                    
 
             if is_nominate: 
 
@@ -191,7 +237,7 @@ class Staking(Base):
             pallet = 'NominationPools' if is_pool else 'Staking'
             dispatch_call = 'bondMore'
             params = {'extra': amount} if is_pool else {'max_additional': amount}
-            print(self.api)
+            
             generic_call = Helper.get_generic_call(
                 api=self.api,
                 module=pallet,
@@ -382,6 +428,18 @@ class Staking(Base):
                                         user_address=user_address    
                                     )
             return {'Status': is_success, 'Message': message}
+
+    def get_staking_status(self, user_address):
+        
+        assert user_address is not None, "SUBSTKAE-STAKING(STAKING STATUS): User address must be provided"
+
+        payee = self.api.query(
+            module='Staking',
+            storage_function='payee',
+            params=[user_address]
+        )
+
+        
 
 
 if __name__ == "__main__":
