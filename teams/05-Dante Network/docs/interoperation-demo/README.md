@@ -74,7 +74,7 @@ You can use the default private key file `.secret`. If the amount is not enough 
   ```
   node rinkebyToAstar.js --greet
   ```
-
+  - Check what happened on [Rinkeby greeting smart contract](https://rinkeby.etherscan.io/address/0x32272DA543c8B7f394B2c0d578bc76A0e7F25Ffe)
   - Query result from **Greeting** contract on `Contracts on Rococo`
 
   ![image](https://user-images.githubusercontent.com/83757490/174969839-f4733c11-02b7-4c82-942c-5cecbff87e51.png)
