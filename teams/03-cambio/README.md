@@ -1,56 +1,83 @@
-## 基本资料
 
-项目名称：Cambio Network
+# Cambio Network
 
-项目立项日期 (2022年5月)：
-
-## 项目整体简介
-
-![Cambio Network](assets/cambio-network-logo.png)
+![Cambio Network](assets/cambio-network-new-logo.png)
 
 
-Cambio Network 旨在构建一个波卡生态中的高效, 大吞吐量, 极低费用的Name Service.
-在Cambio Network上, 用户可以注册/查询/管理域名, 将繁琐难记的账户公钥地址, Contract地址置于容易记忆的域名背后.
+## About Cambio Network
 
-目前已经有的Name Service项目如以太坊的ENS等, 都是基于智能合约开发, 效率和吞吐量存在较大限制, 且受制于公链本身的gas fee, 其使用费用较高.
-一个好用且费用低廉的Name Service, 会极大降低普通用户使用web3.0各项服务的难度.
+Cambio is a Spanish word meaning “change”, which is the goal of our team, to change.
 
-因此我们团队计划基于substrate这一高效灵活的开发框架, 基于Pallet和offchain workers来实现一个高效, 大吞吐量且费用低廉的Name Service.
+Since Web3 already a big change to Web 2, we hope to bring more changes into the Web 3 world, the first change we want make, is the Cambio Name Service.
+
+## What is Cambio Name Service
+
+The Cambio Name Service(CNS) is a decentralized, almost zero-cost high performance with hybrid resolving, security name service, You can simply think it a substrate based decentralized DNSEC service for both Web2 and Web3. 
+
+Cambio Name Service contains 3 subsystems: 
+
+- Name Asset Manage System
+- Cross Chain Bridge System
+- Decentralized Name Resolver;
+
+Also there is a core protocol we call Hybrid Name Protocol.
+
+### Core Protocol: The Hybrid Name Protocol (HNP)
+
+This is our core Protocol, which means everything else are developed upon it.
+
+The HNP have full support traditional DNS record type like A for IPv4, AAA for IPv6, CNAME for url etc, and also support web 3 types like account address, contract address, a RMRK NFT, a IPFS file and so on.
+
+### Name Asset Manager System
+
+A **Name Asset** in Cambio Network is like a domain name in web2, with extended ability to access web3 objects. It has the same format of domain name, with support of infinity levels of sub name, and records to resolve.
+
+The Name Asset Manager System basically a substrate pallet which provide functions to Manage Name assets, you can mint and burn a Name Asset for yourself or others, transfer it to another account, you can also add hundreds of resolve records to target any web2 wor web3 object.
+
+#### Zero Cost
+
+Unlike a domain name in other name service, the Name Asset in Cambio Network is **Almost Zero Cost, which means it will cost you almost nothing to have a Name Asset and hold it.**
+
+Why and how to make this possible will be detailed in white paper, we are working on it and will publish in Q3 2022.
+
+### Cross Chain Bridge System
+
+The Cross Chain System is the subsystem which links other subsystem, it provides:
+
+1. chain governance
+2. the implement of our economy model
+
+The Cross Chain Bridge System is heavily base on Polkadot cross chain components like XCM, XCVM, XCMP, and share the security and liquidity of Polkadot ecosystem. Thanks to Parity and Polkadot ecosystem,  those cross chain components give us the power and ability to make Name Asset cost almost zero. 
+
+### The Decentralized Name Resolving System
+
+The DNRS is the sub-system to handle the resolving of any record in Name Asset, use the advantage of HNP, it can response to both traditional DNS clients and web3 dapps, contracts and pallets.
+
+The advantage of DNRS is that, for traditional Web2, it can effectively deal with various problems in DNS resolution, such as DNS pollution, the risks of DNS central server or top server errors or panic, etc., and ensure the security and correctness of each record resolving, this important is adapted for Web3 query as well.
+
+## Our Team
+
+We are a fresh new team founded on Jun.1.2022, right now we have 4 members:
+
+### Aaron Peng
+
+Co-founder, a senior system architect, a Substrate Evangelist, and a rustacean.
 
 
-## 黑客松期间计划完成的事项
+### Geoger Li
 
+Co-founder, Substrate Evangelist, a ex-Meituan senior software engineer, ex-Phala engineerr and a high performance distributional database developer
 
-**区块链端**
+### Bo Zhu
 
-- `pallet-name`
-  - [ ] 域名 创建
-  - [ ] 域名 管理
+Designer of our Economy model and mathematical model, PhD in Mathematics, University of Utah.
 
-**客户端**
+### May
 
-- web 端
-  - [ ] 域名注册页面
-  - [ ] 域名创建流程
-  - [ ] 域名管理
+Our front-end adviser, Senior frontend developer and team leader worked in Microsoft and Meituan.
 
+### Jane Zhao
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+Front-end developer, China Agricultural University.
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
-
-## 队员信息
-
-彭亚伦  github: arstman
-
-
-李笑宇  github: g302ge
-
-
-朱博 github: xabozhu
-
-
-赵健    github: zhoajiann
 
