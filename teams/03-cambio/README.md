@@ -85,3 +85,6 @@ Front-end developer, China Agricultural University.
 - [x] Math model design
 - [x] Economic model design and testing
 - [x] preparing the code base
+
+## Roadmap
+![Cambio Network Roadmap 2022](assets/roadmap.png)
