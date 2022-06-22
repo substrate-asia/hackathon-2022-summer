@@ -85,7 +85,8 @@ token ecosystem: https://i.2fei2.com/ADVAITA-token.pdf
 
 
 
-**Blockchain side**
+**Blockchain side**  
+
 Address : https://moonbase.moonscan.io/address/0x3a3e92644c7aedfbbbf53145e399dbc5dd156d75
 
 - `pallet-token`
