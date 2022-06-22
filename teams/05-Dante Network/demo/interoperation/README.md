@@ -63,7 +63,7 @@ You can use the default private key file `.secret`. If the amount is not enough 
 
 #### **Interoperation between `Contracts on Rococo` and `Rinkeby`**
 
-- Send greeting from `Rinkeby` to `Contracts on Rococo`
+- Send greeting from `Rinkeby` to `Contracts on Rococo`. We replaced the `Testnet of AStar(Shibuya)` with `Rococo Contracts` as `Shibuya` is unavailable currently. But the following script still works.
 ```
 node rinkebyToAstar.js --greet
 ```
@@ -76,10 +76,11 @@ node rinkebyToAstar.js --greet
 
 ![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
 
-- Query result on `Rinkeby`
+- Query result on `Rinkeby`. 
 ```
 node rinkebyToAstar.js --query <ID>
 ```
+- Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/)
 
 `<ID>` is the id of the message sent from `Contracts on Rococo`
 
@@ -91,7 +92,10 @@ node rinkebyToAstar.js --query <ID>
 
 ![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
 
-#### **Interoperation between `Moonbeam` and `NEAR`**
+#### **Interoperation between `Moonbeam` and `NEAR`**  
+
+**Check related transaction in [Moonbeam Scan](https://moonbase.moonscan.io/)**  
+**Check related transaction in [Near Scan](https://explorer.testnet.near.org/)**
 
 - Send greeting from Moonbeam to NEAR
 ```
