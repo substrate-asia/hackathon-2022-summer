@@ -7,8 +7,9 @@ DIFTTT has partnerships with different service providers that supply event notif
 
 
 the difttt-frontend had these feature:
-1 create triger/action/recipe
-2 get triger/action/recipe list
+- 1 create triger/action/recipe
+- 2 get triger/action/recipe list
+- 3 delete/enable/disable recipe
 
 ## Usage
 
