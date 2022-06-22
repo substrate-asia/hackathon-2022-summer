@@ -55,6 +55,11 @@ You can use the default private key file `.secret`. If the amount is not enough 
     - `oscomputing.contract`:
         - Address: `5D6gvY4fsUsjkQcPnHtxRTy72CxC12RzFzXHknaZDts2sX2T`
         - Related [metadata.json](../../src/ink!/usage-contract/oscomputing/bin/os_computing_metadata.json)
+- Prepare an test account:
+    - Click `Add account` on `Accounts` page, and finish creating an account
+    - Get token from faucet in `Element`, change link is [https://matrix.to/#/#rococo-faucet:matrix.org](https://matrix.to/#/#rococo-faucet:matrix.org)
+    - Input !drip <Address>:1002
+    - Test with this account
 
 ![image](https://user-images.githubusercontent.com/83757490/174969528-b880803b-1e27-47d0-80cb-d4bed375cf1d.png)
 
