@@ -8,7 +8,7 @@
 
 ![](./docs/logo.png)
 
-The project 1in10k is a dapp that has deployed on the moonbase alpha testnet (chainID:1287, rpc:https://rpc.api.moonbase.moonbeam.network): https://moonbase.moonscan.io/address/0x27002439bed6cfea6ebd4fa6d5512cf1ec5e975b. You can play the dapp at http://moonbase.1in10k.com. There are 10,000 blocks(or you can say grids) on the UI of the dapp. People can create or buy any of the blocks. So the name 1in10k means pick one block in the 10,000 blocks.
+The project 1in10k is a dapp that has deployed on the moonbase alpha testnet (chainID:1287,rpc:https://rpc.api.moonbase.moonbeam.network): https://moonbase.moonscan.io/address/0x27002439bed6cfea6ebd4fa6d5512cf1ec5e975b. You can play the dapp at http://moonbase.1in10k.com. There are 10,000 blocks(or you can say grids) on the UI of the dapp. People can create or buy any of the blocks. So the name 1in10k means pick one block in the 10,000 blocks.
 
 People can use those blocks to create something interesting, like some pixel images. If the dapp can get some popularity in the future, it can also be a good poster board, if someone owns an interesting pixel image that consist of the blocks, she/he can put some information on the image, like some words she/he want to say, or a url link she/he want people to click. There's something else creative about the dapp, but to avoid other project use the creativity before the dapp, I think It's necessary to keep it a secret now.
 
@@ -29,7 +29,7 @@ The front-end of the dapp is made by Vue, Element-UI and ethers.js. The smart co
 目前已完成绝大部份项目代码，但是 UI 还需要更美化。  
 并没有完全开源代码，但部分合约源码已存放在"./src/contract/abridgedCodes.sol"，源码编译后的得到的 artifacts 文件夹也已存放在"./src/artifacts"。  
 一个五分钟内的介绍视频上传到了"./doc/demo.mp4"，另外一个更详细的介绍视频上传到了：https://www.youtube.com/watch?v=o7V0vkARtB4 。  
-部署了 dapp 的前端在：http://moonbase.1in10k.com ，需连接到 moonbase alpha testnet (chainID:1287, rpc:https://rpc.api.moonbase.moonbeam.network)。
+部署了 dapp 的前端在：http://moonbase.1in10k.com ，需连接到 moonbase alpha testnet (chainID:1287,rpc:https://rpc.api.moonbase.moonbeam.network)。
 
 ## 队员信息
 
