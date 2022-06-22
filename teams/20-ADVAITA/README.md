@@ -71,6 +71,7 @@ Everything is sweet as honey everything is sweet as honey
 Let the metaverse to have emotion and let web3.0 to have soul.  
 
 
+[![asciicast](https://i.2fei2.com/QQ%E6%88%AA%E5%9B%BE20220622211516.png)](https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4)
 
 Product DEMO video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4  
 Detailed PPT introduction : https://i.2fei2.com/ADVAITA-CN-.pdf  
@@ -84,7 +85,9 @@ token ecosystem: https://i.2fei2.com/ADVAITA-token.pdf
 
 
 
-**Blockchain side**
+**Blockchain side**  
+
+Address : https://moonbase.moonscan.io/address/0x3a3e92644c7aedfbbbf53145e399dbc5dd156d75
 
 - `pallet-token`
   - [⍻] Query balance function (`fn totalSupply()`)
