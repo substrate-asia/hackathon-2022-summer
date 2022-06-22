@@ -77,12 +77,17 @@ Work:
 ## Other infomation
 
 github: https://github.com/skyh24/Hackathon-DOT
+
 docs: https://docs.google.com/presentation/d/1gk9jJAYNp0nq0zw7rwagsEPgSUzj3nsagvWhuVXFaP4/edit?usp=sharing
+
 presentation: ./docs/presentation.mp4
+
 demo: ./docs/domo.mp4
 
 ## Team
 
 Skyhigh (github: skyh24)
+
 Rui Li (github: gittruili)
+
 Lora
