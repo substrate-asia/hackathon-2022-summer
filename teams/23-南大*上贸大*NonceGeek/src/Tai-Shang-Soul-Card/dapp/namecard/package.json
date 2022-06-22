@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "surge": "cp dist/index.html dist/200.html && surge ./dist"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "axios": "^0.27.2",
+    "ethers": "^5.6.7",
+    "file-loader": "^6.2.0",
+    "ipfs-http-client": "^56.0.3",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "umi": "^3.5.23",
+    "web3": "^1.7.3",
+    "web3modal": "^1.9.7",
+    "surge": "^0.21.5"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.23",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "umi-plugin-tailwindcss": "^3.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
