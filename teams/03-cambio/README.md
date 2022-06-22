@@ -18,7 +18,7 @@ Cambio Name Service contains 3 subsystems:
 
 - Name Asset Manage System
 - Cross Chain Bridge System
-- Decentralized Name Resolver;
+- Decentralized Name Resolving System
 
 Also there is a core protocol we call Hybrid Name Protocol.
 
