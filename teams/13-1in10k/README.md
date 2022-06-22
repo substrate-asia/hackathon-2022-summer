@@ -1,4 +1,4 @@
-## basic information
+## Basic information
 
 project name: 1in10k
 
