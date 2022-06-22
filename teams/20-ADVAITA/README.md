@@ -77,7 +77,7 @@ Detailed PPT introduction : https://i.2fei2.com/ADVAITA-CN-.pdf
 Official website : http://advaita.games  
 
 ## Technical Architecture Diagram
-![](https://i.2fei2.com/hackathon-2022-summer123.png)  
+![](https://i.2fei2.com/hackathon-2022-summer1233.png)  
 token ecosystem: https://i.2fei2.com/ADVAITA-token.pdf  
 
 ## Code 
