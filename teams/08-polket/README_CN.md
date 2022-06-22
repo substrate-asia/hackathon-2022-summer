@@ -74,6 +74,10 @@ ToEarnFun是一款fit to earn的Web3的智能健身应用程序。相对于其�
 - 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
 - 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
 
+## Demo Video
+
+https://drive.google.com/file/d/1hpaKNFYQhYxkj0dNOEaRD81jcSrm66h3/view?usp=sharing
+
 ## 队员信息
 
 | 名字                                         | 角色        | 简介                                                                                |
