@@ -1,0 +1,7 @@
+.idea
+target/
+script/data
+script/config
+script/diora
+script/polkadot
+.DS_Store

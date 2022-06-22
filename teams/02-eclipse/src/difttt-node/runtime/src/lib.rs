@@ -301,6 +301,7 @@ impl pallet_difttt::Config for Runtime {
 	type TimeProvider = pallet_timestamp::Pallet<Runtime>;
 	type Call = Call;
 	type UnsignedPriority = UnsignedPriority;
+	type WeightInfo = pallet_difttt::weights::SubstrateWeight<Runtime>;
 }
 
 impl<LocalCall> frame_system::offchain::CreateSignedTransaction<LocalCall> for Runtime
@@ -411,7 +412,6 @@ extern crate frame_benchmarking;
 mod benches {
 	define_benchmarks!(
 		[frame_benchmarking, BaselineBench::<Runtime>]
-		[pallet_assets, Assets]
 		[frame_system, SystemBench::<Runtime>]
 		[pallet_balances, Balances]
 		[pallet_timestamp, Timestamp]

@@ -137,6 +137,8 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 >
 > Demo Video: [Demo Video](./docs/demo.mp4)
 >
+> Project Intro Video: [SoulCard Intro Video](./docs/SoulCard Intro Video.mp4)
+>
 > Project Source Code: [Tai-Shang-Soul-Card](./src/Tai-Shang-Soul-Card)
 
 ## 黑客松期间计划完成的事项
@@ -202,3 +204,14 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 
 - 区块链全干工程狮
 
+**Yaya(snowyaya)**
+
+- 全部都会的工程师
+
+**周颖**
+
+- 南京大学信息管理学院图书情报专业研究生，致力于区块链技术研究探索。
+
+**crocodile(yingmonster123)**
+
+- 南大本科 GIS+海洋出身 菜鸡前端

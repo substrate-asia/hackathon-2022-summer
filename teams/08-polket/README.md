@@ -79,6 +79,10 @@ We also made a Chinese version of the PPT, [click here](./docs/toearnfun-ppt.pdf
 - Created the substrate project and completed the development of `pallet-vfe`, in `src/polket-node`.
 - Completed the UI design of the App, in `src/ui`.
 
+## Demo Video
+
+https://drive.google.com/file/d/1hpaKNFYQhYxkj0dNOEaRD81jcSrm66h3/view?usp=sharing
+
 ## Team members
 
 | Name                                         | Role                 | Introduction                                                                                                                                                                                                                          |

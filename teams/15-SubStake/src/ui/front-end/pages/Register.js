@@ -23,7 +23,7 @@ export default function Register({ navigation }) {
     try {
       const result = derivePrivateKey(mnemonic);
 
-      await fetch('https://rest-api.substake.app//api/request/dev/set-key', {
+      const response1 = await fetch('https://rest-api.substake.app/api/request/dev/set-key', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export default function Register({ navigation }) {
         }),
       });
 
-      await fetch('https://rest-api.substake.app//api/request/dev/set-key', {
+      const response2 = await fetch('https://rest-api.substake.app/api/request/dev/set-key', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,6 +46,8 @@ export default function Register({ navigation }) {
           env: 'substrate',
         }),
       });
+
+      console.log(response1, response2);
 
       setPublicKey(result);
       setStatus(1);
@@ -100,8 +102,9 @@ export default function Register({ navigation }) {
           <>
             <View style={commonStyle.userChatContainer}>
               <View style={commonStyle.userChatBox}>
-                <Text style={commonStyle.userChatBoxText}>{`sr25519: ${publicKey.sr25519.address}`}</Text>
-                <Text style={commonStyle.userChatBoxText}>{`bip39: ${publicKey.bip39.address}`}</Text>
+                {/* <Text style={commonStyle.userChatBoxText}>{`sr25519: ${publicKey.sr25519.address}`}</Text> */}
+                {/* <Text style={commonStyle.userChatBoxText}>{`bip39: ${publicKey.bip39.address}`}</Text> */}
+                <Text style={commonStyle.userChatBoxText}>{mnemonic}</Text>
               </View>
             </View>
             <View style={commonStyle.serviceChatContainer}>

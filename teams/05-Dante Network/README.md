@@ -9,9 +9,9 @@ Start time: 2022.2
 ![79065cb236bd6d0a18725bd864cc36a](https://user-images.githubusercontent.com/83746881/169981478-dd274207-a0ee-48a5-bdc1-94e46f938766.png)
 
 In this hackathon we have chosen the following tracks:
-* [Category 5：cross-chain，Bridge，Layer2，Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#%E7%B1%BB%E5%88%AB-5%E8%B7%A8%E9%93%BEbridgelayer2layer0)
+* [Category 5：cross-chain，Bridge，Layer2，Layer0](https://github.com/ParityAsia/hackathon-2022-summer/blob/main/docs/categories-en.md#category-5-cross-chain-bridge-layer2-layer0)
   
-  * [Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#layer0)
+  * [Layer0](https://github.com/ParityAsia/hackathon-2022-summer/blob/main/docs/categories-en.md#layer0)
 
 Dante Network is the middleware of Web3 for collaboration among multiple ecosystems.  In Dante Network, we define and implement a protocol stack for Web3 to realize the interconnection and the interoperability, which will bring innovative experience for Web3, just as an "Internet protocol stack" is for the current Internet. Based on Dante protocol stack, in the future, not only token circulation among multi-chain ecosystems could be easily achieved, but comprehensive information perception and barrier-free interoperability of smart contracts will also be seamlessly feasible. 
 
@@ -32,8 +32,9 @@ Contretely, Dante protocol stack is implemented as the following:
 ### Details
 Details of our project are as below: 
 * [Github Organization](https://github.com/dantenetwork)
-* [Pitch deck  & white paper](https://github.com/dantenetwork/Pitch-Deck)
-* [Video](https://www.youtube.com/watch?v=CYXx4O8Xgcs)
+* [Technology white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Network%EF%BC%9AThe%20_Internet%20protocol%20stack_%20of%20Web3.pdf)
+* [Pitch deck  & white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Pitch%20Deck.pdf)
+* [Video](https://youtu.be/_JYxEMSPkpM)
 
 ## Plan to Develop
 
@@ -42,38 +43,37 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
 
 - `Smart contracts`
   - [ ] The implementation of the Message protocol for ink!.
-  - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
+  - [ ] Message communication smart contracts deployed on `Contracts on Rococo`, `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
   - [ ] Basic SQoS Items：Identity traceability as the default choice.
   - [ ] On-chain prototypes for some of the underlying algorithms.
 - `off-chain routers` 
-  - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
-  - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
-  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust` technology stack
+  - [ ] Message translation between `ink`(`TEST ROCOCO : CONTRACTS(1002)`) and `solidity`(some EVM chains) technology stack
+  - [ ] Message translation between `ink`(`TEST ROCOCO : CONTRACTS(1002)`) and `NEAR Rust`(NEAR) technology stack
+  - [ ] Message translation between `solidity`(`Testnet Parachain Moonbeam`) and `NEAR Rust` technology stack
   - [ ] Message delivering.
 - `Omnichain dApp SDK for Polkadot`
-  - [ ] Omnichain dev SDK for `ink`(Parachain AStar) smart contract
-  - [ ] Omnichain dev SDK for `solidity`(Parachain Moonbeam) smart contract
+  - [ ] Omnichain dev SDK for `ink`(`TEST ROCOCO : CONTRACTS(1002)`) smart contract
+  - [ ] Omnichain dev SDK for `solidity`(`Testnet Parachain Moonbeam`) smart contract
 - `Demos`(Deployed on Testnet)
-  - [ ] Message communication between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
-  - [ ] Smart contracts invocation between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Message communication between `ink!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `ink!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
   - [ ] Message communication between `solidity` smart contract platform(`Moonbase Alpha`) in Polkadot and Near
-  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
 
 ## Achievement in hackathon
 - Completed:
   - Complete all content of the `smart contracts` part.
-    - Check the ink! smart contract [here](./src/ink!/core-contract/bin/)
-    - Check the sol smart contract [here](./src/Moonbeam/core-contract/bin/)
-    - Check the underlying mechanisms [here](./src/ink!/algorithm-prototype/)
+    - Check the smart contracts infomation [here](./src/README.md) (both ink! and Moonbeam)
   - Complete all content of the `off-chain routers` part.
-    - We have launched off-chain test routers to deliver messages for the [demos](./demo/)
+    - We have launched off-chain test routers to deliver messages for the [demos](./docs/interoperation-demo/)
   - Complete all content of the `Omnichain dApp SDK for Polkadot` part.
     - Check the ink! sdk for application smart contract developing [here](./src/ink!/ink-sdk/) and [here](./src/ink!/message-ink/)
-    - Check the sol sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
+    - Check the solidity sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
   - Complete all content of the `Demos` part.
-    - Check the demos [here](./demo/)
+    - Try the demos manually [here](./docs/interoperation-demo/)
+    - Check the smart contracts deploy information [here](./docs/README.md)
 - Videos:
-  - To Do...
+  - Check the video [here](./docs/README.md)
 
 
 ## Technology Team

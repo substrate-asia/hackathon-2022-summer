@@ -25,10 +25,12 @@ import { MoonbeamContextProvider, useMoonbeam } from './components/Context/Moonb
 import { useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useUserBalance } from './query';
-import { Platform } from 'react-native';
+import { Platform, LogBox } from 'react-native';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import CurrentStakes from './pages/CurrentStakes';
 import CurrentStakeDetails from './pages/CurrentStakeDetails';
+
+LogBox.ignoreAllLogs(); //Ignore all log notifications
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +45,7 @@ const queryClient = new QueryClient({
 export function Root() {
   const { isLoaded: asyncStorageLoaded, accounts } = useAsyncStorage();
   const { isLoaded: westendLoaded } = useWestend();
+  const { data, isSuccess } = useUserBalance();
   // const { isLoaded: moonbeamLoaded } = useMoonbeam();
 
   // useEffect(() => {
@@ -63,7 +66,7 @@ export function Root() {
 
   const isRegistered = accounts && accounts.length > 0;
 
-  console.log(asyncStorageLoaded, westendLoaded);
+  console.log(asyncStorageLoaded, westendLoaded, isSuccess, data);
 
   return (
     <NavigationContainer>

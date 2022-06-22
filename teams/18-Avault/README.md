@@ -60,7 +60,10 @@ Therefore, we designed ISO. We hope to rebuild the trust between users and proje
 
 
 ## Tasks done during Hackathon
-See Above
+ - demo video
+ 
+[![Avault Demo](https://img.youtube.com/vi/Snsf1315Vg0/0.jpg)](https://www.youtube.com/watch?v=Snsf1315Vg0)
+
 
 ## Members
 
@@ -69,3 +72,4 @@ See Above
 - Alex: Product manager 
 - Hai: Front-end
 - Lee: UI/UX
+- Edmund: BD

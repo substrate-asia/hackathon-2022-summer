@@ -22,10 +22,10 @@ We can see in the picture above, that the theoretical value of probability distr
 
 #### Usage
 ##### Deploy
-Try the following operations with [polkadot,js/app](https://polkadot.js.org/apps/#/explorer). On the `Shibuya Testnet` or deploy the smart contract `algorithm_prototype.contract` in *./bin* on a local substrate node.
+Try the following operations with [polkadot.js.app](https://polkadot.js.org/apps/#/explorer). Or deploy the smart contract on a local substrate node.
 
-* You can launch a [local substrate node](https://github.com/paritytech/substrate-contracts-node) and deploy the `algorithm_prototype.contract` on it to try. 
-* Or use the deployed `algorithm_prototype.contract` on the Testnet of AStar, that is `Shibuya Testnet`. The address is *`aiNehN39tGVVtJyWCkWNWBEWQJjftLafCUzKVxG9tqvzPGx`*, and the related `metadata.json` is in *./bin*.
+* Method one: Launch a [local substrate node](https://github.com/paritytech/substrate-contracts-node) and deploy the [algorithm_prototype.contract](./bin/algorithm_prototype.contract) on it to try. 
+* Method two: Use the deployed `algorithm_prototype.contract` on [TEST ROCOCO & PARACHAINS : Contracts(1002)](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts). The address is *`5GMZtFKF1r2mfSrDg4QF7sdQr9bY8wyLC571VPV9dhYLAufY`*, with the related [metadate](./bin/).
 
 ##### Operation
 * Call `randomRegisterRouters` to register simulation off-chain routers. To make this test simple, you can register enough at a time with any credibilities you want in the parameter vector. The id of the routers will be dynamically created. The registered routers can be checked by calling `getRegisteredRouters `. The result will be something like this:
@@ -58,12 +58,7 @@ And the number determines how many routers one message needs to be delivered par
 
 * The submitted message copies can be checked by `simuGetMessage `.
 
-
-
-
 *  When enough message copies are submitted, `simu_message_verification` will be called internally. The result will be cached in order to be checked manually and an event `VerifiedMessage` will be emitted to show the result, but the result event need to be decoded by `Polkadot.js`. 
-
-
 
 * Check the cached verification result by `getVerifiedResults`.
 

@@ -1,38 +1,45 @@
-## 基本资料
+## Basic information
 
-项目名称：1in10k
+project name: 1in10k
 
-项目立项日期：2022 年 3 月
+Project initiation date (year and month): 2022-03
 
-## 项目整体简介
+## Project overall introduction
 
 ![](./docs/logo.png)
 
-The project 1in10k is a dapp that has deployed on the moonbase alpha testnet: https://moonbase.moonscan.io/address/0x27002439bed6cfea6ebd4fa6d5512cf1ec5e975b. There are 10,000 blocks(or you can say grids) on the UI of the dapp. People can create or buy any of the blocks. So the name 1in10k means pick one block in the 10,000 blocks.
+The project 1in10k is a dapp that has deployed on the moonbase alpha testnet ( chainID:1287,rpc:https://rpc.api.moonbase.moonbeam.network ): https://moonbase.moonscan.io/address/0x27002439bed6cfea6ebd4fa6d5512cf1ec5e975b. You can play the dapp at http://moonbase.1in10k.com. There are 10,000 blocks(or you can say grids) on the UI of the dapp. People can create or buy any of the blocks. So the name 1in10k means pick one block in the 10,000 blocks.
 
-People can use those blocks to create something interesting, like some pixel images. If the dapp can get some popularity in the future, it can also be a good poster board, if someone owns an interesting pixel image that combined with the blocks, She/He can put some information on the image, like some words She/He want to say, or a url link She/He want people to click. There's something else creative about the dapp, but to avoid other project use the creativity before the dapp, I think It's necessary to keep it a secret now.
+People can use those blocks to create something interesting, like some pixel images. If the dapp can get some popularity in the future, it can also be a good poster board, if someone owns an interesting pixel image that consist of the blocks, she/he can put some information on the image, like some words she/he want to say, or a url link she/he want people to click. There's something else creative about the dapp, but to avoid other project use the creativity before the dapp, I think It's necessary to keep it a secret now.
 
-The front-end of the dapp is made by Vue, Element-UI and ethers.js. The smart contract of the dapp is made by Solidity, but it has interaction with moonbase Native Token ERC-20 Precompile, so I think it's qualified to try to join this hackthon. It's not 100% opensourced, but I uploaded a part of the smart contract at "./src/abridgedCodes.sol" and also uploaded the artifacts folder at "./src/artifacts". You can also watch the intro video at: https://www.youtube.com/watch?v=o7V0vkARtB4 (My English is not good, so I speak in Chinese in this video).
+The front-end of the dapp is made by Vue, Element-UI and ethers.js. The smart contract of the dapp is made by Solidity, but it has interaction with moonbase Native Token ERC-20 Precompile, so I think it's qualified to try to join this hackthon. It's not 100% opensourced, but I uploaded a part of the smart contract at "./src/abridgedCodes.sol" and the artifacts folder at "./src/artifacts". I also uploaded a simple intro video at "./doc/demo.mp4" You can also watch a more detailed video at: https://www.youtube.com/watch?v=o7V0vkARtB4 (My English is not good, so I speak in Chinese in this video).
 
-## 黑客松期间计划完成的事项
+## What to do during the hackathon
 
-**区块链端**
+**Blockchain Side**
 
-编写并部署 solidity 智能合约，实现 dapp 所需需求，并使用了 moonbeam alpha testnet 的 Token ERC-20 预编译来进行转账操作。
+Code and depoly the solidity contract to fufill the demand of the dapp. And use the moonbase Native Token ERC-20 Precompile to achive the transfer function of the dapp.
 
-**客户端**
+**Client Side**
 
-使用 Vue，Element-UI，ethers.js 来实现可与智能合约交互的前端。并尽量美化 UI。
+Use Vue, Element-UI, and ethers.js to implement a front end that interacts with the smart contract, and make the UI as polished as possible.
 
-## 黑客松期间所完成的事项
+## What was accomplished during the hackathon
 
-目前已完成绝大部份项目代码，但是 UI 还需要更美化。  
-并没有完全开源代码，但部分合约源码已存放在"./src/contract/abridgedCodes.sol"，源码编译后的得到的 artifacts 文件夹也已存放在"./src/artifacts"。  
-由于录制的展示视频超过了规定的 5 分钟，所以没有上传至 github，而是上传到了：https://www.youtube.com/watch?v=o7V0vkARtB4 。
+Most of the project code has been completed, but the UI needs to be more polished.
 
-## 队员信息
+The code is not 100% opensourced, but part of the contract code has been uploaded at ".src/contract/abridgedCodes.sol", and the compiled files have been uploaded at "./src/artifacts".
 
-姓名：peilin；  
-Github：1in10k-com;  
-微信：peilin567；  
-此项目为单人参赛
+A short introduction video has been uploaded at "./doc/demo.mp4", another more detailed one has been uploaded at https://www.youtube.com/watch?v=o7V0vkARtB4 .
+
+Deployed the dapp frontend at http://moonbase.1in10k.com
+
+## Player information
+
+It's a soloteam, so all the work is done by myself. I'm not a professional coder, just have some passion in coding and blockchain so I learn to code and try to do some works in the cryptoworld.
+
+Name：peilin；
+
+Github：1in10k-com;
+
+Wechat：peilin567；

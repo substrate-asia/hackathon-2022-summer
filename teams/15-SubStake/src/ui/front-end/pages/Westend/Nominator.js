@@ -78,9 +78,9 @@ export default function WestendNominator({ navigation }) {
       setValidatorList(result);
       setStatus(1);
     } catch {}
+
     setPending(false);
   };
-
   useEffect(() => {
     setValidatorFilter([
       { filter: 'One validator per operator', isChecked: false },
@@ -109,17 +109,22 @@ export default function WestendNominator({ navigation }) {
           provider: 'westend',
           method: 'stake',
           userAddress: accounts[currentIndex].sr25519,
-          validators: validatorList.map((el) => el.public_key),
+          amount: bondAmount,
+          payee: 'Staked',
           isNominate: 'True',
+          isBoth: 'True',
+          validators: validatorList.map((el) => el.public_key),
         }),
       });
-
+      console.log(response);
       const result = await response.json();
+      console.log(result);
       if (result.Status === 'Success') setTxMessage(result.Message);
       setTxStatus(result.Status);
     } catch {
       setTxStatus('Failed');
     }
+    setStatus(4);
     setPending(false);
   };
 
@@ -169,7 +174,7 @@ export default function WestendNominator({ navigation }) {
           <View style={commonStyle.serviceChatBox}>
             <Text style={commonStyle.serviceChatBoxTitle}>Enter the staking amount intended</Text>
             <Text style={commonStyle.serviceChatBoxDesc}>
-              Transferrable Amount: {formatBalanceToString(data.westendBalance.transferrableBalance)} WND
+              Transferrable Amount: {formatBalanceToString(data?.westendBalance?.transferrableBalance)} WND
             </Text>
             {status === 0 && (
               <>
@@ -312,7 +317,7 @@ export default function WestendNominator({ navigation }) {
                       key={i}
                       style={styles.curatedButton}
                       onPress={() => {
-                        setSelectedValidator(el.public_key);
+                        setSelectedValidator(el);
                         setDetailModalVisible(true);
                       }}
                       disabled={status !== 3}
