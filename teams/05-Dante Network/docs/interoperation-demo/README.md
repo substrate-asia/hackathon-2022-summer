@@ -92,9 +92,21 @@ node rinkebyToAstar.js --query <ID>
 
 - Send computing task from **OSComputing** contract on `Contracts on Rococo` to `Rinkeby`
 
+Here, we have registered the destination chain contract and address to the **OSComputing** contract with the method `multiDestContracts::registerDestContract`, so the method `sendComputingTask` just needs the destination chain name and numbers to be computed as parameters.
+
+You can query the destination contract and method name with the method `multiDestContracts::getDestContractInfo`.
+
+![image](https://user-images.githubusercontent.com/83757490/175050523-834eefc0-f742-4cec-9e3d-ff23a1a24482.png)
+
+The prefix "X" is added because the hex string will be handled specially.
+
+Send computing task
+
 ![image](https://user-images.githubusercontent.com/83757490/174970600-bb4855ff-5a7f-4b1f-b744-193d97c297fe.png)
 
-- Query result from **OSComputing** contract on `Contracts on Rococo`
+You can query the message sent to Rinkeby on ["https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e"](https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e)
+
+- Query result from **OSComputing** contract on `Contracts on Rococo`, it may take 1 minute after the computing task was sent.
 
 ![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
 
