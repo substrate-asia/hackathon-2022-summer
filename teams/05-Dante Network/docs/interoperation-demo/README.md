@@ -44,20 +44,17 @@ You can use the default private key file `.secret`. If the amount is not enough 
 **Interoperation between Polkadot parachain and EVM compatible chains**
 
 **Prepare**
-
-**Note: if the testnet of `Astar(Shibuya)` doesn't work, the ink! related demo may not work, but you can check it in [Demo vedios](). But you still can try the [Moonbeam](#interoperation-between-moonbeam-and-near) demo manually.**
-
 - Open Polkadot Apps - Contracts on Rococo: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)
 - We have deployed these smart contracts on `Contracts on Rococo`:
     - `cross_chain.contract`: 
         - Address: `5FyenLDubA4si9vyCGtW3VJkTW16i7thxAXNsoyVSCq59uTD`
-        - Related [metadata.json](../src/ink!/core-contract/bin/cross_chain_metadata.json)
+        - Related [metadata.json](../../src/ink!/core-contract/bin/cross_chain_metadata.json)
     - `greeting.contract`:          
         - Address: `5CqHgtxcuqhng95pxXvS25hBCPXNv9wKhvSktK7SgtDPjBTd`
-        - Related [metadata.json](../src/ink!/usage-contract/greeting/bin/greeting_metadata.json)
+        - Related [metadata.json](../../src/ink!/usage-contract/greeting/bin/greeting_metadata.json)
     - `oscomputing.contract`:
         - Address: `5D6gvY4fsUsjkQcPnHtxRTy72CxC12RzFzXHknaZDts2sX2T`
-        - Related [metadata.json](../src/ink!/usage-contract/oscomputing/bin/os_computing_metadata.json)
+        - Related [metadata.json](../../src/ink!/usage-contract/oscomputing/bin/os_computing_metadata.json)
 
 ![image](https://user-images.githubusercontent.com/83757490/174969528-b880803b-1e27-47d0-80cb-d4bed375cf1d.png)
 
