@@ -1,51 +1,75 @@
-## 基本资料
+## About
 
-项目名称：Avault
+Project Name：Avault
 
-项目立项日期 (哪年哪月)：
+Started in：2022.2
 
-## 项目整体简介
+## Project Details
 
-项目简介，英文提交。包括但不限于：
+### Overview
+Avault is a yield aggregator platform that provides aLP/aToken to DeFi users with automated compounding yields at empirically optimal intervals while pooling gas fees through smart contracts and best yield optimization strategies. At the same time, Avault is also a launchpad by using a whole new public sale strategy, which is called ISO.
 
-- 项目背景/原由/要解决的问题 (如有其他附件，可放到 `docs` 目录内。英文提交)。
-- 项目介绍
-- 技术架构
-- 项目 logo (如有)，这 logo 会印制在文宣，会场海报或贴子上。
+### What is aLP/aToken? 
+aLP/aToken is the receipt of your deposited LP/token. At the same time, it is an interest-bearing asset token. Every interest-bearing token will earn interest automatically, even if users only hold it without doing anything. Users can also stake their aLP/aToken into our farm to earn $AVAT.
 
-## 黑客松期间计划完成的事项
+### Why aLP/aToken?
+The reason why we create the aLP and aToken is trying to rich the ecosystem. Even if the Avault token is all distributed in the future, the LP that users deposited in Avault can still be used by other projects.
+We believe that aLP/aToken can become an essential part of ecosystem. The aLP/aToken can unlock the value of staked assets in the liquidity pools. All the defi projects can do lots of things by using our aLP/aToken. Let's say layer 0 is the asset on the ecosystem, for example the LP and the asset on dex, lending protocol or other dapps. Then the layer 1 will be the aLP/aToken. It is because users can deposit all their layer 0 asset into Avault to receive aLP/aToken. They can still receive their revenue from dex, lending protocol or other dapps. At the same time, users can stake their aLP/aToken to farm AVAT token for higher returns. They can also stake their aLP/aToken to other dapp for more use cases. Such as they can use it as collateral on lending protocol, aLP/aToken will have less risk of liquidation compared with single token, because the value of aLP/aToken continutely increasing. There are many other use cases that aLP/aToken can be applied. aLP/aToken can maximize the asset utilization on Astar ecosystem. So Avault is not only a simple yield aggregator, we are trying to rich the whole Astar defi ecosystem. Every defi user can benefit from this mechanism, and when the XCMP is available, aToken could also benefit all the polkadot users.
 
-- 请团队在报名那一周 git clone 这个代码库并创建团队目录，在 readme 里列出黑客松期间内打算完成的代码功能点。并提交 PR 到本代码库。例子如下 (这只是一个 nft 项目的例子，请根据团队项目自身定义具体工作)：
+### What is ISO?
+ISO means Initial Stake Offering. 50% users' principal will be used for adding initial liquidity with the project's public sale token. 40% users' principal will be used to create an ISO reward pool for the loyal holder award. 10% will be used for team operation and development. With this mechanism, ISO participants are guaranteed to get back at least 40% principal(Calculated by Currency Standard) if they are loyal holders.
 
-**区块链端**
+### Why ISO?
+Under the bear market, we believe that it would be difficult for the developer to raise the money from IDO. It might be because of the bear market situation and the users’ fear of losing all their money. It is reasonable that users do not want to take that high risk. However, this would be very hard for the builders to get through the bear market without operation fees.
+Therefore, we designed ISO. We hope to rebuild the trust between users and projects via ISO. As we know, there are many users who may lose money on different IDO, especially in this market situation. We can’t guarantee participants must get 2x or 10x revenue, what we can guarantee is that participants would never lose all or even 90% principal.
 
-- `pallet-nft`
-  - [ ] NFT 创建及数据结构定义 (`fn create_nft()`)
-  - [ ] NFT 转帐函数 (`fn transfer()`)
-  - [ ] NFT 销毁函数 (`fn burn_token()`)
+![](assets/ISOvsIDO.jpeg)
 
-**客户端**
+### Architecture
+![ISO Architecture](assets/ISO%20Architecture.svg)
 
-- web 端
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
-
-- hybrid (react-native)
-  - [ ] 用户注册页面
-  - [ ] NFT 产品创建流程
-  - [ ] NFT 产品购买流程
+### logo
+![](assets/avatLogo1.png)
+![](assets/avatLogo2.png)
+![](assets/avatLogo3.png)
+![](assets/avatLogo4.png)
 
 
-## 黑客松期间所完成的事项 (6月22日初审前提交)
+## Code Structure
 
-- 6月22日前，在本栏列出黑客松期间最终完成的功能点。
-- 把相关代码放在 `src` 目录里，并在本栏列出在黑客松期间打完成的开发工作/功能点。我们将对这些目录/档案作重点技术评审。
-- 放一段不长于 **5 分钟** 的产品 DEMO 展示视频, 命名为 `团队目录/docs/demo.mp4`。初审时这视频是可选，demo day 这是计分项。
 
-## 队员信息
+**Blockchain**
 
-包含参赛者名称及介绍
-在团队中担任的角色
-GitHub 帐号
-微信账号（如有请留下，方便及时联系）
+- AVault Basic
+  - [✓] Compound Contracts (`AVaultForMasterChef`)
+  - [✓] Zap Contracts (`ZapArthswap`)
+  - [✓] ISO Contracts - Basic version (`PresaleShidenTest`)
+  - [⍻] ISO Contracts - Platform version (`Presale`)
+
+
+**Client**
+
+- web
+  - [⍻] Home Page
+  - [✓] Compound Page
+  - [✓] Zap Page
+  - [✓] ISO Page - Basic version
+  - [ ] ISO Page - Platform version
+  - [ ] ISO managment Page
+  - [ ] ISO application Page
+
+
+## Tasks done during Hackathon
+ - demo video
+ 
+[![Avault Demo](https://img.youtube.com/vi/Snsf1315Vg0/0.jpg)](https://www.youtube.com/watch?v=Snsf1315Vg0)
+
+
+## Members
+
+- Ericsson: Operation
+- Sam: Smart contract/ Backend
+- Alex: Product manager 
+- Hai: Front-end
+- Lee: UI/UX
+- Edmund: BD

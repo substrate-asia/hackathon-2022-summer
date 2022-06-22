@@ -1,0 +1,22 @@
+version: '3.5'
+networks:
+  diftttnetwork:
+    name: diftttnetwork
+
+services:
+  difttt-node:
+    container_name: difttt-node
+    image: baidang201/difttt-node:latest
+    working_dir: /var/www/node-template
+    ports:
+      - '9944:9944'
+    volumes:
+      - ./data:/data
+    environment:
+      - CARGO_HOME=/var/www/node-template/.cargo
+    command: /usr/local/bin/node-template --dev --rpc-cors all --rpc-methods=unsafe --rpc-external --unsafe-ws-external --unsafe-rpc-external --base-path=/data
+    restart: always
+    networks:
+      diftttnetwork:
+        aliases:
+          - diftttnetwork

@@ -1,0 +1,155 @@
+body{ font-family:"微软雅黑", arial; font-size:14px; line-height:150%; margin:0px; padding:0px; background:#f3f3f3; min-width:1200px;}
+img{ border:0px;}
+a{ color:#000000; text-decoration:none;}
+a:hover{ color:#000000; text-decoration:underline;}
+form{ margin:0px; padding:0px;}
+input,select,textarea{ margin:0px; padding:3px 5px; font-family:"微软雅黑"; font-size:14px; vertical-align:middle;}
+ul,li{ margin:0px; padding:0px; list-style-type:none;}
+
+.input_error{ border:1px solid #ff0000; background:#fff7f7; color:#ff0000;}
+.msg{ color:#ff0000;}
+.remark{ color:#999999;}
+.clear{ clear:both;}
+
+/*****Public*****/
+.wrap{ background:url(../image/bg.jpg) top center no-repeat #f3f3f3;}
+.wrap-sub{ background:url(../image/bg_sub.jpg) top center no-repeat #f3f3f3;}
+.popup{ width:100%; height:100%; clear:both; position:fixed; top:0px; left:0px; background:rgba(0,0,0,0.4); z-index:1000; display:none;}
+.popup .cot{ width:1000px; height:500px; margin:10% auto 0 auto; clear:both; background:#ffffff; border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; position:relative;}
+.popup .cot .close{ width:20px; height:20px; padding:10px; clear:both; background:url(../image/close.png) center no-repeat; position:absolute; top:10px; right:10px; font-size:0px; line-height:0px; cursor:pointer;}
+.popup .cot .close:hover{ transform:rotate(180deg); transition:all ease-in 0.5s;}
+
+/*****Head*****/
+.head{ width:100%; height:auto; clear:both; position:absolute; top:0px; left:0px; z-index:1000;}
+.head .cot{ width:1200px; height:auto; margin:0 auto; padding-top:0px; clear:both; position:relative;}
+.head .cot .logo{ width:250px; height:58px; padding-top:36px; float:left; font-size:0px; line-height:0px;}
+.head .cot .nav{ width:auto; height:auto; padding-top:68px; float:right;}
+.head .cot .nav .li{ width:auto; height:40px; float:left; font-size:16px; color:#ffffff;}
+.head .cot .nav .li a{ display:inline-table; width:auto; height:40px; padding:0px 20px; color:#ffffff; text-decoration:none;}
+.head .cot .nav .li a:hover{ color:#3ef3ac;}
+.head .cot .nav .li-on a{ color:#3ef3ac;}
+
+/*****Foot*****/
+.foot{ width:100%; height:auto; margin:100px auto 0 auto; clear:both; background:#063db4;}
+.foot .contact{ width:1200px; height:auto; margin:0 auto; padding-top:45px; clear:both; text-align:center;}
+.foot .contact .li{ display:inline-table; width:30px; height:30px; margin:0px 5px; background:#ffffff; border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px; font-size:0px; line-height:0px; overflow:hidden;}
+.foot .contact .li a{ display:block; width:30px; height:30px;}
+.foot .txt{ width:1200px; height:auto; margin:0 auto; padding-top:30px; clear:both; text-align:center; font-size:14px; color:#ffffff; line-height:170%;}
+.foot .logo{ width:180px; height:auto; margin:0 auto; padding:40px 0px 50px 0px; clear:both; font-size:0px; line-height:0px;}
+
+/*****Main*****/
+.main{ width:1200px; height:auto; margin:0 auto; clear:both;}
+.main .ads{ width:100%; height:190px; padding-top:35px; clear:both; font-size:30px; color:#ffffff; line-height:170%;}
+.main .ads span{ font-weight:bold;}
+.main .statistics{ width:100%; height:125px; clear:both;}
+.main .statistics .li{ width:100%; height:auto; padding:25px 0px; clear:both; border-top:1px solid rgba(255,255,255,0.2); overflow:hidden;}
+.main .statistics .li:first-child{ border-top:0px;}
+.main .statistics .li .sli{ width:18%; height:auto; float:left; font-size:28px; color:#ffffff;}
+.main .statistics .li .sli span{ display:block; padding-top:10px; font-size:16px; color:#9996c6;}
+.main .buts{ width:100%; height:auto; clear:both; overflow:hidden;}
+.main .buts .but-staking{ width:260px; height:74px; line-height:74px; margin-right:50px; float:left; background:url(../image/but_bg.png) center no-repeat; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; text-align:center; font-size:20px; color:#ffffff; font-weight:bold; -webkit-text-shadow:0 0 10px rgb(43,46,163); -moz-text-shadow:0 0 10px rgb(43,46,163); text-shadow:0 0 10px rgb(43,46,163);}
+.main .buts .but-staking a{ display:block; width:100%; height:100%; color:#ffffff; text-decoration:none;}
+.main .buts .but-staking:hover{ -webkit-text-shadow:0 0 0; -moz-text-shadow:0 0 0; text-shadow:0 0 0;}
+.main .buts .but-collator{ width:252px; height:66px; line-height:66px; margin-right:50px; padding:4px; float:left; background:url(../image/but_bg.png) center no-repeat; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; text-align:center; font-size:20px; color:#ffffff; font-weight:bold; -webkit-text-shadow:0 0 10px rgb(43,46,163,0.5); -moz-text-shadow:0 0 10px rgb(43,46,163,0.5); text-shadow:0 0 10px rgb(43,46,163,0.5);}
+.main .buts .but-collator a{ display:block; width:252px; height:66px; background:#ffffff; color:#063db4; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; text-decoration:none;}
+.main .buts .but-collator:hover{ -webkit-text-shadow:0 0 0; -moz-text-shadow:0 0 0; text-shadow:0 0 0;}
+
+.balance{ width:1200px; height:auto; margin:0 auto; padding-top:120px; clear:both;}
+.balance .cot{ width:1198px; height:250px; clear:both; background:#ffffff; border:1px solid #5db1f1; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -webkit-box-shadow:0 0 20px rgba(93,177,241,0.2); -moz-box-shadow:0 0 20px rgba(93,177,241,0.2); box-shadow:0 0 20px rgba(93,177,241,0.2);}
+.balance .cot .btit{ width:100%; height:62px; clear:both; border-bottom:1px solid #dfeffc; overflow:hidden;}
+.balance .cot .btit .icon{ width:25px; height:26px; padding:18px 0px 0px 20px; float:left; font-size:0px; line-height:0px;}
+.balance .cot .btit .txt{ width:auto; height:62px; line-height:62px; padding-left:12px; float:left; font-size:24px; color:#063db4; font-weight:bold;}
+.balance .cot .btit .user{ width:auto; height:auto; padding:14px 40px 0px 0px; float:right;}
+.balance .cot .btit .user .headimg{ width:35px; height:35px; margin-right:15px; float:left; font-size:0px; line-height:0px;}
+.balance .cot .btit .user .address{ width:auto; height:35px; line-height:35px; float:left; font-size:16px; color:#000000;}
+.balance .cot .bcot{ width:1080px; height:auto; margin:0 auto; padding-top:30px; display: flex;justify-content: space-around;}
+.balance .cot .bcot .li{ width:25%; height:auto; }
+.balance .cot .bcot .li .txt{ width:100%; height:auto; clear:both; font-size:28px; color:#000000;}
+.balance .cot .bcot .li .txt span{ display:block; padding-top:10px; font-size:16px; color:#777777;}
+.balance .cot .bcot .li .but{ width:auto; height:37px; line-height:37px; margin-top:20px; clear:both; float:left; background:#063db4; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; font-size:16px; color:#ffffff;}
+.balance .cot .bcot .li .but a{ display:block; width:auto; height:37px; padding:0 20px; color:#ffffff; text-decoration:none;}
+.balance .cot .bcot .li .but a:hover{ font-weight:bold;}
+
+.latest{ width:1200px; height:auto; margin:0 auto; padding-top:50px; clear:both; overflow:hidden;}
+.latest .li{ width:587px; height:350px; margin-bottom:40px; float:left; background:#ffffff; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -webkit-box-shadow:0 0 10px rgba(93,177,241,0.2); -moz-box-shadow:0 0 10px rgba(93,177,241,0.2); box-shadow:0 0 10px rgba(93,177,241,0.2);}
+.latest .li2{ margin-left:26px;}
+.latest .li .ltit{ width:100%; height:62px; clear:both; border-bottom:1px solid #dfeffc; overflow:hidden;}
+.latest .li .ltit .icon{ width:25px; height:26px; padding:18px 0px 0px 20px; float:left; font-size:0px; line-height:0px;}
+.latest .li .ltit .txt{ width:auto; height:62px; line-height:62px; padding-left:12px; float:left; font-size:24px; color:#063db4; font-weight:bold;}
+.latest .li .lcot{ width:87%; height:auto; margin:0 auto; padding-top:12px; clear:both;}
+.latest .li .lcot .cli{ width:100%; height:auto; padding:8px 0px; clear:both; font-size:16px; color:#000000; overflow:hidden;}
+.latest .li .lcot .cli span{ float:right;}
+.latest .li .lcot .cli .headimg{ width:35px; height:35px; margin-right:20px; float:left; font-size:0px; line-height:0px;}
+.latest .li .lcot .cli .address{ width:auto; height:35px; line-height:35px; float:left; font-size:16px; color:#000000;}
+.latest .li .lcot .cli .wrong{ width:auto; height:35px; line-height:35px; float:right; font-size:16px; color:#666666;}
+.latest .li .lcot .cli .operate{ width:auto; height:35px; float:right; font-size:0px; line-height:0px; display:none;}
+.latest .li .lcot .cli .operate .oli{ margin-left:15px; float:left; cursor:pointer;}
+.latest .li .lcot .cli:hover .operate{ display:block;}
+.latest .li .lcot .more{ width:auto; height:auto; padding-top:10px; clear:both; font-size:16px; color:#063db4;}
+.latest .li .lcot .more a{ color:#063db4;}
+.latest .li-collator .lcot .cli{ padding:10px 0px;}
+
+/*****Sub*****/
+.sub{ width:1200px; height:auto; margin:0 auto; padding-top:120px; clear:both;}
+.sub .stit{ width:100%; height:auto;  clear:both; font-size:40px; color:#ffffff; font-weight:bold; position:relative;}
+.sub .stit .but{ width:200px; height:57px; line-height:57px; clear:both; position:absolute; top:35px; right:0px; background:url(../image/but_bg.png) top center no-repeat; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; text-align:center; font-size:20px; color:#ffffff; font-weight:bold; -webkit-text-shadow:0 0 10px rgb(43,46,163); -moz-text-shadow:0 0 10px rgb(43,46,163); text-shadow:0 0 10px rgb(43,46,163);}
+.sub .stit .but a{ display:block; width:100%; height:100%; color:#ffffff; text-decoration:none;}
+.sub .stit .but:hover{ -webkit-text-shadow:0 0 0; -moz-text-shadow:0 0 0; text-shadow:0 0 0;}
+.sub .scot{ width:100%; height:auto;  clear:both; background:#ffffff; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -webkit-box-shadow:0 0 10px rgba(93,177,241,0.2); -moz-box-shadow:0 0 10px rgba(93,177,241,0.2); box-shadow:0 0 10px rgba(93,177,241,0.2);}
+.sub .scot .content{  width:93%; height:auto; margin:0 auto; padding:25px 0px 35px 0px; clear:both; font-size:18px; color:#000000; line-height:180%;}
+.sub .scot .ctit{ width:100%; height:auto; clear:both; border-bottom:1px solid #dfeffc;}
+.sub .scot table{ width:93%; height:auto; margin:0 auto;}
+.sub .scot table tr th{ padding:25px 0px 15px 0px; color:#777777; text-align:left; font-weight:normal; line-height:120%;}
+.sub .scot table tr td{ padding:20px 0px; border-top:1px solid #e5e5e5; color:#000000;}
+.sub .scot table tr td a{ padding-right:15px; color:#063db4; text-decoration:underline; position:relative;}
+.sub .scot table tr:first-child td{ border-top:0px;}
+.sub .scot table tr td a .vote{ width:80px; height:auto; clear:both; position:absolute; top:0px; left:0px; z-index:1; background:#063db4; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; display:none;}
+.sub .scot table tr td a .vote .li{ width:74%; height:32px; line-height:32px; padding:0 13%; clear:both; border-top:1px solid rgba(255,255,255,0.2); font-size:14px; color:#ffffff; cursor:pointer;}
+.sub .scot table tr td a .vote .li:first-child{ border-top:0px;}
+.sub .scot table tr td a:hover .vote{ display:block;}
+
+
+
+
+/*****Popup*****/
+.popup .staking{ width:450px; height:430px;}
+.popup .staking .stit{ width:85%; height:75px; line-height:75px; margin:0 auto; clear:both; font-size:24px; color:#063db4;}
+.popup .staking .scot{ width:85%; height:auto; margin:0 auto; padding-top:5px; clear:both;}
+.popup .bind{ height:300px;}
+
+/*****Form*****/
+.form .li{ width:100%; height:auto; padding-bottom:15px; clear:both;}
+.form .li .ftit{ width:100%; height:auto; padding-bottom:5px; clear:both; font-size:16px;}
+.form .li .ftit span{ color:#ff0000;}
+.form .li .input{ width:93%; height:auto; padding:10px 3%; clear:both; background:#ffffff; border:1px solid #cccccc; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; font-size:16px;}
+.form .li .short{ width:50%;}
+.form .li .input textarea{ width:100%; height:150px; padding:0px; border:0px; background:none; font-size:16px; border:0px; background:none; box-shadow:none; outline-color:invert; outline-style:none; outline-width:0px; border:none; border-style:none; text-shadow:none; -webkit-appearance:none; -webkit-user-select:text; outline-color:transparent;}
+.form .li .input input{ width:100%; height:24px; line-height:24px; border:0px; background:none; font-size:16px; border:0px; background:none; box-shadow:none; outline-color:invert; outline-style:none; outline-width:0px; border:none; border-style:none; text-shadow:none; -webkit-appearance:none; -webkit-user-select:text; outline-color:transparent;}
+.form .li .input select{ width:100%; height:30px; line-height:24px; border:0px; background:none; font-size:16px; border:0px; background:none; box-shadow:none; outline-color:invert; outline-style:none; outline-width:0px; border:none; border-style:none; text-shadow:none; outline-color:transparent;}
+.form .li .input select.small{ width:120px; margin-right:10px;}
+.form  .explain{ width:100%; height:auto; clear:both; font-size:16px; color:#ff0000;}
+.form .but{ width:260px; height:74px; line-height:74px; margin-top:20px; clear:both; background:url(../image/but_bg.png) center no-repeat; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; text-align:center; font-size:20px; color:#ffffff; font-weight:bold; -webkit-text-shadow:0 0 10px rgb(43,46,163); -moz-text-shadow:0 0 10px rgb(43,46,163); text-shadow:0 0 10px rgb(43,46,163);}
+.form .but a{ display:block; width:100%; height:100%; color:#ffffff; text-decoration:none;}
+.form .but:hover{ -webkit-text-shadow:0 0 0; -moz-text-shadow:0 0 0; text-shadow:0 0 0;}
+
+/*****Page*****/
+.page{ width:100%; height:auto; margin:0px; padding-top:35px; clear:both; font-size:14px; text-align:center;}
+.page a{ display:inline-table; padding:5px 12px; margin:0 3px; background:#ffffff; border:1px solid #cccccc; text-align:center; color:#999999; text-decoration:none; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.page a:hover{ border:1px solid #063db4;}
+.page a.on{ color:#063db4; border:1px solid #063db4;}
+.page span{ display:inline-table; padding:5px 2px;}
+
+
+
+
+
+/*信息提示*/
+.message{ width:auto; height:auto; padding:180px 0px 250px 0px; clear:both;}
+.message .icon{ width:40px; height:40px; margin:0 auto; clear:both; font-size:0px;}
+.message .text{ width:auto; height:auto; padding-top:15px; clear:both; text-align:center; font-size:20px;}
+.message .text span{ display:block; padding-top:8px; font-size:14px; color:#999999; line-height:125%;}
+.message .text span a{ color:#999999;}
+
+
+
+

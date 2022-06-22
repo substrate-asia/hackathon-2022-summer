@@ -17,6 +17,10 @@
 
 **ToEarnFun**是一款**fit to earn**的Web3的智能健身应用程序。相对于其它只有**SocialFi**和**GameFi**元素的**x-to-earn**应用，它能够与真实的智能健身器材连接，依靠硬件芯片的加密技术，保证付出的汗水得到公平的回报。**ToEarnFun**的入门用户无需购买加密货币，只需要购买应用适配的智能健身器材，即可马上**fit to earn**，大大降低普通用户进入web3世界的门槛。
 
+## Architecture
+
+![Architecture](../assets/toearnfun-architecture.png)
+
 ## Why ToEarnFun?
 
 ### 简单易上手

@@ -1,0 +1,28 @@
+[package]
+name = "evm-proxy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.5.0-rc.2"
+web3 = "0.18.0"
+hex = "0.4"
+tokio = { version = "1.0", features = ["full"] }
+anyhow = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+json= "0.12.4"
+simplelog = "0.10.2"
+log = "0.4.14"
+openssl = { version = "0.10.32", features = ["vendored"] }
+ethers = "0.6.2"
+serde = { version = "1.0.136", features = ["derive"] }
+serde_yaml = "0.8.23"
+subxt = "0.20.0"
+sp-core = "6.0.0"
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive", "full", "bit-vec"] }
+sp-keyring = "6.0.0"
+hex-literal = "0.3.4"
+secp256k1 = { version = "0.21", features = ["recovery"] }
+base64 = "0.13.0"

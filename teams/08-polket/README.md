@@ -1,14 +1,20 @@
 ## Project
 
-Project NName: ToEarnFun
+Project Name: ToEarnFun
 
 Project Start Date: May 2022
 
 ## Introduction
 
+![logo](./assets/toearnfun-log.svg)
+
 **ToEarnFun** is a **fit to earn** Web3 smart fitness application. Compared with other **x-to-earn** applications that only have **SocialFi** and **GameFi** elements, it can be connected with real smart fitness equipment. It relies on the encryption technology of the hardware chip to ensure that the sweat is paid fairly. The entry-level users of **ToEarnFun** do not need to purchase cryptocurrencies, but only need to purchase smart fitness equipment adapted to the application, and they can **fit to earn** immediately, greatly reducing the difficulty for ordinary users to enter the web3 world.
 
-**Why ToEarnFun?**
+### Architecture
+
+![Architecture](./assets/toearnfun-architecture.png)
+
+### Why ToEarnFun?
 
 - Easy To Use.
 - Fitness + GameFi.
@@ -19,7 +25,7 @@ Project Start Date: May 2022
 - Community Driven Development.
 - Interoperability Of Cross-chains.
 
-**What can ToEarnFun do?**
+### What can ToEarnFun do?
 
 - Promote the production and sales of fitness equipment.
 - Fitness + GameFi
@@ -27,6 +33,7 @@ Project Start Date: May 2022
 - Competition Challenge.
 
 For more details, please [click here](./docs/README.md).
+We also made a Chinese version of the PPT, [click here](./docs/toearnfun-ppt.pdf).
 
 ## What to plan to accomplish during the hackathon
 
@@ -71,6 +78,10 @@ For more details, please [click here](./docs/README.md).
 - The `smart skipping rope` product has integrated an encryption algorithm and adds a hardware-level anti-cheating algorithm.
 - Created the substrate project and completed the development of `pallet-vfe`, in `src/polket-node`.
 - Completed the UI design of the App, in `src/ui`.
+
+## Demo Video
+
+https://drive.google.com/file/d/1hpaKNFYQhYxkj0dNOEaRD81jcSrm66h3/view?usp=sharing
 
 ## Team members
 

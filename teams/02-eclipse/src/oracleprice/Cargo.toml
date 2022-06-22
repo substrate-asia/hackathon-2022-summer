@@ -1,0 +1,20 @@
+[package]
+name = "oracle_price"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+ethers = "0.6.2"
+log = "0.4.17"
+reqwest = "0.11.10"
+simplelog = "0.12.0"
+web3 = "0.18.0"
+serde = { version = "1.0.136", features = ["derive"] }
+json= "0.12.4"
+secp256k1 = { version = "0.21", features = ["recovery"] }
+hex-literal = "0.3.4"
+openssl = { version = "0.10.32", features = ["vendored"] }
+serde_json = "1.0.81"

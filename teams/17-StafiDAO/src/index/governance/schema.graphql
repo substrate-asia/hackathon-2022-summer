@@ -1,0 +1,39 @@
+type StartGovern @entity {
+
+  id: ID! #Transaction hash
+
+  creator: String!
+
+  number: BigInt
+
+  governType: BigInt
+
+  startDate: BigInt
+
+  endDate: BigInt
+
+  uintValue: BigInt
+
+  strValue: String
+
+  totalVoter: BigInt
+
+  contractAddress: String!
+}
+
+type VoteByNumber @entity {
+
+  id: ID! #Transaction hash
+
+  votor: String!
+
+  number: BigInt
+
+  governType: BigInt
+
+  state: BigInt
+
+  voters: BigInt
+
+  contractAddress: String!
+}

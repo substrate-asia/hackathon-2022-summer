@@ -1,0 +1,12 @@
+type Transaction @entity {
+
+  id: ID! # Transaction hash
+
+  value: BigInt!
+
+  to: String!
+
+  from: String!
+
+  contractAddress: String!
+}
