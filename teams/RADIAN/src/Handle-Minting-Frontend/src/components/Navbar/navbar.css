@@ -1,0 +1,29 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu .rd-menuItem { 
+    margin: 0 20px;
+    padding-bottom: 2px;
+}
+
+#menu span.rd-menuItem {
+    cursor: pointer;
+    color: var(--font-white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#menu span.rd-menuItem.active { 
+    color: var(--theme-purple-light);
+    transition: border-width 0.3s;
+}
+
+#menu .ant-btn-primary {
+}

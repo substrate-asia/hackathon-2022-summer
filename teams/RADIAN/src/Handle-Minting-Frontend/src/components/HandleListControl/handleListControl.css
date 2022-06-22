@@ -1,0 +1,30 @@
+.HandleListControl-root .ant-select {
+    color: var(--font-white);
+    
+}
+
+.HandleListControl-root .ant-select:hover .ant-select-selector {
+    border-color: var(--font-white) !important;
+}
+
+.HandleListControl-root .ant-select-selector {
+    background-color: var(--background-color) !important;
+    border-radius: 12px !important;
+    padding: 0 20px !important;
+}
+
+.HandleListControl-root .anticon {
+    color: var(--font-white);
+}
+
+.HandleListControl-item {
+    background-color: #1E1E1E !important;
+}
+
+.HandleListControl-item .ant-select-item-option-selected {
+    background-color: #404040 !important
+}
+
+.HandleListControl-item .ant-select-item {
+    color: var(--font-white) !important;
+}
