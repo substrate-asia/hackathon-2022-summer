@@ -1,0 +1,128 @@
+.page {
+  background-color: #ffffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.header {
+  padding: 1.25rem 1.13rem 1.13rem;
+  height: 3.69rem;
+  position: relative;
+}
+.group {
+  padding: 1rem 1.06rem 9.81rem;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.image {
+  border-radius: 50%;
+  position: absolute;
+  left: 1.13rem;
+  bottom: 0.69rem;
+  width: 1.88rem;
+  height: 1.88rem;
+}
+.text {
+  align-self: center;
+  color: #4a4a4a;
+  font-size: 1.13rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.31rem;
+}
+.group_2 {
+  margin-top: 2.19rem;
+}
+.group_3 {
+  margin-top: 2rem;
+}
+.button {
+  margin-left: 0.13rem;
+  margin-top: 14.63rem;
+  padding: 1.19rem 0 1.38rem;
+  background-color: #fcffd1;
+  border-radius: 1.88rem;
+  border: solid 0.063rem #979797;
+}
+.text_1 {
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.75rem;
+}
+.image_1 {
+  margin-top: 0.88rem;
+  border-radius: 50%;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.text_2 {
+  margin-top: 0.88rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.75rem;
+}
+.text_3 {
+  align-self: flex-start;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.section_1 {
+  margin-left: 0.13rem;
+  margin-top: 0.56rem;
+  padding: 1.06rem 1.25rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+.text_5 {
+  align-self: flex-start;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.text-wrapper {
+  margin-left: 0.13rem;
+  margin-top: 0.56rem;
+  padding: 1.19rem 0 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+.text_7 {
+  margin-left: 0.19rem;
+  margin-top: 0.56rem;
+  align-self: flex-start;
+  color: #8b8b8b;
+  font-size: 0.75rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 0.94rem;
+}
+.text_8 {
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.text_4 {
+  align-self: center;
+  color: #000000;
+  font-size: 1.75rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 0.94rem;
+  width: 98%;
+}
+.image_2 {
+  width: 1.63rem;
+  height: 1.63rem;
+}
+.text_6 {
+  margin-left: 1.63rem;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+  width: 95%;
+}
