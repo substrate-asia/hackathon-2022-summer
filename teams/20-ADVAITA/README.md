@@ -60,15 +60,15 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 
 - `transfer contract`
 
-	1. Data structure: used to ensure that a report can only receive a reward once
+  1. Data structure: used to ensure that a report can only receive a reward once
 
-		`mapping(string => bool) public user_is_reward;`
-		
+    `mapping(string => bool) public user_is_reward;`
+    
 
-	2. Transfer function:
+  2. Transfer function:
 
-		ERC20Token transfer function：`fn transferERC20()`
-		Balance query function：`fn getBalance()`
+    ERC20Token transfer function：`fn transferERC20()`
+    Balance query function：`fn getBalance()`
 
 **Client**
 
@@ -89,8 +89,8 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 ## Things Done During the Hackathon (Submitted before the first trial on June 22)
   
 Product demo video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4  
-PPT(EN) : [To be perfected]  
-PPT(CN) : https://i.2fei2.com/ADVAITA-CN.pdf  
+Detailed PPT introduction(EN) : https://i.2fei2.com/ADVAITA-EN.pdf
+Detailed PPT introduction(CN) : https://i.2fei2.com/ADVAITA-CN.pdf  
 
 ## Team information
 
