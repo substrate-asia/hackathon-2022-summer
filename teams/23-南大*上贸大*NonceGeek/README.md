@@ -8,7 +8,7 @@
 
 ![image-20220622110833152](https://tva1.sinaimg.cn/large/e6c9d24egy1h3gugke0ndj203x03xwed.jpg)
 
-**Problem:**
+### Problem
 
 Traditional Web2 online name cards have more costs and lower efficiency on information verified.
 
@@ -18,9 +18,9 @@ Job seekers are in a weak position because the personal information proprietorsh
 
 The remote & global recruitment channels are not clear enough for the rapidly increasing of web3 builders’ population.
 
-**Background**
+### Background
 
-1. Building a building block "soul card" based on human social nature
+**1. Building a building block "soul card" based on human social nature**
 
 Recently, E. Glen Weyl, Puja Ohlhaver, Vitalik Buterin and others published their paper "Decentralized Society: In Search of the Soul of Web3". The paper represents the trend of the next decade in blockchain - extending from purely distributed finance (Defi) to explore both the path of distributed finance and distributed society (DeSoc).
 
@@ -50,7 +50,7 @@ Therefore, in this case, how to efficiently make a good and deep first impressio
 
 This cannot be achieved if it is simply an unthought-out **message pile** - like the smelly, long resumes we often see in our mailboxes. Therefore, there is a need to think further about this matter at the product design level and design products that are more in line with human "social nature" - something that is currently lacking in the DeSocial space.
 
-2. Structural Hole Theory and "Crossed Souls"
+**2. Structural Hole Theory and "Crossed Souls"**
 
 > **structural holes** is a concept from [social network](https://en.wikipedia.org/wiki/Social_network) research, originally developed by [Ronald Stuart](https://en.wikipedia.org/wiki/Ronald_Stuart_Burt) Burt. The study of structural holes spans the fields of sociology, economics, and computer science. Burt introduced this concept in an attempt to explain the origin of differences in [social capital](https://en.wikipedia.org/wiki/Social_capital). Burt’s theory suggests that individuals hold certain positional advantages/disadvantages from how they are embedded in neighborhoods or other social structures. A structural hole is understood as a gap between two individuals who have complementary sources to information.
 > -- Wikipedia
@@ -59,13 +59,13 @@ This cannot be achieved if it is simply an unthought-out **message pile** - like
 
 Therefore, when designing the SoulCard product, we had to think more fully about how SoulCard could better bring to light the key people who fill the holes in the structure -- people who have often been invisible in the past -- and how it could be a win-win situation for both the key nodes themselves and the social networks they connect to. It's a win-win situation. For example, a key person who is both a Coder & Designer and who is an active participant in both a DevDAO and a DesignDAO has the potential to lead the exchange of resources between the two DAOs, creating new possibilities and new value. In DeSoc, we can name the soul of such a person as **"Cross-Soul "**.
 
-3. Trust in new cooperative relationships
+**3. Trust in new cooperative relationships**
 
 > In his Philosophy of Money and Foundations of Social Theory, Zimmer suggests that trust is an important condition for exchange mechanisms and a prerequisite for the continuity of sociality. The sociologist James Coleman devotes a large part of his magnum opus, The Foundations of Social Theory, to trust as an important component of social capital (Robert D . Trust helps to increase the efficiency of microeconomic organizations.
 
 Reducing the cost of building trust and eliminating barriers to building trust both require authenticity of information exchange (verified profile) and effectiveness of structure building (short time to the right person, shortest path to the right person).
 
-4. Decentralized diffusion of DAO brand
+**4. Decentralized diffusion of DAO brand**
 
 Like any other organization, DAOs still need branding. In addition to traditional brand building ideas, DAOs should also consider a more decentralized (and likewise more primitive 😁) approach to communication -
 
@@ -79,13 +79,13 @@ In this case, it is essential to let the DAO develop the Template for the busine
 
 > **Receiver:** People who see SoulCard can quickly and efficiently understand the people they are in contact with and the organizations behind them.
 
-5. Information Entropy and Value
+**5. Information Entropy and Value**
 
 Traditional resumes and profiles have no mechanism to avoid lengthy, dull information, and the low concentration of effective information reduces the sense of value to the Profile Owner.
 
 The traditional solution is to increase the information density and value of the profile through some resume-related courses, but we believe that this can be solved mechanically - for example, by having the SoulCard Owner provide only the 3 most valuable articles that he/she has written when providing technical articles.
 
-**Introduction:**
+### Introduction
 
 When considering about the grand vision of constructing DeSoc based on Blockchain, NonceGeekDAO believes that a proposal of creating DID Credential for Builder groups and the on chain SoulCard which can represent the soul of ethnic groups are the most important first step. 
 
@@ -97,9 +97,12 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 * After the SoulCard Owner joins the DAO, the information about the DAO it participates in which carried by SoulCard that will effectively and clearly marking the Owner's population.
 * SoulCard contains the Web3 footprint of its Owner.
 
-**Technical Architecture**
+### Technical Architecture
 
 ![SoulCard架构 (1)](https://tva1.sinaimg.cn/large/e6c9d24egy1h3gxa953m0j21a80hsjt5.jpg)
+
+
+### See more:
 
 * Videos:
 
@@ -124,7 +127,7 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 >
 > **[0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D](https://moonbeam.moonscan.io/address/0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D#code)**
 
-**See more:**
+* Other Files:
 
 > Project Introduction：[SoulCard Introduction](./docs/SoulCard Introduction.md)
 >
