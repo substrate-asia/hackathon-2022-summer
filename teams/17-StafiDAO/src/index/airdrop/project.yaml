@@ -1,0 +1,35 @@
+specVersion: 0.2.0
+name: stafi-dao-query-airdrop
+version: 1.0.0
+description: 'stafi-dao-query-airdrop'
+repository: 'https://github.com/makefriendwithtime/stafi-dao-query-airdrop'
+schema:
+  file: ./schema.graphql
+network:
+  genesisHash: '0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527'
+  endpoint: wss://moonbeam-alpha.api.onfinality.io/public-ws
+  dictionary: 'https://api.subquery.network/sq/subquery/moonbase-alpha-dictionary'
+#  genesisHash: '0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b' # Genesis hash of Moonriver
+#  endpoint: wss://moonriver.api.onfinality.io/public-ws
+#  dictionary: 'https://api.subquery.network/sq/subquery/moonriver-dictionary'
+  chaintypes:
+    file: ./dist/chaintypes.js
+dataSources:
+  - kind: substrate/FrontierEvm
+    startBlock: 2129700
+    processor:
+      file: './node_modules/@subql/contract-processors/dist/frontierEvm.js'
+      options:
+        abi: airdrop
+        address: '0x9aB76857F3bB2bfc03925FA79450BdDC0891fEac'
+    assets:
+      airdrop:
+        file: './abi.airdrop.json'
+    mapping:
+      file: './dist/index.js'
+      handlers:
+        - handler: handleAirdropEvmEvent
+          kind: substrate/FrontierEvmEvent
+          filter:
+            topics:
+              - Transfer(address indexed from,address indexed to,uint256 value)

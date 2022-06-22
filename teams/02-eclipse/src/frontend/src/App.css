@@ -1,0 +1,9 @@
+@import 'antd/dist/antd.css';
+
+.App {
+  /* text-align: center; */
+  padding: 40px 0;
+  background: linear-gradient(180deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%); 
+  /* {"background":{"color":{"value":"#0d47a1"},"image":"linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%)"},"particles":{"number":{"value":40,"density":{"enable":false}},"size":{"value":12,"random":true,"anim":{"speed":1,"size_min":0.3}},"links":{"enable":false},"move":{"random":true,"speed":1,"direction":"top","out_mode":"out"}},"interactivity":{"events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"}},"modes":{"bubble":{"distance":250,"duration":2,"size":0,"opacity":0},"repulse":{"distance":400,"duration":4}}}} */
+
+}
