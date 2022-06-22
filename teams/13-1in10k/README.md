@@ -1,10 +1,10 @@
-## 基本资料
+## basic information
 
-项目名称：1in10k
+project name: 1in10k
 
-项目立项日期：2022 年 3 月
+Project initiation date (year and month): 2022-03
 
-## 项目整体简介
+## Project overall introduction
 
 ![](./docs/logo.png)
 
@@ -14,26 +14,32 @@ People can use those blocks to create something interesting, like some pixel ima
 
 The front-end of the dapp is made by Vue, Element-UI and ethers.js. The smart contract of the dapp is made by Solidity, but it has interaction with moonbase Native Token ERC-20 Precompile, so I think it's qualified to try to join this hackthon. It's not 100% opensourced, but I uploaded a part of the smart contract at "./src/abridgedCodes.sol" and the artifacts folder at "./src/artifacts". I also uploaded a simple intro video at "./doc/demo.mp4" You can also watch a more detailed video at: https://www.youtube.com/watch?v=o7V0vkARtB4 (My English is not good, so I speak in Chinese in this video).
 
-## 黑客松期间计划完成的事项
+## What to do during the hackathon
 
-**区块链端**
+**Blockchain Side**
 
-编写并部署 solidity 智能合约，实现 dapp 所需需求，并使用了 moonbeam alpha testnet 的 Token ERC-20 预编译来进行转账操作。
+Code and depoly the solidity contract to fufill the demand of the dapp. And use the moonbase Native Token ERC-20 Precompile to achive the transfer function of the dapp.
 
-**客户端**
+**Client Side**
 
-使用 Vue，Element-UI，ethers.js 来实现可与智能合约交互的前端。并尽量美化 UI。
+Use Vue, Element-UI, and ethers.js to implement a front end that interacts with the smart contract, and make the UI as polished as possible.
 
-## 黑客松期间所完成的事项
+## What was accomplished during the hackathon
 
-目前已完成绝大部份项目代码，但是 UI 还需要更美化。  
-并没有完全开源代码，但部分合约源码已存放在"./src/contract/abridgedCodes.sol"，源码编译后的得到的 artifacts 文件夹也已存放在"./src/artifacts"。  
-一个五分钟内的介绍视频上传到了"./doc/demo.mp4"，另外一个更详细的介绍视频上传到了：https://www.youtube.com/watch?v=o7V0vkARtB4 。  
-部署了 dapp 的前端在：http://moonbase.1in10k.com ，需连接到 moonbase alpha testnet ( chainID:1287,rpc:https://rpc.api.moonbase.moonbeam.network )。
+Most of the project code has been completed, but the UI needs to be more polished.
 
-## 队员信息
+The code is not 100% opensourced, but part of the contract code has been uploaded at ".src/contract/abridgedCodes.sol", and the compiled files have been uploaded at "./src/artifacts".
 
-姓名：peilin；  
-Github：1in10k-com;  
-微信：peilin567；  
-此项目为单人参赛
+A short introduction video has been uploaded at "./doc/demo.mp4", another more detailed one has been uploaded at https://www.youtube.com/watch?v=o7V0vkARtB4 .
+
+Deployed the dapp frontend at http://moonbase.1in10k.com
+
+## Player information
+
+It's a soloteam, so all the work is done by myself. I'm not a professional coder, just have some passion in coding and blockchain so I learn to code and try to do some works in the cryptoworld.
+
+Name：peilin；
+
+Github：1in10k-com;
+
+Wechat：peilin567；
