@@ -1,0 +1,150 @@
+.equal-division-item {
+  flex: 1 1 6.56rem;
+  padding: 0.44rem 0 0.34rem;
+  width: 6.56rem;
+}
+.image_2 {
+  border-radius: 50%;
+  width: 2.84rem;
+  height: 2.84rem;
+}
+.list-item {
+  padding: 0.94rem 0.88rem;
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
+}
+.text_8 {
+  align-self: center;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.list-item_1 {
+  padding: 0.94rem 0.88rem;
+  background-color: #fdf3ff;
+  border-radius: 0.5rem;
+}
+.image_5 {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 1.88rem;
+  height: 1.88rem;
+}
+.text_6 {
+  margin-left: 1.13rem;
+  align-self: center;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.text_15 {
+  margin-right: 0.19rem;
+  align-self: center;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.image_8 {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 1.88rem;
+  height: 1.88rem;
+}
+.text_13 {
+  margin-left: 1.13rem;
+  align-self: center;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.text_2 {
+  margin-top: 0.94rem;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.page {
+  background-color: #ffffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.header {
+  padding: 1.25rem 1.13rem 1rem;
+  height: 3.56rem;
+  position: relative;
+}
+.group {
+  padding: 0.63rem 1.13rem 17.31rem;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.image {
+  border-radius: 50%;
+  position: absolute;
+  left: 1.13rem;
+  bottom: 0.56rem;
+  width: 1.88rem;
+  height: 1.88rem;
+}
+.text {
+  align-self: center;
+  color: #000000;
+  font-size: 1.13rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.31rem;
+}
+.equal-division {
+  margin-top: 1.97rem;
+  align-self: center;
+}
+.group_4 {
+  margin-top: 3.28rem;
+}
+.image_1 {
+  border-radius: 50%;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.text_1 {
+  margin-top: 0.94rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.75rem;
+}
+.text_5 {
+  align-self: flex-start;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.list {
+  margin-top: 0.44rem;
+}
+.group_7 {
+  margin-top: 1.19rem;
+}
+.list-item:last-of-type {
+  margin-top: 0.25rem;
+}
+.text_12 {
+  align-self: flex-start;
+  color: #000000;
+  font-size: 0.88rem;
+  font-family: '.AppleSystemUIFont';
+  line-height: 1.06rem;
+}
+.list_1 {
+  margin-top: 0.31rem;
+}
+.list-item_1:last-of-type {
+  margin-top: 0.25rem;
+}
