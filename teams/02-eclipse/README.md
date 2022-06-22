@@ -24,21 +24,7 @@ DIFTTT employs the following concepts:
 
 ![logo](./logo.png)
 
-```
-    runtime 
-        ｜(get task info)
-        V
-   offchain worker
-        ｜(check triger condition, send task)
-        V
-     evm_proxy
-        ｜ (sign and send task )
-        V
-deeper-machine evm contract
-        ｜(race and run task )
-        V
-deeper-machine node
-```
+![logo](./ifttt_struct.png)
 
 ## What to do during the hackathon
 
