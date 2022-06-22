@@ -92,7 +92,7 @@ const TriggerList = ({ triggers, setTriggers }: { triggers: any; setTriggers: an
     setIsModalVisible(true)
   }
   const handleOk = (values: any) => {
-    const now = new Date().getTime()
+    const now = new Date().getTime()/1000
     if (values.triggerType === 'Timer') {
       createTrigger({
         Timer: [now, values.interval],

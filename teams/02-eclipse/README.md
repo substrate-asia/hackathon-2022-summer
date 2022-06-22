@@ -30,26 +30,26 @@ DIFTTT employs the following concepts:
 
 **Blockchain side**
 - `difttt-node`
-  - [ ] Triger creation (`fn create_triger()`)
-  - [ ] Action creation (`fn create_action()`)
-  - [ ] Recipe creation (`fn create_recipe()`)
-  - [ ] Delete Recipe (`fn del_recipe()`)
-  - [ ] Enable recipe (`fn turn_on_recipe()`)
-  - [ ] Disable recipe (`fn turn_off_recipe()`)
-  - [ ] Check the triger condition, and run the action (`fn offchain_worker()`)
+  - [x] Triger creation (`fn create_triger()`)
+  - [x] Action creation (`fn create_action()`)
+  - [x] Recipe creation (`fn create_recipe()`)
+  - [x] Delete Recipe (`fn del_recipe()`)
+  - [x] Enable recipe (`fn turn_on_recipe()`)
+  - [x] Disable recipe (`fn turn_off_recipe()`)
+  - [x] Check the triger condition, and run the action (`fn offchain_worker()`)
   
 **Client**
 
 - web side(react)
-  - [ ] Triger/Action/Recipe create page
-  - [ ] Triger/Action/Recipe list page
+  - [x] Triger/Action/Recipe create page
+  - [x] Triger/Action/Recipe list page
 
 - evm-proxy(rust)
-  - [ ] pass action to DEP(a Distributed Task System)
+  - [x] pass action to DEP(a Distributed Task System)
 
 **TaskImages**
-- [ ] email docker image
-- [ ] oracle docker image
+- [x] email docker image
+- [x] oracle docker image
 
 ## What was accomplished during the hackathon (submitted before the June 22nd trial)
 the Demo program has some interesting example:
