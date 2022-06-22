@@ -25,7 +25,7 @@ We can see in the picture above, that the theoretical value of probability distr
 Try the following operations with [polkadot.js.app](https://polkadot.js.org/apps/#/explorer). Or deploy the smart contract on a local substrate node.
 
 * Method one: Launch a [local substrate node](https://github.com/paritytech/substrate-contracts-node) and deploy the [algorithm_prototype.contract](./bin/algorithm_prototype.contract) on it to try. 
-* Method two: Use the deployed `algorithm_prototype.contract` on [TEST ROCOCO & PARACHAINS : Contracts(1002)](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts). The address is *`5GMZtFKF1r2mfSrDg4QF7sdQr9bY8wyLC571VPV9dhYLAufY`*, with the related [metadate](./bin/metadata.json).
+* Method two: Use the deployed `algorithm_prototype.contract` on [TEST ROCOCO & PARACHAINS : Contracts(1002)](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts). The address is *`5GMZtFKF1r2mfSrDg4QF7sdQr9bY8wyLC571VPV9dhYLAufY`*, with the related [metadate](./bin/).
 
 ##### Operation
 * Call `randomRegisterRouters` to register simulation off-chain routers. To make this test simple, you can register enough at a time with any credibilities you want in the parameter vector. The id of the routers will be dynamically created. The registered routers can be checked by calling `getRegisteredRouters `. The result will be something like this:
