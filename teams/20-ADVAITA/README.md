@@ -71,7 +71,8 @@ Everything is sweet as honey everything is sweet as honey
 Let the metaverse to have emotion and let web3.0 to have soul.  
 
 
-[![asciicast](https://i.2fei2.com/QQ%E6%88%AA%E5%9B%BE20220622211516.png)](https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4)
+[![asciicast][(https://i.2fei2.com/QQ%E6%88%AA%E5%9B%BE20220622211516.png)](https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4)  
+
 Product DEMO video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4  
 Detailed PPT introduction : https://i.2fei2.com/ADVAITA-CN-.pdf  
 Official website : http://advaita.games  
