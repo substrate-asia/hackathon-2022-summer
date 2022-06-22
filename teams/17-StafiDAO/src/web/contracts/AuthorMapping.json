@@ -1,0 +1,1092 @@
+{
+  "contractName": "AuthorMapping",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nimbus_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "add_association",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "old_nimbus_id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "new_nimbus_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "update_association",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nimbus_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "clear_association",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "author_id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "keys",
+          "type": "bytes32"
+        }
+      ],
+      "name": "register_keys",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "old_author_id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "new_author_id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "new_keys",
+          "type": "bytes32"
+        }
+      ],
+      "name": "set_keys",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nimbus_id\",\"type\":\"bytes32\"}],\"name\":\"add_association\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nimbus_id\",\"type\":\"bytes32\"}],\"name\":\"clear_association\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"author_id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"keys\",\"type\":\"bytes32\"}],\"name\":\"register_keys\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"old_author_id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"new_author_id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"new_keys\",\"type\":\"bytes32\"}],\"name\":\"set_keys\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"old_nimbus_id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"new_nimbus_id\",\"type\":\"bytes32\"}],\"name\":\"update_association\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"add_association(bytes32)\":{\"params\":{\"nimbus_id\":\"The nimbusId to be associated\"}},\"clear_association(bytes32)\":{\"params\":{\"nimbus_id\":\"The nimbusId to be cleared\"}},\"register_keys(bytes32,bytes32)\":{\"params\":{\"author_id\":\"The new author id registered\",\"keys\":\"The session keys\"}},\"set_keys(bytes32,bytes32,bytes32)\":{\"params\":{\"new_author_id\":\"The new nimbusId to be associated\",\"new_keys\":\"The new session keys\",\"old_author_id\":\"The old nimbusId to be replaced\"}},\"update_association(bytes32,bytes32)\":{\"params\":{\"new_nimbus_id\":\"The new nimbusId to be associated\",\"old_nimbus_id\":\"The old nimbusId to be replaced\"}}},\"title\":\"Pallet AuthorMapping Interface The interface through which solidity contracts will interact with pallet-author.mapping Address :    0x0000000000000000000000000000000000000807\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"add_association(bytes32)\":{\"notice\":\"Add association Selector: aa5ac585\"},\"clear_association(bytes32)\":{\"notice\":\"Clear existing associationg Selector: 7354c91d\"},\"register_keys(bytes32,bytes32)\":{\"notice\":\"Register association and session keys Selector: 4f50accf\"},\"set_keys(bytes32,bytes32,bytes32)\":{\"notice\":\"Set keys Selector: a8259c85\"},\"update_association(bytes32,bytes32)\":{\"notice\":\"Update existing association Selector: d9cef879\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/AuthorMappingInterface.sol\":\"AuthorMapping\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/AuthorMappingInterface.sol\":{\"keccak256\":\"0x493fd857ef4d3fc1daa08d3b80961e9a9e9bc4f261856bc7c7cb4e16827721e9\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://90c4b42b3dbb86f60caff03ae5e335fdb8d0c9e6558218afd743cf3099c9b2c1\",\"dweb:/ipfs/QmXPGp92GLnd6pm21149AeSKrnr2sWcHjBuEWajktJrK9M\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0-only\npragma solidity >=0.8.0;\n\n/**\n * @title Pallet AuthorMapping Interface\n *\n * The interface through which solidity contracts will interact with pallet-author.mapping\n * Address :    0x0000000000000000000000000000000000000807\n */\n\ninterface AuthorMapping {\n    /**\n     * Add association\n     * Selector: aa5ac585\n     *\n     * @param nimbus_id The nimbusId to be associated\n     */\n    function add_association(bytes32 nimbus_id) external;\n\n    /**\n     * Update existing association\n     * Selector: d9cef879\n     *\n     * @param old_nimbus_id The old nimbusId to be replaced\n     * @param new_nimbus_id The new nimbusId to be associated\n     */\n    function update_association(bytes32 old_nimbus_id, bytes32 new_nimbus_id)\n    external;\n\n    /**\n     * Clear existing associationg\n     * Selector: 7354c91d\n     *\n     * @param nimbus_id The nimbusId to be cleared\n     */\n    function clear_association(bytes32 nimbus_id) external;\n\n    /**\n     * Register association and session keys\n     * Selector: 4f50accf\n     *\n     * @param author_id The new author id registered\n     * @param keys The session keys\n     */\n    function register_keys(bytes32 author_id, bytes32 keys) external;\n\n    /**\n     * Set keys\n     * Selector: a8259c85\n     *\n     * @param old_author_id The old nimbusId to be replaced\n     * @param new_author_id The new nimbusId to be associated\n     * @param new_keys The new session keys\n     */\n    function set_keys(\n        bytes32 old_author_id,\n        bytes32 new_author_id,\n        bytes32 new_keys\n    ) external;\n}",
+  "sourcePath": "D:\\项目\\vueDao\\StakeFinance\\truffle-dev\\contracts\\AuthorMappingInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/AuthorMappingInterface.sol",
+    "exportedSymbols": {
+      "AuthorMapping": [
+        4525
+      ]
+    },
+    "id": 4526,
+    "license": "GPL-3.0-only",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4485,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:24:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "AuthorMapping",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4486,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:201:14",
+          "text": " @title Pallet AuthorMapping Interface\n The interface through which solidity contracts will interact with pallet-author.mapping\n Address :    0x0000000000000000000000000000000000000807"
+        },
+        "fullyImplemented": false,
+        "id": 4525,
+        "linearizedBaseContracts": [
+          4525
+        ],
+        "name": "AuthorMapping",
+        "nameLocation": "280:13:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 4487,
+              "nodeType": "StructuredDocumentation",
+              "src": "300:121:14",
+              "text": " Add association\n Selector: aa5ac585\n @param nimbus_id The nimbusId to be associated"
+            },
+            "functionSelector": "aa5ac585",
+            "id": 4492,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add_association",
+            "nameLocation": "435:15:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4489,
+                  "mutability": "mutable",
+                  "name": "nimbus_id",
+                  "nameLocation": "459:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4492,
+                  "src": "451:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4488,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "450:19:14"
+            },
+            "returnParameters": {
+              "id": 4491,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "478:0:14"
+            },
+            "scope": 4525,
+            "src": "426:53:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4493,
+              "nodeType": "StructuredDocumentation",
+              "src": "485:201:14",
+              "text": " Update existing association\n Selector: d9cef879\n @param old_nimbus_id The old nimbusId to be replaced\n @param new_nimbus_id The new nimbusId to be associated"
+            },
+            "functionSelector": "d9cef879",
+            "id": 4500,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update_association",
+            "nameLocation": "700:18:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4498,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4495,
+                  "mutability": "mutable",
+                  "name": "old_nimbus_id",
+                  "nameLocation": "727:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4500,
+                  "src": "719:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4494,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "719:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4497,
+                  "mutability": "mutable",
+                  "name": "new_nimbus_id",
+                  "nameLocation": "750:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4500,
+                  "src": "742:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4496,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "742:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "718:46:14"
+            },
+            "returnParameters": {
+              "id": 4499,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "777:0:14"
+            },
+            "scope": 4525,
+            "src": "691:87:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4501,
+              "nodeType": "StructuredDocumentation",
+              "src": "784:130:14",
+              "text": " Clear existing associationg\n Selector: 7354c91d\n @param nimbus_id The nimbusId to be cleared"
+            },
+            "functionSelector": "7354c91d",
+            "id": 4506,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "clear_association",
+            "nameLocation": "928:17:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4504,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4503,
+                  "mutability": "mutable",
+                  "name": "nimbus_id",
+                  "nameLocation": "954:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4506,
+                  "src": "946:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4502,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "945:19:14"
+            },
+            "returnParameters": {
+              "id": 4505,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "973:0:14"
+            },
+            "scope": 4525,
+            "src": "919:55:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4507,
+              "nodeType": "StructuredDocumentation",
+              "src": "980:178:14",
+              "text": " Register association and session keys\n Selector: 4f50accf\n @param author_id The new author id registered\n @param keys The session keys"
+            },
+            "functionSelector": "4f50accf",
+            "id": 4514,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "register_keys",
+            "nameLocation": "1172:13:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4512,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4509,
+                  "mutability": "mutable",
+                  "name": "author_id",
+                  "nameLocation": "1194:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4514,
+                  "src": "1186:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4508,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1186:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4511,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "1213:4:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4514,
+                  "src": "1205:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4510,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1205:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1185:33:14"
+            },
+            "returnParameters": {
+              "id": 4513,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1227:0:14"
+            },
+            "scope": 4525,
+            "src": "1163:65:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4515,
+              "nodeType": "StructuredDocumentation",
+              "src": "1234:226:14",
+              "text": " Set keys\n Selector: a8259c85\n @param old_author_id The old nimbusId to be replaced\n @param new_author_id The new nimbusId to be associated\n @param new_keys The new session keys"
+            },
+            "functionSelector": "a8259c85",
+            "id": 4524,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set_keys",
+            "nameLocation": "1474:8:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4522,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4517,
+                  "mutability": "mutable",
+                  "name": "old_author_id",
+                  "nameLocation": "1500:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1492:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4516,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1492:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4519,
+                  "mutability": "mutable",
+                  "name": "new_author_id",
+                  "nameLocation": "1531:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1523:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4518,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1523:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4521,
+                  "mutability": "mutable",
+                  "name": "new_keys",
+                  "nameLocation": "1562:8:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1554:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4520,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1554:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1482:94:14"
+            },
+            "returnParameters": {
+              "id": 4523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1585:0:14"
+            },
+            "scope": 4525,
+            "src": "1465:121:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4526,
+        "src": "270:1318:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:1547:14"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/AuthorMappingInterface.sol",
+    "exportedSymbols": {
+      "AuthorMapping": [
+        4525
+      ]
+    },
+    "id": 4526,
+    "license": "GPL-3.0-only",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4485,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:24:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "AuthorMapping",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4486,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:201:14",
+          "text": " @title Pallet AuthorMapping Interface\n The interface through which solidity contracts will interact with pallet-author.mapping\n Address :    0x0000000000000000000000000000000000000807"
+        },
+        "fullyImplemented": false,
+        "id": 4525,
+        "linearizedBaseContracts": [
+          4525
+        ],
+        "name": "AuthorMapping",
+        "nameLocation": "280:13:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 4487,
+              "nodeType": "StructuredDocumentation",
+              "src": "300:121:14",
+              "text": " Add association\n Selector: aa5ac585\n @param nimbus_id The nimbusId to be associated"
+            },
+            "functionSelector": "aa5ac585",
+            "id": 4492,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add_association",
+            "nameLocation": "435:15:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4489,
+                  "mutability": "mutable",
+                  "name": "nimbus_id",
+                  "nameLocation": "459:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4492,
+                  "src": "451:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4488,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "450:19:14"
+            },
+            "returnParameters": {
+              "id": 4491,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "478:0:14"
+            },
+            "scope": 4525,
+            "src": "426:53:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4493,
+              "nodeType": "StructuredDocumentation",
+              "src": "485:201:14",
+              "text": " Update existing association\n Selector: d9cef879\n @param old_nimbus_id The old nimbusId to be replaced\n @param new_nimbus_id The new nimbusId to be associated"
+            },
+            "functionSelector": "d9cef879",
+            "id": 4500,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update_association",
+            "nameLocation": "700:18:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4498,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4495,
+                  "mutability": "mutable",
+                  "name": "old_nimbus_id",
+                  "nameLocation": "727:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4500,
+                  "src": "719:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4494,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "719:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4497,
+                  "mutability": "mutable",
+                  "name": "new_nimbus_id",
+                  "nameLocation": "750:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4500,
+                  "src": "742:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4496,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "742:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "718:46:14"
+            },
+            "returnParameters": {
+              "id": 4499,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "777:0:14"
+            },
+            "scope": 4525,
+            "src": "691:87:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4501,
+              "nodeType": "StructuredDocumentation",
+              "src": "784:130:14",
+              "text": " Clear existing associationg\n Selector: 7354c91d\n @param nimbus_id The nimbusId to be cleared"
+            },
+            "functionSelector": "7354c91d",
+            "id": 4506,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "clear_association",
+            "nameLocation": "928:17:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4504,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4503,
+                  "mutability": "mutable",
+                  "name": "nimbus_id",
+                  "nameLocation": "954:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4506,
+                  "src": "946:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4502,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "945:19:14"
+            },
+            "returnParameters": {
+              "id": 4505,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "973:0:14"
+            },
+            "scope": 4525,
+            "src": "919:55:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4507,
+              "nodeType": "StructuredDocumentation",
+              "src": "980:178:14",
+              "text": " Register association and session keys\n Selector: 4f50accf\n @param author_id The new author id registered\n @param keys The session keys"
+            },
+            "functionSelector": "4f50accf",
+            "id": 4514,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "register_keys",
+            "nameLocation": "1172:13:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4512,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4509,
+                  "mutability": "mutable",
+                  "name": "author_id",
+                  "nameLocation": "1194:9:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4514,
+                  "src": "1186:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4508,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1186:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4511,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "1213:4:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4514,
+                  "src": "1205:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4510,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1205:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1185:33:14"
+            },
+            "returnParameters": {
+              "id": 4513,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1227:0:14"
+            },
+            "scope": 4525,
+            "src": "1163:65:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 4515,
+              "nodeType": "StructuredDocumentation",
+              "src": "1234:226:14",
+              "text": " Set keys\n Selector: a8259c85\n @param old_author_id The old nimbusId to be replaced\n @param new_author_id The new nimbusId to be associated\n @param new_keys The new session keys"
+            },
+            "functionSelector": "a8259c85",
+            "id": 4524,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set_keys",
+            "nameLocation": "1474:8:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4522,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4517,
+                  "mutability": "mutable",
+                  "name": "old_author_id",
+                  "nameLocation": "1500:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1492:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4516,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1492:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4519,
+                  "mutability": "mutable",
+                  "name": "new_author_id",
+                  "nameLocation": "1531:13:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1523:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4518,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1523:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4521,
+                  "mutability": "mutable",
+                  "name": "new_keys",
+                  "nameLocation": "1562:8:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4524,
+                  "src": "1554:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4520,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1554:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1482:94:14"
+            },
+            "returnParameters": {
+              "id": 4523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1585:0:14"
+            },
+            "scope": 4525,
+            "src": "1465:121:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4526,
+        "src": "270:1318:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:1547:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.12+commit.f00d7308.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-06-20T02:52:10.396Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "add_association(bytes32)": {
+        "params": {
+          "nimbus_id": "The nimbusId to be associated"
+        }
+      },
+      "clear_association(bytes32)": {
+        "params": {
+          "nimbus_id": "The nimbusId to be cleared"
+        }
+      },
+      "register_keys(bytes32,bytes32)": {
+        "params": {
+          "author_id": "The new author id registered",
+          "keys": "The session keys"
+        }
+      },
+      "set_keys(bytes32,bytes32,bytes32)": {
+        "params": {
+          "new_author_id": "The new nimbusId to be associated",
+          "new_keys": "The new session keys",
+          "old_author_id": "The old nimbusId to be replaced"
+        }
+      },
+      "update_association(bytes32,bytes32)": {
+        "params": {
+          "new_nimbus_id": "The new nimbusId to be associated",
+          "old_nimbus_id": "The old nimbusId to be replaced"
+        }
+      }
+    },
+    "title": "Pallet AuthorMapping Interface The interface through which solidity contracts will interact with pallet-author.mapping Address :    0x0000000000000000000000000000000000000807",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "add_association(bytes32)": {
+        "notice": "Add association Selector: aa5ac585"
+      },
+      "clear_association(bytes32)": {
+        "notice": "Clear existing associationg Selector: 7354c91d"
+      },
+      "register_keys(bytes32,bytes32)": {
+        "notice": "Register association and session keys Selector: 4f50accf"
+      },
+      "set_keys(bytes32,bytes32,bytes32)": {
+        "notice": "Set keys Selector: a8259c85"
+      },
+      "update_association(bytes32,bytes32)": {
+        "notice": "Update existing association Selector: d9cef879"
+      }
+    },
+    "version": 1
+  }
+}

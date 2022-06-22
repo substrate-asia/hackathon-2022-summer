@@ -1,0 +1,10 @@
+type SendValue @entity {
+
+  id: ID! #Transaction hash
+
+  recipient: String!
+
+  amount: BigInt
+
+  contractAddress: String!
+}

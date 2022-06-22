@@ -173,7 +173,7 @@ The use of blockchain to realize competition events is a very suitable applicati
 
 - 0️⃣Stage: Participate in the Polkadot Hackathon, 2022-06.
     - Write technical development documents.
-    - Complete the product Demo to achieve**fit to earn**.
+    - Complete the product Demo to achieve **fit to earn**.
     - Looking for market operation partners and venture capitalist.
 - 1️⃣Stage: Release the beta version, Est. **2022-Q2**.
     - Implement the production and sales scene of fitness equipment, and complete the production of the first batch of smart skipping rope equipment.

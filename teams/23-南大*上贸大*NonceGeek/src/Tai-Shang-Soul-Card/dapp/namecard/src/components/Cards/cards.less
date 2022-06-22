@@ -1,0 +1,134 @@
+.cards {
+    .card {
+      &:first-of-type {
+        position: absolute;
+        width: 298.37px;
+        height: 430.31px;
+        left: 1200px;
+        top: 175px;
+        background: rgba(20, 67, 78, 0.3);
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+        transform: rotate(-8.69deg);
+        border-radius: 20px;
+        border: 1px solid;
+        border-image: linear-gradient(81.31deg, #79D5A8, #D5F97D) 1;
+        clip-path: inset(0 round 3px);
+
+        h6 {
+          color: white;
+          text-align: center;
+          font-family: Inter;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 30px;
+          margin-top: 10px;
+        }
+
+        .rounds {
+          .round {
+            &:first-of-type {
+              width: 17px;
+              height: 17px;
+              background-image: url(../../assets/images/round.png);
+              transform: rotate(-8.69deg);
+              position: absolute;
+              left: 30px;
+              top: 80px;
+            }
+
+            &:nth-of-type(2) {
+              width: 17px;
+              height: 17px;
+              background-image: url(../../assets/images/round.png);
+              transform: rotate(-8.69deg);
+              position: absolute;
+              left: 30px;
+              top: 140px;
+            }
+
+            &:last-of-type {
+              width: 17px;
+              height: 17px;
+              background-image: url(../../assets/images/round.png);
+              transform: rotate(-8.69deg);
+              position: absolute;
+              left: 30px;
+              top: 200px;
+            }
+          }
+        }
+
+        .line {
+          width: 1px;
+          height: 200px;
+          background-image: linear-gradient(#79D5A8, #D5F97D);
+          transform: rotate(-0.69deg);
+          position: absolute;
+          left: 39px;
+          top: 95px;
+          z-index: -1;
+        }
+      }
+
+      &:nth-of-type(2) {
+        box-sizing: border-box;
+        position: absolute;
+        width: 339.97px;
+        height: 187.57px;
+        left: 1191.03px;
+        top: 410.6px;
+        background: #0F181D;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        border: 2px solid;
+        border-image: linear-gradient(#79D5A8, #D5F97D);
+        border-image-slice: 1;
+        overflow: hidden;
+        z-index: 1;
+        padding: 0px 20px 0px 40px;
+
+        .cardTop {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          margin-top: 20px;
+
+          .left {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+
+            p {
+              margin-bottom: 15px;
+            }
+          }
+
+          .right {
+            margin-left: 30px;
+            width: 102px;
+            height: 102px;
+            border-radius: 50%;
+            background-image: url(../../assets/images/cardUser.jpg);
+          }
+        }
+
+        .cardBottom {
+          margin-top: 15px;
+
+          .round {
+            width: 16.41px;
+            height: 16.41px;
+            background: #C4C4C4;
+            border-radius: 50%;
+            margin-right: 20px;
+            float: left;
+          }
+        }
+      }
+
+      &:last-of-type {
+        position: absolute;
+      }
+    }
+  }

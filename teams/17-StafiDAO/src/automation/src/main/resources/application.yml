@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+#配置日志
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: INFO
+      hibernate: ERROR
+  file: D:\\logs\\stafi.log   #输出INFO ERROR WARN三个级别的日志信息
+
+web3j:
+  client-address: https://rpc.testnet.moonbeam.network
+  admin-client: true
+  httpTimeoutSeconds: 600
+  network-id: 1287

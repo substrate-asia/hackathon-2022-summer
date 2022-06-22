@@ -1,0 +1,48 @@
+{
+  "name": "difttt-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^0.25.1",
+    "@polkadot/api": "^8.8.1",
+    "@polkadot/extension-dapp": "^0.44.1",
+    "@polkadot/keyring": "^9.4.1",
+    "@polkadot/networks": "^9.4.1",
+    "@polkadot/types": "^8.8.1",
+    "@polkadot/util": "^9.4.1",
+    "@polkadot/util-crypto": "^9.4.1",
+    "@types/react-router-dom": "^5.3.3",
+    "antd": "^4.21.0",
+    "dayjs": "^1.11.3",
+    "eslint": "^8.17.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@antfu"
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "no-console": "off",
+      "unknown-property": "off",
+      "unknown-word": "off"
+    }
+  }
+}
