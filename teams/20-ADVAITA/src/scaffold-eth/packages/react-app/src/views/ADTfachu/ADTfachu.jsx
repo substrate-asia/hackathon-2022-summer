@@ -19,9 +19,24 @@ export default function ADTfachu({
 
   const data = {};
 
+  const [balance, setBalance] = React.useState(0);
+  const [remaining, setRemaining] = React.useState(balance);
+
+  if (readContracts && readContracts.TokenReward) {
+      readContracts.TokenReward.getContractBalance("0x258fA771b190D44C64471f7401517A4914062C1F").then(result => {
+        setBalance(Number(result._hex)/100);
+        setRemaining(Number(result._hex)/100);
+      })
+  }
+
   function goToADTqianbao() {
     history.push('/ADTqianbao');
   }
+
+  function handleAmountChange() {
+    setRemaining(balance - document.getElementById("sendAmountADT").value);
+  }
+
 //   const goToADTqianbao = useCallback(() => history.push('/ADTqianbao'), [history]);
 
   return (
@@ -40,7 +55,7 @@ export default function ADTfachu({
             src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/617a2ca7e4f1450011362b37/62ac76cac1c22a0011eb9872/16554709265787895986.png"
             className={`${styles['image_1']}`}
           />
-          <span className={`${styles['text_2']}`}>88.88888888 ADT</span>
+          <span className={`${styles['text_2']}`}>{balance} ADT</span>
         </div>
         <div className={`flex-col ${styles['group_2']}`}>
           <span className={`${styles['text_3']}`}>地址</span>
@@ -58,10 +73,10 @@ export default function ADTfachu({
           <span className={`${styles['text_5']}`}>数量</span>
           <div className={`flex-col items-start ${styles['text-wrapper']}`}>
             <span className={`${styles['text_6']}`}>
-                <input id="sendAmountADT" className={`${styles['text_4']}`} placeholder='Amount'/>
+                <input id="sendAmountADT" className={`${styles['text_4']}`} placeholder='Amount' onChange={handleAmountChange}/>
             </span>
           </div>
-          <span className={`${styles['text_7']}`}>余额：88.77777777</span>
+          <span className={`${styles['text_7']}`}>余额：{remaining}</span>
         </div>
         <div className={`flex-col items-center ${styles['button']}`} onClick={
             async () => {

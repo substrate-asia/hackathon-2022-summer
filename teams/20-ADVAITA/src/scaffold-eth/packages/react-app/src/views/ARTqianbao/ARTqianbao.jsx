@@ -41,6 +41,13 @@ export default function ARTqianbao(
       setisARTqianbaoOpen((prevState) => !prevState)
   }
 
+  const [balance, setBalance] = React.useState(0);
+  if (readContracts && readContracts.TokenReward) {
+      readContracts.TokenReward.getContractBalance("0x258fA771b190D44C64471f7401517A4914062C1F").then(result => {
+        setBalance(Number(result._hex)/100);
+      })
+  }
+
   return (
     <div className={`flex-col ${styles['page']}`}>
       <div className={`justify-center ${styles['header']}`}>
@@ -56,7 +63,7 @@ export default function ARTqianbao(
             src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/617a2ca7e4f1450011362b37/62ac76cac1c22a0011eb9872/16554709254250119433.png"
             className={`${styles['image_1']}`}
           />
-          <span className={`${styles['text_1']}`}>88.88888888 ART</span>
+          <span className={`${styles['text_1']}`}>{balance} ART</span>
         </div>
         <div className={`flex-row ${styles['equal-division']}`}>
           <div className={`flex-col items-center ${styles['equal-division-item']}`} onClick={toggleARTqianbaoDrawer}>
