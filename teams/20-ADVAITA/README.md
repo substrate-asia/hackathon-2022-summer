@@ -1,6 +1,6 @@
 # A D V A I T A  
 The Matrix Reloaded
-![](https://i.2fei2.com/hackathon-2022-summer-logo.png)  
+![](https://i.2fei2.com/hackathon-2022-summer-logo2.png)  
 
 ## Project commencement date: 2022-01
 
