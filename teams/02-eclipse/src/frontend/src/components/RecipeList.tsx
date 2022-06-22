@@ -84,7 +84,7 @@ const RecipeList = ({ triggers, actions }: any) => {
       render: (text: boolean) => (text ? 'enable' : 'disable'),
     },
     {
-      title: '操作',
+      title: 'Action',
       key: 'action',
       render: (_: any, record: any) => (
         <Space size="middle">
