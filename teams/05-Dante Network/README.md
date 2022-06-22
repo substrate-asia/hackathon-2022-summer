@@ -63,15 +63,12 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
 ## Achievement in hackathon
 - Completed:
   - Complete all content of the `smart contracts` part.
-    - Check the ink! smart contract [here](./src/ink!/core-contract/).
-    - Check the sol smart contract [here](./src/Moonbeam/core-contract/)
-    - Check the underlying mechanisms [here](./src/ink!/algorithm-prototype/)
-    - Check the deploy infomation [here](./src/README.md)
+    - Check the smart contracts infomation [here](./src/README.md) (both ink! and Moonbeam)
   - Complete all content of the `off-chain routers` part.
     - We have launched off-chain test routers to deliver messages for the [demos](./docs/interoperation-demo/)
   - Complete all content of the `Omnichain dApp SDK for Polkadot` part.
     - Check the ink! sdk for application smart contract developing [here](./src/ink!/ink-sdk/) and [here](./src/ink!/message-ink/)
-    - Check the sol sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
+    - Check the solidity sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
   - Complete all content of the `Demos` part.
     - Try the demos manually [here](./docs/interoperation-demo/)
     - Check the smart contracts deploy information [here](./docs/README.md)

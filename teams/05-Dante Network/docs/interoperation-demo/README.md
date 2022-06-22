@@ -48,13 +48,13 @@ You can use the default private key file `.secret`. If the amount is not enough 
 - We have deployed these smart contracts on `Contracts on Rococo`:
     - `cross_chain.contract`: 
         - Address: `5FyenLDubA4si9vyCGtW3VJkTW16i7thxAXNsoyVSCq59uTD`
-        - Related [metadata.json](../../src/ink!/core-contract/bin/cross_chain_metadata.json)
+        - Related [metadata](../../src/ink!/core-contract/bin/)
     - `greeting.contract`:          
         - Address: `5CqHgtxcuqhng95pxXvS25hBCPXNv9wKhvSktK7SgtDPjBTd`
-        - Related [metadata.json](../../src/ink!/usage-contract/greeting/bin/greeting_metadata.json)
+        - Related [metadata](../../src/ink!/usage-contract/greeting/bin/)
     - `oscomputing.contract`:
         - Address: `5D6gvY4fsUsjkQcPnHtxRTy72CxC12RzFzXHknaZDts2sX2T`
-        - Related [metadata.json](../../src/ink!/usage-contract/oscomputing/bin/os_computing_metadata.json)
+        - Related [metadata](../../src/ink!/usage-contract/oscomputing/bin/)
 - Prepare an test account:
     - Click `Add account` on `Accounts` page, and finish creating an account
     - Get token from faucet in `Element`, channel link is [https://matrix.to/#/#rococo-faucet:matrix.org](https://matrix.to/#/#rococo-faucet:matrix.org)
