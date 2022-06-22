@@ -47,7 +47,7 @@ You can use the default private key file `.secret`. If the amount is not enough 
 
 **Note: if the testnet of `Astar(Shibuya)` doesn't work, the ink! related demo may not work, but you can check it in [Demo vedios](). But you still can try the [Moonbeam](#interoperation-between-moonbeam-and-near) demo manually.**
 
-- Open Polkadot Apps - Contracts on Rococo: [[https://polkadot.js.org/apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)
+- Open Polkadot Apps - Contracts on Rococo: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)
 - We have deployed these smart contracts on `Contracts on Rococo`:
     - `cross_chain.contract`: 5FyenLDubA4si9vyCGtW3VJkTW16i7thxAXNsoyVSCq59uTD
     - `greeting.contract`: 5CqHgtxcuqhng95pxXvS25hBCPXNv9wKhvSktK7SgtDPjBTd
