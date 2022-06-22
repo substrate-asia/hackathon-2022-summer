@@ -73,12 +73,12 @@ Let the metaverse to have emotion and let web3.0 to have soul.
 
 
 Product DEMO video : https://i.2fei2.com/ADVAITA%20demo%206%E6%9C%8820%E6%97%A5.mp4  
-Detailed PPT introduction(EN) : https://i.2fei2.com/ADVAITA-EN.pdf  
-Detailed PPT introduction(CN) : https://i.2fei2.com/ADVAITA-CN.pdf  
+Detailed PPT introduction : https://i.2fei2.com/ADVAITA-CN-.pdf  
+Official website : http://advaita.games  
 
 ## Technical Architecture Diagram
 ![](https://i.2fei2.com/hackathon-2022-summer123.png)  
-
+token ecosystem: https://i.2fei2.com/ADVAITA-token.pdf  
 
 ## Code 
 
