@@ -46,34 +46,36 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
   - [ ] Basic SQoS Items：Identity traceability as the default choice.
   - [ ] On-chain prototypes for some of the underlying algorithms.
 - `off-chain routers` 
-  - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
-  - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
-  - [ ] Message translation between `solidity`(Parachain Moonbeam) and `NEAR Rust` technology stack
+  - [ ] Message translation between `ink`(`TEST ROCOCO : CONTRACTS(1002)`) and `solidity`(some EVM chains) technology stack
+  - [ ] Message translation between `ink`(`TEST ROCOCO : CONTRACTS(1002)`) and `NEAR Rust`(NEAR) technology stack
+  - [ ] Message translation between `solidity`(`Testnet Parachain Moonbeam`) and `NEAR Rust` technology stack
   - [ ] Message delivering.
 - `Omnichain dApp SDK for Polkadot`
-  - [ ] Omnichain dev SDK for `ink`(Parachain AStar) smart contract
-  - [ ] Omnichain dev SDK for `solidity`(Parachain Moonbeam) smart contract
+  - [ ] Omnichain dev SDK for `ink`(`TEST ROCOCO : CONTRACTS(1002)`) smart contract
+  - [ ] Omnichain dev SDK for `solidity`(`Testnet Parachain Moonbeam`) smart contract
 - `Demos`(Deployed on Testnet)
-  - [ ] Message communication between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
-  - [ ] Smart contracts invocation between `ink!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Message communication between `ink!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `ink!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
   - [ ] Message communication between `solidity` smart contract platform(`Moonbase Alpha`) in Polkadot and Near
-  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
+  - [ ] Smart contracts invocation between `solidity!` smart contract platform(`TEST ROCOCO : CONTRACTS(1002)`) in Polkadot and Near or some EVM chains
 
 ## Achievement in hackathon
 - Completed:
   - Complete all content of the `smart contracts` part.
-    - Check the ink! smart contract [here](./src/ink!/core-contract/bin/)
-    - Check the sol smart contract [here](./src/Moonbeam/core-contract/bin/)
+    - Check the ink! smart contract [here](./src/ink!/core-contract/).
+    - Check the sol smart contract [here](./src/Moonbeam/core-contract/)
     - Check the underlying mechanisms [here](./src/ink!/algorithm-prototype/)
+    - Check the deploy infomation [here](./demo/README.md)
   - Complete all content of the `off-chain routers` part.
     - We have launched off-chain test routers to deliver messages for the [demos](./demo/)
   - Complete all content of the `Omnichain dApp SDK for Polkadot` part.
     - Check the ink! sdk for application smart contract developing [here](./src/ink!/ink-sdk/) and [here](./src/ink!/message-ink/)
     - Check the sol sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
   - Complete all content of the `Demos` part.
-    - Check the demos [here](./demo/)
+    - Try the demos manually [here](./demo/interoperation/)
+    - Check the smart contracts deploy information [here](./demo/README.md)
 - Videos:
-  - To Do...
+  - Check the video [here](./demo/)
 
 
 ## Technology Team
