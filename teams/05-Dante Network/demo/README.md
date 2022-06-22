@@ -2,7 +2,7 @@
 
 ## Video
 
-* [Introduction and Demos]()
+* [Video: Introduction and Demos]()
 
 ## Demo to try
 
