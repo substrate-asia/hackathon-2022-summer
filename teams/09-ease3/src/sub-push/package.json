@@ -1,0 +1,46 @@
+{
+    "name": "sub-push",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "vue-cli-service serve",
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@polkadot/vue-identicon": "^1.4.1",
+        "axios": "^0.26.1",
+        "bignumber.js": "^9.0.2",
+        "core-js": "^3.6.5",
+        "dom-to-image": "^2.6.0",
+        "echarts": "^5.3.2",
+        "element-plus": "^2.1.7",
+        "ethereum-blockies-base64": "^1.0.2",
+        "ethers": "^5.5.3",
+        "lodash.debounce": "^4.0.8",
+        "moment": "^2.29.3",
+        "siwe": "^1.0.0",
+        "vue": "^3.0.0",
+        "vue-echarts": "^6.0.2",
+        "vue-router": "^4.0.0-0",
+        "vuedraggable": "^4.1.0",
+        "vuex": "^4.0.0-0"
+    },
+    "devDependencies": {
+        "@open-wc/webpack-import-meta-loader": "^0.4.7",
+        "@arco-design/web-vue": "^2.21.2",
+        "@vue/cli-plugin-babel": "~4.5.15",
+        "@vue/cli-plugin-eslint": "~4.5.15",
+        "@vue/cli-plugin-router": "~4.5.15",
+        "@vue/cli-plugin-vuex": "~4.5.15",
+        "@vue/cli-service": "~4.5.15",
+        "@vue/compiler-sfc": "^3.0.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^7.0.0",
+        "less": "^3.0.4",
+        "less-loader": "^5.0.0",
+        "unplugin-element-plus": "^0.3.3"
+    }
+}

@@ -1,0 +1,497 @@
+html,
+body {
+    font-family: "IBM Plex Sans", "Avenir", Helvetica, Arial, sans-serif;
+    margin: 0;
+    min-width: 1272px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.medium {
+    font-weight: 500;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(38, 38, 38, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ededed;
+}
+
+.hover-item {
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.common-table-option {
+    cursor: pointer;
+    color: #4318FF;
+
+    &:hover {
+        color: #2200B7;
+    }
+
+    &+.common-table-option {
+        margin-left: 10px;
+    }
+}
+
+
+.layout {
+    width: 1272px;
+    margin: 0 auto;
+}
+
+ul li,
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+// modal
+.arco-modal-container {
+    .arco-modal-mask {
+        background: linear-gradient(180deg, #171b1e 0, rgba(73, 75, 77, 0.5) 25%, rgba(73, 75, 77, 0.5) 75%, #171b1e 100%);
+    }
+}
+
+// confirm modal
+.moon-push-confirm-modal {
+    background: #121619 !important;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    .arco-modal-header {
+        display: none;
+    }
+
+    .title {
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .btn-wrap {
+        margin-top: 28px;
+
+        .cancel,
+        .done {
+            width: 97px;
+            height: 32px;
+
+            .linear-btn-content {
+                padding: 5px 0;
+            }
+        }
+
+        .cancel {
+            margin-right: 12px;
+        }
+    }
+}
+
+#body {
+
+    // el-loading
+    .el-loading-mask {
+        z-index: 500;
+    }
+
+    // el-table样式修改
+    .el-table {
+        background: #121619;
+    }
+
+    .el-table .el-table__cell {
+        padding: 13px 0;
+    }
+
+    .el-table td.el-table__cell,
+    .el-table th.el-table__cell.is-leaf {
+        border-bottom: 0;
+    }
+
+    .el-table tr {
+        background: transparent;
+    }
+
+    .el-table__body {
+        td.el-table__cell {
+            background: transparent !important;
+            padding: 20px 0;
+        }
+    }
+
+    .el-table__body-wrapper {
+        margin-top: 20px;
+    }
+
+    .el-table__header-wrapper tr th {
+        background: #F4F7FE;
+        font-size: 16px;
+        color: #C1C7CD;
+
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .el-table__header-wrapper tr {
+        border-radius: 10px;
+    }
+
+    .el-table td.el-table__cell,
+    .el-table th.el-table__cell.is-leaf {
+        background: #21272A;
+    }
+
+    .el-table--border .el-table__inner-wrapper::after,
+    .el-table--border::after,
+    .el-table--border::before,
+    .el-table__inner-wrapper::before {
+        background-color: transparent;
+    }
+
+    .el-table__body tr.hover-row.current-row>td.el-table__cell,
+    .el-table__body tr.hover-row.el-table__row--striped.current-row>td.el-table__cell,
+    .el-table__body tr.hover-row.el-table__row--striped>td.el-table__cell,
+    .el-table__body tr.hover-row>td.el-table__cell {
+        background: #F3F0FF;
+    }
+
+    .el-table__body tr.hover-row {
+        border-radius: 10px;
+
+        td {
+
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+
+    .el-table__body td {
+        font-size: 16px;
+        color: #F2F4F8;
+    }
+
+
+
+    .el-table__expand-column {
+        .cell {
+            padding: 0 0 0 12px;
+        }
+    }
+
+    .el-table .table-option-icon {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .el-table__expanded-cell {
+        padding: 0 !important;
+    }
+
+
+    // a-button
+    .arco-btn {
+        border-radius: 70px;
+    }
+
+    .arco-btn-text:hover,
+    .arco-btn-text[type='button']:hover,
+    .arco-btn-text[type='submit']:hover {
+        background: transparent;
+        color: #2200B7;
+    }
+
+    .arco-btn-text:active,
+    .arco-btn-text[type='button']:active,
+    .arco-btn-text[type='submit']:active {
+        background: #F4F7FE;
+    }
+
+    .arco-btn-outline:hover,
+    .arco-btn-outline[type='button']:hover,
+    .arco-btn-outline[type='submit']:hover {
+        color: #2200B7;
+        border-color: #2200B7;
+    }
+
+    .arco-btn-outline:active,
+    .arco-btn-outline[type='button']:active,
+    .arco-btn-outline[type='submit']:active {
+        box-shadow: 0 0 5px #4318FF;
+    }
+
+    // checkbox
+    .arco-checkbox-icon {
+        border-radius: 4px;
+        border-width: 1px;
+    }
+
+    .arco-checkbox-icon-check {
+        width: 10px;
+    }
+
+    .arco-checkbox .arco-checkbox-icon-hover::before {
+        background: transparent;
+    }
+
+    // tab
+    .arco-tabs-tab:first-child {
+        margin-left: 0;
+    }
+
+    .arco-tabs-nav-type-line .arco-tabs-tab:hover .arco-tabs-tab-title::before {
+        background: transparent;
+    }
+
+    .arco-tabs-nav-type-line .arco-tabs-tab:hover .arco-tabs-tab-title {
+        color: #4318FF !important;
+    }
+
+    .arco-tabs-nav::before {
+        display: none;
+    }
+
+    .arco-tabs-tab-title {
+        transition: all .2s;
+        font-weight: 700;
+        font-size: 24px;
+        color: #A3AED0;
+    }
+
+    .arco-tabs-tab-active,
+    .arco-tabs-tab-active:hover {
+        .arco-tabs-tab-title {
+            color: #4318FF;
+        }
+    }
+
+    // input
+    .arco-input-wrapper {
+        color: #F2F4F8;
+        background: #21272A;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 6px 19px;
+
+        .arco-input {
+            font-size: 16px;
+        }
+    }
+
+    .arco-input-wrapper:focus-within,
+    .arco-input-wrapper.arco-input-focus {
+        border-color: transparent;
+    }
+
+    // textarea
+    .arco-textarea-wrapper {
+        color: #F2F4F8;
+        background: #21272A;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 0;
+
+        .arco-textarea {
+            padding: 7px 19px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+    }
+
+    .arco-textarea-wrapper:focus-within,
+    .arco-textarea-wrapper.arco-textarea-focus {
+        border-color: transparent;
+    }
+
+
+    // select
+    .arco-select {
+        background: #21272A;
+        border-radius: 10px;
+        padding: 5px 19px;
+
+        .arco-select-view-input {
+            font-size: 16px;
+        }
+
+        .arco-select-view-value {
+            font-size: 16px;
+            color: #F2F4F8;
+        }
+    }
+
+    .arco-select-view-single:focus-within,
+    .arco-select-view-single.arco-select-view-focus {
+        border-color: transparent;
+    }
+
+    .arco-select-dropdown {
+        padding: 12px 0;
+        background-color: #343A3F;
+        border-radius: 10px;
+        border-color: transparent;
+
+        .arco-select-option {
+            background-color: #343A3F;
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+    }
+
+    .arco-select-dropdown .arco-select-option-active,
+    .arco-select-dropdown .arco-select-option:not(.arco-select-dropdown .arco-select-option-disabled):hover {
+        background: #4D5358;
+
+    }
+
+    // input-number
+    .arco-input-number {
+        .arco-input-wrapper {
+            border-radius: 0;
+
+            .arco-input {
+                text-align: center;
+            }
+        }
+
+        .arco-input-prepend {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: 1px solid #343A3F;
+        }
+
+        .arco-input-append {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-left: 1px solid #343A3F;
+        }
+    }
+
+    .arco-input-number-mode-button .arco-input-prepend,
+    .arco-input-number-mode-button .arco-input-append {
+        padding: 0 4px;
+        background: #21272A;
+
+        .arco-btn {
+            font-size: 18px;
+            border-radius: 0;
+            background-color: #21272A;
+            border-color: #21272A;
+            color: #DDE1E6;
+        }
+    }
+
+    //dropdown
+    .arco-dropdown {
+        background-color: #343A3F;
+        border-radius: 10px;
+        border-color: transparent;
+        padding: 12px 0;
+        min-width: 100px;
+    }
+
+    .arco-dropdown-option {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    .arco-dropdown-option-active,
+    .arco-dropdown-option:not(.arco-dropdown-option-disabled):hover {
+        background: #4D5358;
+    }
+
+    //message
+    .arco-message-success {
+        padding: 10px 30px;
+        justify-content: center;
+        height: 46px;
+        min-width: 265px;
+        box-sizing: border-box;
+        text-align: center;
+        background: #08EF9C;
+        border-radius: 70px;
+        border: 0;
+
+        .arco-message-icon {
+            display: none;
+        }
+
+        .arco-message-content {
+            color: #000000;
+            font-size: 14px;
+        }
+    }
+
+    .arco-message-error {
+        padding: 10px 30px;
+        justify-content: center;
+        height: 46px;
+        min-width: 265px;
+        box-sizing: border-box;
+        text-align: center;
+        background: #FFB547;
+        border-radius: 70px;
+        border: 0;
+
+        .arco-message-icon {
+            display: none;
+        }
+
+        .arco-message-content {
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+    }
+
+    // tooltip
+    .arco-tooltip {
+
+        .arco-tooltip-content {
+            background: #878D96;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+
+        .arco-trigger-arrow {
+            background: #878D96;
+
+        }
+    }
+}
