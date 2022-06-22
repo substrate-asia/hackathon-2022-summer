@@ -28,6 +28,14 @@ We provide two situations:
 npm install -d
 ```
 
+### Prepare secret key
+- Create a evm-compatible account(private key is neccessary), so MetaMask will be ok
+- Create a key file named `.secret` at the root path
+- Paste private key into the file `.secret`, you can refer to `.secret-example`
+- Get token for test, faucets are shown below
+  - Moonbeam: https://docs.moonbeam.network/learn/platform/networks/moonbase/#moonbase-alpha-faucet
+  - Rinkeby: https://rinkebyfaucet.com/
+
 ### Test script
 
 **Interoperation between Polkadot parachain and EVM compatible chains**
