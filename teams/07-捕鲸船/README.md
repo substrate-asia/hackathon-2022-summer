@@ -59,5 +59,6 @@ Introducing SAFEMINT!
 | 7    | Panda      | [https://github.com/wujunze](https://github.com/wujunze)     | 14jzcom@gmail.com          | Solidity / Golang / System Architect                         | System Architect & PMO |
 | 8    | heisenberg | [https://github.com/bingowrt](https://github.com/bingowrt)   | bingowrt@gmail.com         | ex petroleum engineer,menber of Conflux technical oversight committee | PM                     |
 
-
+## Video of the Project
+https://www.youtube.com/watch?v=13JLitPKD7A
 
