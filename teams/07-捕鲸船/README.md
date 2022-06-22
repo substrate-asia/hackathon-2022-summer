@@ -29,6 +29,12 @@ Introducing SAFEMINT!
 
 * The product delivered this time is v 0.1 MVP, which only covers the most basic core functions of this platform: project information is submitted to the platform (safemint), and the platform reviews the project information and verifies whether there are vulnerabilities or frauds in the NFT contract. If there is fraudulent behavior, it will not be displayed on the SAFEMINT platform. If the project is audited by the platform without contract vulnerabilities and fraudulent behavior, the project will be allowed to be listed on the platform, and get a separate display page.
 * Users can view project information on the display page, which also provides buttons with functions such as one-click MINT (depending on the contract interface provided by the project party, the type and number of buttons may change). Therefore, in the v 0.1 version, the main core content is : (1) NFT display; (2) Submit; (3) Contract audit and launch
+
+## technical framework
+FRONT end: react+umi, hosted in github pages, using aws CDN
+DB: all the data are stored in json format in ipfs using pinata, all pictures are stored in ipfs, index of the json file are stored in smart contract
+CONTRACT: solidity 
+
   **Contract**
 
 * `pallet-nft`
