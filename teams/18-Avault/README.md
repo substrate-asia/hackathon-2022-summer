@@ -72,3 +72,4 @@ Therefore, we designed ISO. We hope to rebuild the trust between users and proje
 - Alex: Product manager 
 - Hai: Front-end
 - Lee: UI/UX
+- Edmund: BD
