@@ -1,0 +1,35 @@
+specVersion: 0.2.0
+name: stafi-dao-query-reward
+version: 1.0.0
+description: 'stafi-dao-query-reward'
+repository: 'https://github.com/makefriendwithtime/stafi-dao-query-reward'
+schema:
+  file: ./schema.graphql
+network:
+  genesisHash: '0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527'
+  endpoint: wss://moonbeam-alpha.api.onfinality.io/public-ws
+  dictionary: 'https://api.subquery.network/sq/subquery/moonbase-alpha-dictionary'
+#  genesisHash: '0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b' # Genesis hash of Moonriver
+#  endpoint: wss://moonriver.api.onfinality.io/public-ws
+#  dictionary: 'https://api.subquery.network/sq/subquery/moonriver-dictionary'
+  chaintypes:
+    file: ./dist/chaintypes.js
+dataSources:
+  - kind: substrate/FrontierEvm
+    startBlock: 2129700
+    processor:
+      file: './node_modules/@subql/contract-processors/dist/frontierEvm.js'
+      options:
+        abi: reward
+        address: '0x827bB2d4Eb60C3CCF47f8c4Ac36487aac9a86782'
+    assets:
+      reward:
+        file: './abi.reward.json'
+    mapping:
+      file: './dist/index.js'
+      handlers:
+        - handler: handleRewardEvmEvent
+          kind: substrate/FrontierEvmEvent
+          filter:
+            topics:
+              - SendValue(address indexed recipient,uint256 amount)

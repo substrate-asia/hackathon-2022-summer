@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "node",
+    "pallets/difttt",
+    "runtime",
+]
+[profile.release]
+panic = "unwind"
