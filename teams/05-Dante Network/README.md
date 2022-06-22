@@ -34,7 +34,7 @@ Details of our project are as below:
 * [Github Organization](https://github.com/dantenetwork)
 * [Technology white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Network%EF%BC%9AThe%20_Internet%20protocol%20stack_%20of%20Web3.pdf)
 * [Pitch deck  & white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Pitch%20Deck.pdf)
-* [Video](https://www.youtube.com/watch?v=CYXx4O8Xgcs)
+* [Video](https://youtu.be/_JYxEMSPkpM)
 
 ## Plan to Develop
 
