@@ -30,7 +30,7 @@ npm install -d
 
 ### Prepare private key
 The private key is used to sign transations which will be sent to Rinkeby and Moonbeam.  
-You can use the default private key file `.secret`. If the amount is not enough to pay gas fee, you can contact us.  
+You can use the default private key file `.secret`. If the amount is not enough to pay gas fee, you can get token from faucet listed below.  
 
 **If you do not want to use default private key file, you can create it yourself**
 - Create a evm-compatible account(private key is neccessary), MetaMask will be ok
@@ -47,43 +47,43 @@ You can use the default private key file `.secret`. If the amount is not enough 
 
 **Note: if the testnet of `Astar(Shibuya)` doesn't work, the ink! related demo may not work, but you can check it in [Demo vedios](). But you still can try the [Moonbeam](#interoperation-between-moonbeam-and-near) demo manually.**
 
-- Open Polkadot Apps: https://polkadot.js.org/apps
-- We have deployed these smart contracts on `AStar Testnet`:
-    - `cross_chain.contract`: 
-    - `greeting.contract`: 
-    - `oscomputing.contract`: 
+- Open Polkadot Apps - Contracts on Rococo: [[https://polkadot.js.org/apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/contracts)
+- We have deployed these smart contracts on `Contracts on Rococo`:
+    - `cross_chain.contract`: 5FyenLDubA4si9vyCGtW3VJkTW16i7thxAXNsoyVSCq59uTD
+    - `greeting.contract`: 5CqHgtxcuqhng95pxXvS25hBCPXNv9wKhvSktK7SgtDPjBTd
+    - `oscomputing.contract`: 5D6gvY4fsUsjkQcPnHtxRTy72CxC12RzFzXHknaZDts2sX2T
 
-![image](https://user-images.githubusercontent.com/83757490/174795732-3c83f06d-938c-4510-915c-1d0642af4009.png)
+![image](https://user-images.githubusercontent.com/83757490/174969528-b880803b-1e27-47d0-80cb-d4bed375cf1d.png)
 
-#### **Interoperation between ink! and Rinkeby**
+#### **Interoperation between `Contracts on Rococo` and `Rinkeby`**
 
-- Send greeting from `Rinkeby` to `Astar Testnet`
+- Send greeting from `Rinkeby` to `Contracts on Rococo`
 ```
 node rinkebyToAstar.js --greet
 ```
 
-- Query result on `Astar Testnet`
+- Query result on `Contracts on Rococo`
 
-![b8d1d5cf5ec4bd3bf647c95a2fc3be0f_](https://user-images.githubusercontent.com/83757490/174796925-a974c507-5637-472d-af15-4f3c445e7169.jpg)
+![image](https://user-images.githubusercontent.com/83757490/174969839-f4733c11-02b7-4c82-942c-5cecbff87e51.png)
 
-- Send greeting from `AStar Testnet` to `Rinkeby`
+- Send greeting from `Contracts on Rococo` to `Rinkeby`
 
-<img width="894" alt="d64abeea609b7ef20fa29ecbe22f4e75_" src="https://user-images.githubusercontent.com/83757490/174797223-ccde17ab-cd0d-437f-b47b-8ca371b4b0b3.png">
+![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
 
 - Query result on `Rinkeby`
 ```
 node rinkebyToAstar.js --query <ID>
 ```
 
-`<ID>` is the id of the message sent from `Astar Testnet`
+`<ID>` is the id of the message sent from `Contracts on Rococo`
 
-- Send computing task from `AStar Testnet` to `Rinkeby`
+- Send computing task from `Contracts on Rococo` to `Rinkeby`
 
-![4ca97ecdafe83429a74d653a369ce07](https://user-images.githubusercontent.com/83757490/174798862-b8a90758-5013-492f-aa36-588887d3ee4e.jpg)
+![image](https://user-images.githubusercontent.com/83757490/174970600-bb4855ff-5a7f-4b1f-b744-193d97c297fe.png)
 
-- Query result on `Astar Testnet`
+- Query result on `Contracts on Rococo`
 
-![59c7213e1cdd7535e3d43c8779231a8d_](https://user-images.githubusercontent.com/83757490/174797727-982feea8-89cd-4020-9d47-496a55b31706.jpg)
+![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
 
 #### **Interoperation between `Moonbeam` and `NEAR`**
 
