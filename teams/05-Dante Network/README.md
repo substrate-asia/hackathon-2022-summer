@@ -9,9 +9,9 @@ Start time: 2022.2
 ![79065cb236bd6d0a18725bd864cc36a](https://user-images.githubusercontent.com/83746881/169981478-dd274207-a0ee-48a5-bdc1-94e46f938766.png)
 
 In this hackathon we have chosen the following tracks:
-* [Category 5：cross-chain，Bridge，Layer2，Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#%E7%B1%BB%E5%88%AB-5%E8%B7%A8%E9%93%BEbridgelayer2layer0)
+* [Category 5：cross-chain，Bridge，Layer2，Layer0](https://github.com/ParityAsia/hackathon-2022-summer/blob/main/docs/categories-en.md#category-5-cross-chain-bridge-layer2-layer0)
   
-  * [Layer0](https://github.com/xiyu1984/hackathon-2022-summer/blob/main/docs/categories.md#layer0)
+  * [Layer0](https://github.com/ParityAsia/hackathon-2022-summer/blob/main/docs/categories-en.md#layer0)
 
 Dante Network is the middleware of Web3 for collaboration among multiple ecosystems.  In Dante Network, we define and implement a protocol stack for Web3 to realize the interconnection and the interoperability, which will bring innovative experience for Web3, just as an "Internet protocol stack" is for the current Internet. Based on Dante protocol stack, in the future, not only token circulation among multi-chain ecosystems could be easily achieved, but comprehensive information perception and barrier-free interoperability of smart contracts will also be seamlessly feasible. 
 
