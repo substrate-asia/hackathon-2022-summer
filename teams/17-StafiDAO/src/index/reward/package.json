@@ -1,0 +1,35 @@
+{
+  "name": "stafi-dao-query-reward",
+  "version": "1.0.0",
+  "description": "Read more about this at https://doc.subquery.network/create/frontier/.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepack": "rm -rf dist && npm build",
+    "test": "jest",
+    "codegen": "./node_modules/.bin/subql codegen"
+  },
+  "homepage": "https://github.com/makefriendwithtime/stafi-dao-query-reward",
+  "repository": "github:makefriendwithtime/stafi-dao-query-reward",
+  "files": [
+    "dist",
+    "schema.graphql",
+    "project.yaml"
+  ],
+  "author": "Ian He & Jay Ji",
+  "license": "Apache-2.0",
+  "resolutions": {
+    "@polkadot/api": "8.2.1",
+    "ipfs-unixfs": "6.0.6"
+  },
+  "dependencies": {
+    "moonbeam-types-bundle": "2.0.4"
+  },
+  "devDependencies": {
+    "@polkadot/api": "8.2.1",
+    "@subql/cli": "0.28.0",
+    "@subql/contract-processors": "0.6.0",
+    "@subql/types": "0.15.0",
+    "typescript": "^4.6.2"
+  }
+}
