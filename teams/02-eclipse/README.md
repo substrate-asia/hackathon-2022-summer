@@ -13,9 +13,9 @@ The project core topic is web3-based automatic triggers. You may have heard of I
 DIFTTT has partnerships with different service providers that supply event notifications to DIFTTT and execute commands that implement the responses. Some event and command interfaces are simply public APIs, Some Action May be a blockchain opration, or Docker Task.
 
 DIFTTT employs the following concepts:
-- [ ] Triggers are the "this" part of an recipes. They are the items that trigger the action. 
-- [ ] Actions are the "that" part of an recipes. They are the output that results from the input of the trigger.
-- [ ] Recipes are the predicates made from Triggers and Actions. For example, if you like a token indicator (trigger), an DIFTTT app can buy token base the indicator conditions (action).
+-  Triggers are the "this" part of an recipes. They are the items that trigger the action. 
+-  Actions are the "that" part of an recipes. They are the output that results from the input of the trigger.
+-  Recipes are the predicates made from Triggers and Actions. For example, if you like a token indicator (trigger), an DIFTTT app can buy token base the indicator conditions (action).
 
 ### Planning for the last few months
 - [ ] Improve code stability
@@ -53,9 +53,9 @@ DIFTTT employs the following concepts:
 
 ## What was accomplished during the hackathon (submitted before the June 22nd trial)
 the Demo program has some interesting example:
-- [ ] price greate then/price less than triger -> email
-- [ ] timer triger -> price oracle
-- [ ] token indicator triger-> buy token
+- [x] price greate then/price less than triger -> email
+- [x] timer triger -> price oracle
+- [x] token indicator triger-> buy token
 
 ## Player information
 
