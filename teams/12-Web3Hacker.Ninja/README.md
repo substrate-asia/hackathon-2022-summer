@@ -8,8 +8,8 @@
 * Video demo: [Video link](https://github.com/NftTopBest/moonbasealpha-for-polka)
 * Source code: [Code link](https://github.com/NftTopBest/moonbasealpha-for-polka)
 * Keynote(pdf version): [Keynote link](https://github.com/NftTopBest/moonbasealpha-for-polka/keynote.pdf)
-* [NFT contract on Moonbase](https://moonbase.moonscan.io/address/0x83b06d09b99ad2641dd9b1132e8ce8809b623433)
-* [Voting contract on Moonbase](https://moonbase.moonscan.io/address/0xc6ed496eafaacd3254add3e62cd3f1d87b8d89ac)
+* [NFT contract deploy on Moonbase](https://moonbase.moonscan.io/address/0x83b06d09b99ad2641dd9b1132e8ce8809b623433)
+* [Voting contract deploy on Moonbase](https://moonbase.moonscan.io/address/0xc6ed496eafaacd3254add3e62cd3f1d87b8d89ac)
 
 Web3NFT.Social arm to make every web2 creator easily create products and earn on web3.
 AKA: Web3 NFT Creator Economic.
