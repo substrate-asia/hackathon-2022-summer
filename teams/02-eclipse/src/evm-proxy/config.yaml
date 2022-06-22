@@ -1,0 +1,9 @@
+---
+operator: 5HmxV7yUHQnJYnVZVqDW2zd2qGznrvtqKLgyzFKnCS7jCAtT
+chain: "https://mainnet-dev.deeper.network/rpc"
+topic: f73572a14c820f867be454ea2eba1ec98b27da2ccc4e50373c3565b77bf6c569
+wallet_dir: ./key
+wallet_filename: eth_key
+eth_key_password: "mysecret"
+operator_phrase: boring crush turtle chronic dignity taxi glide hill exist twenty sure movie
+substrate_endpoint: "wss://mainnet-dev.deeper.network:443"
