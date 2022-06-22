@@ -78,13 +78,17 @@ node rinkebyToAstar.js --greet
 
 ![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
 
+After the transaction has been executed successfully, query the id of the message from **Cross Chain** contract on `Contracts on Rococo`, the id is the same as the number of all sent messages.
+
+![image](https://user-images.githubusercontent.com/83757490/175046819-1c4adfca-ea46-466d-a0bb-0bb75d68bfd4.png)
+
 - Query result on `Rinkeby`. 
 ```
 node rinkebyToAstar.js --query <ID>
 ```
 - Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/)
 
-`<ID>` is the id of the message sent from `Contracts on Rococo`
+`<ID>` is the id queryed above. 
 
 - Send computing task from **OSComputing** contract on `Contracts on Rococo` to `Rinkeby`
 
