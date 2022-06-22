@@ -212,6 +212,6 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 
 - 南京大学信息管理学院图书情报专业研究生，致力于区块链技术研究探索。
 
-**鳄鱼小张**
+**crocodile(yingmonster123)**
 
-- 南京大学学生，区块链开发
+- 南大本科 GIS+海洋出身 菜鸡前端
