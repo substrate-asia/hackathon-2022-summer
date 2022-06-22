@@ -33,15 +33,15 @@ const Trigger = ({ visible, onCreate, onCancel }: any) => {
         style={{ padding: '20px' }}
       >
         <Form.Item
-          label="触发类型"
+          label="Type"
           name="triggerType"
           rules={[{ required: true, message: 'Please input your triggerType!' }]}
         >
           <Select placeholder="Select a trigger type">
-            <Select.Option value="Timer">间隔触发</Select.Option>
-            <Select.Option value="Schedule">定时触发</Select.Option>
-            <Select.Option value="PriceGT">价格上限触发</Select.Option>
-            <Select.Option value="PriceLT">价格下限触发</Select.Option>
+            <Select.Option value="Timer">Timer</Select.Option>
+            <Select.Option value="Schedule">Schedule</Select.Option>
+            <Select.Option value="PriceGT">PriceGT</Select.Option>
+            <Select.Option value="PriceLT">PriceLT</Select.Option>
             <Select.Option value="Arh999LT">Arh999 less than</Select.Option>
           </Select>
         </Form.Item>
@@ -55,18 +55,18 @@ const Trigger = ({ visible, onCreate, onCancel }: any) => {
             if (triggerType === 'Timer') {
               return (
                 <Form.Item
-                  label="间隔时间"
+                  label="Interval"
                   name="interval"
                   rules={[{ required: true, message: 'Please input timer!' }]}
                 >
-                  <Input placeholder="Interval" addonAfter="秒" />
+                  <Input placeholder="Interval" addonAfter="S" />
                 </Form.Item>
               )
             }
             else if (triggerType === 'Schedule') {
               return (
                 <Form.Item
-                  label="定时时间"
+                  label="schedule"
                   name="schedule"
                   rules={[{ required: true, message: 'Please input schedule!' }]}
                 >
@@ -77,7 +77,7 @@ const Trigger = ({ visible, onCreate, onCancel }: any) => {
             else if (triggerType === 'PriceGT') {
               return (
                 <Form.Item
-                  label="价格上限"
+                  label="PriceGT"
                   name="priceGT"
                   rules={[{ required: true, message: 'Please input priceGT!' }]}
                 >
@@ -88,7 +88,7 @@ const Trigger = ({ visible, onCreate, onCancel }: any) => {
             else if (triggerType === 'PriceLT') {
               return (
                 <Form.Item
-                  label="价格下限"
+                  label="PriceLT"
                   name="priceLT"
                   rules={[{ required: true, message: 'Please input priceLT!' }]}
                 >

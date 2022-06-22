@@ -46,10 +46,10 @@ Afer sending request, check the email and terminal to verify if everything is ok
 ```
 func main() {
 
-	//1. 调用url
+	//1. 
 	postUrl:= "http://127.0.0.1:3030/form"
 
-	//2. 提供一组json格式的参数,样例如下
+	//2. 
 
 	body := []byte (
 		`{
@@ -60,7 +60,7 @@ func main() {
 	 	}`,
 	)
 
-	//3. 发送post请求（测试业务逻辑可以直接使用 postman 发送json格式的post请求）
+	//3.
 	r,err := http.NewRequest("POST",postUrl,bytes.NewBuffer(body))
 	if err != nil {
 		panic(err)
@@ -97,4 +97,4 @@ docker build --tag baidang201/email --platform=linux/arm/v8 .
 
 ## 5 run with docker images
 
-docker run  baidang201/email  /email  --revicer="116174160@qq.com" --title="你好，这是邮件测试2"  --body="你好，正在邮件api测试2"
+docker run  baidang201/email  /email  --revicer="116174160@qq.com" --title="title"  --body="body"

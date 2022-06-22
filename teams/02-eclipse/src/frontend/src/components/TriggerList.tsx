@@ -12,48 +12,48 @@ const columns = [
     key: 'id',
   },
   {
-    title: '类型',
+    title: 'Type',
     align: 'center',
     dataIndex: 'type',
     key: 'type',
   },
   {
-    title: '创建时间',
+    title: 'Created Time',
     align: 'center',
     dataIndex: 'createdTime',
     key: 'createdTime',
     render: (text: string) => dayjs(text).format('YYYY-MM-DD HH:mm:ss'),
   },
   {
-    title: '触发条件',
+    title: 'Trigger Condition',
     align: 'center',
     dataIndex: 'condition',
     key: 'condition',
     render: (text: string, record: any) => {
-      if (record.type === 'Timer') { return `间隔：${text} s` }
+      if (record.type === 'Timer') { return `Interval：${text} s` }
       else if (record.type === 'Schedule') {
         const time = +text.split(',').join('')
         const timeFormat = dayjs(time).format('YYYY-MM-DD HH:mm:ss')
-        return `执行时间：${timeFormat}`
+        return `When：${timeFormat}`
       }
-      else if (record.type === 'PriceGT') { return `价格上限：${text}` }
-      else if (record.type === 'PriceLT') { return `价格下限：${text}` }
+      else if (record.type === 'PriceGT') { return `PriceGT：${text}` }
+      else if (record.type === 'PriceLT') { return `PriceLT：${text}` }
     },
   },
   {
-    title: 'indicator',
+    title: 'Indicator',
     align: 'center',
     dataIndex: 'indicator',
     key: 'indicator',
   },
   {
-    title: 'seconds',
+    title: 'Seconds',
     align: 'center',
     dataIndex: 'seconds',
     key: 'seconds',
   },
   {
-    title: '操作',
+    title: 'Action',
     align: 'center',
     key: 'action',
     render: () => (
@@ -92,7 +92,8 @@ const TriggerList = ({ triggers, setTriggers }: { triggers: any; setTriggers: an
     setIsModalVisible(true)
   }
   const handleOk = (values: any) => {
-    const now = new Date().getTime()
+    const now = Math.floor(new Date().getTime()/1000)
+
     if (values.triggerType === 'Timer') {
       createTrigger({
         Timer: [now, values.interval],

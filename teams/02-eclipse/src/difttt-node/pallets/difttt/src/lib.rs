@@ -19,6 +19,9 @@ mod tests;
 #[cfg(feature = "runtime-benchmarks")]
 mod benchmarking;
 
+pub mod weights;
+pub use weights::WeightInfo;
+
 #[derive(Encode, Decode, Eq, PartialEq, Copy, Clone, RuntimeDebug, TypeInfo, MaxEncodedLen)]
 // #[cfg_attr(feature = "std", derive(Serialize, Deserialize))]
 // #[cfg_attr(feature = "std", serde(rename_all = "camelCase"))]
@@ -27,7 +30,7 @@ pub enum Triger {
 	Schedule(u64, u64), //insert_time,  timestamp
 	PriceGT(u64, u64),  //insert_time,  price   //todo,price use float
 	PriceLT(u64, u64),  //insert_time,  price   //todo,price use float
-	Arh999LT(u64, u64, u64), /* insert_time,  indicator, Minimum buy interval   //todo,
+	Arh999LT(u64, u64, u64), /* insert_time,  indicator, Minimum seconds buy interval   //todo,
 	                     * indicator use float */
 }
 
@@ -46,7 +49,7 @@ pub enum Action<AccountId> {
 	 * by asymmetric encryption,
 	 * revicer, title, body */
 	Oracle(BoundedVec<u8, ConstU32<32>>, BoundedVec<u8, ConstU32<128>>), // TokenName, SourceURL
-	BuyToken(AccountId, BoundedVec<u8, ConstU32<32>>, u64),              // TokenName, Number
+	BuyToken(AccountId, BoundedVec<u8, ConstU32<32>>, u64),              // TokenName, Amount
 }
 
 #[derive(Encode, Decode, Eq, PartialEq, Clone, RuntimeDebug, TypeInfo, MaxEncodedLen)]
@@ -63,6 +66,7 @@ pub struct Recipe {
 
 #[frame_support::pallet]
 pub mod pallet {
+	pub use crate::weights::WeightInfo;
 	use crate::{Action, Recipe, Triger};
 	use codec::alloc::string::ToString;
 	use data_encoding::BASE64;
@@ -140,6 +144,9 @@ pub mod pallet {
 		/// multiple pallets send unsigned transactions.
 		#[pallet::constant]
 		type UnsignedPriority: Get<TransactionPriority>;
+
+		/// Weight information for extrinsics in this pallet.
+		type WeightInfo: WeightInfo;
 	}
 
 	#[pallet::pallet]
@@ -226,7 +233,7 @@ pub mod pallet {
 	#[pallet::call]
 	impl<T: Config> Pallet<T> {
 		/// create_trigerid
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::create_triger())]
 		pub fn create_triger(origin: OriginFor<T>, triger: Triger) -> DispatchResult {
 			let user = ensure_signed(origin)?;
 			let triger_id = NextTrigerId::<T>::get().unwrap_or_default();
@@ -241,7 +248,7 @@ pub mod pallet {
 		}
 
 		/// create_action
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::create_action())]
 		pub fn create_action(origin: OriginFor<T>, action: Action<T::AccountId>) -> DispatchResult {
 			let user = ensure_signed(origin)?;
 			let action_id = NextActionId::<T>::get().unwrap_or_default();
@@ -256,7 +263,7 @@ pub mod pallet {
 		}
 
 		/// test
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::create_recipe())]
 		pub fn create_recipe(
 			origin: OriginFor<T>,
 			triger_id: u64,
@@ -287,7 +294,7 @@ pub mod pallet {
 		}
 
 		/// test
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::del_recipe())]
 		pub fn del_recipe(origin: OriginFor<T>, recipe_id: u64) -> DispatchResult {
 			let user = ensure_signed(origin)?;
 
@@ -303,7 +310,7 @@ pub mod pallet {
 		}
 
 		/// test
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::turn_on_recipe())]
 		pub fn turn_on_recipe(origin: OriginFor<T>, recipe_id: u64) -> DispatchResult {
 			let user = ensure_signed(origin)?;
 
@@ -322,7 +329,7 @@ pub mod pallet {
 		}
 
 		/// test
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::turn_off_recipe())]
 		pub fn turn_off_recipe(origin: OriginFor<T>, recipe_id: u64) -> DispatchResult {
 			let user = ensure_signed(origin)?;
 
@@ -340,7 +347,7 @@ pub mod pallet {
 			Ok(())
 		}
 
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::set_recipe_done_unsigned())]
 		pub fn set_recipe_done_unsigned(
 			origin: OriginFor<T>,
 			_block_number: T::BlockNumber,
@@ -362,7 +369,7 @@ pub mod pallet {
 			Ok(())
 		}
 
-		#[pallet::weight(0)]
+		#[pallet::weight(<T as Config>::WeightInfo::buy_token_unsigned())]
 		pub fn buy_token_unsigned(
 			origin: OriginFor<T>,
 			_block_number: T::BlockNumber,
