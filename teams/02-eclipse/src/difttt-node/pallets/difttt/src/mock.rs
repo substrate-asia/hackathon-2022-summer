@@ -70,6 +70,7 @@ impl pallet_difttt::Config for Test {
 	type TimeProvider = pallet_timestamp::Pallet<Test>;
 	type Call = Call;
 	type UnsignedPriority = UnsignedPriority;
+	type WeightInfo = ();
 }
 
 type Extrinsic = TestXt<Call, ()>;
