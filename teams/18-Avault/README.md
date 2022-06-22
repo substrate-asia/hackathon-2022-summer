@@ -61,7 +61,9 @@ Therefore, we designed ISO. We hope to rebuild the trust between users and proje
 
 ## Tasks done during Hackathon
  - demo video
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Snsf1315Vg0" title="Avault Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+[![Avault Demo](https://img.youtube.com/vi/Snsf1315Vg0/0.jpg)](https://www.youtube.com/watch?v=Snsf1315Vg0)
+
 
 ## Members
 
