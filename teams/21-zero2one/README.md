@@ -15,6 +15,8 @@ https://echodao.io
 code, chart, demo: 
 https://drive.google.com/drive/folders/1B0UsstPiEoAudPEu5CUG23szdZcQ6e9S?usp=sharing
 
+User Story：
+https://u0y6lbimke.feishu.cn/docx/doxcnaEneQL6uR4C5QkXcej7uZf
 
 ## 黑客松期间计划完成的事项
 - 前端mvp
