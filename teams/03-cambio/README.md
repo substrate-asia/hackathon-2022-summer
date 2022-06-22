@@ -28,7 +28,7 @@ This is our core Protocol, which means everything else are developed upon it.
 
 The HNP have full support traditional DNS record type like A for IPv4, AAA for IPv6, CNAME for url etc, and also support web 3 types like account address, contract address, a RMRK NFT, a IPFS file and so on.
 
-### Name Asset Manager System
+### Name Asset Management System
 
 A **Name Asset** in Cambio Network is like a domain name in web2, with extended ability to access web3 objects. It has the same format of domain name, with support of infinity levels of sub name, and records to resolve.
 
