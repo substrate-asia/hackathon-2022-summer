@@ -79,4 +79,9 @@ Our front-end adviser, Senior frontend developer and team leader worked in Micro
 
 Front-end developer, China Agricultural University.
 
-
+## Thing we have done during Hackathon
+- [x] Arthitect design
+- [x] Protocol design
+- [x] Math model design
+- [x] Economic model design and testing
+- [x] preparing the code base
