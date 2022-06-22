@@ -19,16 +19,16 @@ code, chart, demo:
 https://drive.google.com/drive/folders/1B0UsstPiEoAudPEu5CUG23szdZcQ6e9S?usp=sharing
 
 ## 黑客松期间计划完成的事项
-- 前端mvp
-- 后端mvp
-- 链端mvp
-- 三端联调
+- frontend mvp
+- backend mvp
+- smart contract mvp
+- link three end 
 
 ## 黑客松期间所完成的事项 (6月22日初审前提交)
 
 **链端**
-- solidity智能合约
-- moonbeam预编译
+- solidity smart contract 
+- moonbeam pre compile
 
 **前端**
 - homepage
@@ -40,8 +40,8 @@ https://drive.google.com/drive/folders/1B0UsstPiEoAudPEu5CUG23szdZcQ6e9S?usp=sha
 
 **devops**
 - Google workspace
-- 前端cicd
-- 前端prod部署
+- frontend cicd
+- frontend prod deploy 
 - cdn
 
 ## 队员信息
