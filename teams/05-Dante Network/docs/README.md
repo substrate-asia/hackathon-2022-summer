@@ -29,8 +29,13 @@
 
 - [Moonbeam smart contracts](https://moonbase.moonscan.io/)
     - `cross_chain.contract`: 
-        - Address: `0x63819128fFb3F84BB2C7B2e41875332ec9D66376`
+        - Address: [`0x63819128fFb3F84BB2C7B2e41875332ec9D66376`](https://moonbase.moonscan.io/address/0x63819128fFb3F84BB2C7B2e41875332ec9D66376)
     - `greeting.contract`:          
-        - Address: `0x4744A2bD04ED29CCf5A3747e3516595fa33330ae`
+        - Address: [`0x4744A2bD04ED29CCf5A3747e3516595fa33330ae`](https://moonbase.moonscan.io/address/0x4744A2bD04ED29CCf5A3747e3516595fa33330ae)
     - `oscomputing.contract`:
-        - Address: `0xA2f022E9777fa9c413f1c48312C2fF9A36Cf4940`
+        - Address: [`0xA2f022E9777fa9c413f1c48312C2fF9A36Cf4940`](https://moonbase.moonscan.io/address/0xA2f022E9777fa9c413f1c48312C2fF9A36Cf4940)
+
+- [RINKEBY](https://rinkeby.etherscan.io/):
+    - cross-chain: [`0x359d5510405093f7Ea15408a0A3F52c52730A77e`](https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e)
+    - greeting: [`0x32272DA543c8B7f394B2c0d578bc76A0e7F25Ffe`](https://rinkeby.etherscan.io/address/0x32272DA543c8B7f394B2c0d578bc76A0e7F25Ffe)
+    - computing: [`0x43EF6f239454D1c2f3a66Ec386c2C81e6e43C682`](https://rinkeby.etherscan.io/address/0x43EF6f239454D1c2f3a66Ec386c2C81e6e43C682)
