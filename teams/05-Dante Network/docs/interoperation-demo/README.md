@@ -70,11 +70,11 @@ You can use the default private key file `.secret`. If the amount is not enough 
 node rinkebyToAstar.js --greet
 ```
 
-- Query result on `Contracts on Rococo`
+- Query result from **Greeting** contract on `Contracts on Rococo`
 
 ![image](https://user-images.githubusercontent.com/83757490/174969839-f4733c11-02b7-4c82-942c-5cecbff87e51.png)
 
-- Send greeting from `Contracts on Rococo` to `Rinkeby`
+- Send greeting from **Greeting** contract  on `Contracts on Rococo` to `Rinkeby`
 
 ![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
 
@@ -86,11 +86,11 @@ node rinkebyToAstar.js --query <ID>
 
 `<ID>` is the id of the message sent from `Contracts on Rococo`
 
-- Send computing task from `Contracts on Rococo` to `Rinkeby`
+- Send computing task from **OSComputing** contract on `Contracts on Rococo` to `Rinkeby`
 
 ![image](https://user-images.githubusercontent.com/83757490/174970600-bb4855ff-5a7f-4b1f-b744-193d97c297fe.png)
 
-- Query result on `Contracts on Rococo`
+- Query result from **OSComputing** contract on `Contracts on Rococo`
 
 ![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
 
