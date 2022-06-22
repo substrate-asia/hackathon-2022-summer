@@ -207,3 +207,7 @@ Compare to LinkedIn, a kind of traditional  way on showing personal information,
 **Yaya(snowyaya)**
 
 - 全部都会的工程师
+
+**周颖**
+
+- 南京大学研究生，区块链技术探索者
