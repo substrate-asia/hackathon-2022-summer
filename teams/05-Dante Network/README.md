@@ -44,7 +44,7 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
   - [ ] The implementation of the Message protocol for ink!.
   - [ ] Message communication smart contracts deployed on `shibuya`(AStart Testnet), `Moonbase Alpha`(Moonbeam Testnet), Near Testnet, and some EVM chains.
   - [ ] Basic SQoS Items：Identity traceability as the default choice.
-  - [ ] On-chain simulations for some of the underlying algorithms.
+  - [ ] On-chain prototypes for some of the underlying algorithms.
 - `off-chain routers` 
   - [ ] Message translation between `ink`(Parachain AStar) and `solidity`(some EVM chains) technology stack
   - [ ] Message translation between `ink`(Parachain AStar) and `NEAR Rust`(NEAR) technology stack
@@ -60,11 +60,18 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
   - [ ] Smart contracts invocation between `solidity!` smart contract platform(`shibuya`) in Polkadot and Near or some EVM chains
 
 ## Achievement in hackathon
-- Complated:
+- Completed:
   - Complete all content of the `smart contracts` part.
+    - Check the ink! smart contract [here](./src/ink!/core-contract/bin/)
+    - Check the sol smart contract [here](./src/Moonbeam/core-contract/bin/)
+    - Check the underlying mechanisms [here](./src/ink!/algorithm-prototype/)
   - Complete all content of the `off-chain routers` part.
+    - We have launched off-chain test routers to deliver messages for the [demos](./demo/)
   - Complete all content of the `Omnichain dApp SDK for Polkadot` part.
+    - Check the ink! sdk for application smart contract developing [here](./src/ink!/ink-sdk/) and [here](./src/ink!/message-ink/)
+    - Check the sol sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
   - Complete all content of the `Demos` part.
+    - Check the demos [here](./demo/)
 - Videos:
   - To Do...
 
