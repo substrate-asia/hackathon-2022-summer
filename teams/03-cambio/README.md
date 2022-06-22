@@ -61,11 +61,11 @@ We are a fresh new team founded on Jun.1.2022, right now we have 4 members and 1
 
 ### Aaron Peng
 
-Co-founder, a senior system architect, a Substrate Evangelist, and a rustacean.
+Core Developer, a senior system architect, a Substrate Evangelist, and a rustacean.
 
 ### Geoger Li
 
-Co-founder, Substrate Evangelist, a ex-Meituan senior software engineer, ex-Phala engineerr and a high performance distributional database developer
+Core Developer, Substrate Evangelist, a ex-Meituan senior software engineer, ex-Phala engineerr and a high performance distributional database developer
 
 ### Bo Zhu
 
