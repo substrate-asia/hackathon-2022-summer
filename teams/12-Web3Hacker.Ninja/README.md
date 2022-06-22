@@ -7,7 +7,7 @@
 * Online Demo: [Online Link](https://moonbasealpha.web3nft.social/0xC6E58fb4aFFB6aB8A392b7CC23CD3feF74517F6C)
 * Video Demo: [video Link](https://github.com/NftTopBest/moonbasealpha-for-polka)
 * Source code: [code Link](https://github.com/NftTopBest/moonbasealpha-for-polka)
-* Keynote(pdf version): [keynote Link](https://github.com/NftTopBest/keynote.pdf)
+* Keynote(pdf version): [keynote Link](https://github.com/NftTopBest/moonbasealpha-for-polka/keynote.pdf)
 
 Web3NFT.Social arm to make every web2 creator easily create products and earn on web3.
 AKA: Web3 NFT Creator Economic.
