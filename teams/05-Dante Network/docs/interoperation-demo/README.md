@@ -65,50 +65,61 @@ You can use the default private key file `.secret`. If the amount is not enough 
 
 #### **Interoperation between `Contracts on Rococo` and `Rinkeby`**
 
-- Send greeting from `Rinkeby` to `Contracts on Rococo`. We replaced the `Testnet of AStar(Shibuya)` with `Rococo Contracts` as `Shibuya` is unavailable currently. But the following script still works.
-```
-node rinkebyToAstar.js --greet
-```
+- Send greeting from `Rinkeby` to `Contracts on Rococo`. 
 
-- Query result from **Greeting** contract on `Contracts on Rococo`
+  We replaced the `Testnet of AStar(Shibuya)` with `Rococo Contracts` as `Shibuya` is unavailable currently. But the following script still works.
 
-![image](https://user-images.githubusercontent.com/83757490/174969839-f4733c11-02b7-4c82-942c-5cecbff87e51.png)
+  - Send greeting from `Rinkeby` with command
+  
+  ```
+  node rinkebyToAstar.js --greet
+  ```
 
-- Send greeting from **Greeting** contract  on `Contracts on Rococo` to `Rinkeby`
+  - Query result from **Greeting** contract on `Contracts on Rococo`
 
-![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
+  ![image](https://user-images.githubusercontent.com/83757490/174969839-f4733c11-02b7-4c82-942c-5cecbff87e51.png)
 
-After the transaction has been executed successfully, query the id of the message from **Cross Chain** contract on `Contracts on Rococo`, the id is the same as the number of all sent messages.
+- Send greeting from `Contracts on Rococo` to `Rinkeby`
 
-![image](https://user-images.githubusercontent.com/83757490/175046819-1c4adfca-ea46-466d-a0bb-0bb75d68bfd4.png)
+  - Send greeting with **Greeting** contract on `Contracts on Rococo`
 
-- Query result on `Rinkeby`. 
-```
-node rinkebyToAstar.js --query <ID>
-```
-- Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/)
+  ![image](https://user-images.githubusercontent.com/83757490/174970370-b6cc7bf5-dc77-45c6-b377-7316b2c88529.png)
 
-`<ID>` is the id queryed above. 
+  - Query message id
+  
+  After the transaction has been executed successfully, query the id of the message from **Cross Chain** contract on `Contracts on Rococo`. The id is the same as the number of all sent messages.
 
-- Send computing task from **OSComputing** contract on `Contracts on Rococo` to `Rinkeby`
+  ![image](https://user-images.githubusercontent.com/83757490/175046819-1c4adfca-ea46-466d-a0bb-0bb75d68bfd4.png)
 
-Here, we have registered the destination chain contract and address to the **OSComputing** contract with the method `multiDestContracts::registerDestContract`, so the method `sendComputingTask` just needs the destination chain name and numbers to be computed as parameters.
+  - Query result on `Rinkeby` with command
+  
+  ```
+  node rinkebyToAstar.js --query <ID>
+  ```
+  `<ID>` is the id queryed above. 
+  
+  - Check related transaction in [Rinkeby Scan](https://rinkeby.etherscan.io/)
 
-You can query the destination contract and method name with the method `multiDestContracts::getDestContractInfo`.
 
-![image](https://user-images.githubusercontent.com/83757490/175050523-834eefc0-f742-4cec-9e3d-ff23a1a24482.png)
+- Send computing task from `Contracts on Rococo` to `Rinkeby`
 
-The prefix "X" is added because the hex string will be handled specially.
+  Here, we have registered the destination chain contract and address to the **OSComputing** contract with the method `multiDestContracts::registerDestContract`, so the method `sendComputingTask` just needs the destination chain name and numbers to be computed as parameters.
 
-Send computing task
+  You can query the destination contract and method name with the method `multiDestContracts::getDestContractInfo`.
 
-![image](https://user-images.githubusercontent.com/83757490/174970600-bb4855ff-5a7f-4b1f-b744-193d97c297fe.png)
+  ![image](https://user-images.githubusercontent.com/83757490/175050523-834eefc0-f742-4cec-9e3d-ff23a1a24482.png)
 
-You can query the message sent to Rinkeby on ["https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e"](https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e)
+  The prefix "X" is added because the hex string will be handled specially.
 
-- Query result from **OSComputing** contract on `Contracts on Rococo`, it may take 1 minute after the computing task was sent.
+  - Send computing task with **OSComputing** contract on `Contracts on Rococo`
 
-![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
+  ![image](https://user-images.githubusercontent.com/83757490/174970600-bb4855ff-5a7f-4b1f-b744-193d97c297fe.png)
+
+  You can query the message sent to Rinkeby on [Rinkeby Scan](https://rinkeby.etherscan.io/address/0x359d5510405093f7Ea15408a0A3F52c52730A77e)
+
+  - Query result from **OSComputing** contract on `Contracts on Rococo`, it may take 1 minute after the computing task was sent.
+
+  ![image](https://user-images.githubusercontent.com/83757490/174970671-81320a68-4d66-407f-8998-a85aee26fdb9.png)
 
 #### **Interoperation between `Moonbeam` and `NEAR`**  
 
