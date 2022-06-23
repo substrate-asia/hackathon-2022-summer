@@ -9,6 +9,10 @@ INITIATION DATE: 2022.4.15
 FE Source code: [Link](https://github.com/safemint-org/fe)   
 Contract Source code: [Code link](https://github.com/safemint-org/contracts)
 
+Demo Link:  https://safemint.org/
+
+Demo Video:  https://www.youtube.com/watch?v=13JLitPKD7A    
+
 
 ## INTRODUCTION
 
