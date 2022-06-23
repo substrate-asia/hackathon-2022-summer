@@ -32,7 +32,10 @@ Here is a very rough preliminary estimate. (Since we need to evaluate before mak
 - [x] Implement Gear's event adapter;
 - [x] Introduce the adapter into the project as a lib;
 - [ ] Write Gear test contract for testing (Currently Gear's Wasm smart contract support is still under development. After Gear's evaluation, Wasm parsing is still unstable and needs to wait for stability to be developed.)
- 
+
+**community contribution**
+- [x] Due to the update of Gear system and API, some of the API test samples provided by GearFans before have been outdated, we have updated some of the test samples, details can be referred to: https://github.com/only4sim/GearFansexample
+
 
 ## Preparation
 
