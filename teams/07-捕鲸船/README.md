@@ -6,6 +6,10 @@ TEAM: WHALER
 
 INITIATION DATE: 2022.4.15
 
+FE Source code: [Link](https://github.com/safemint-org/fe)   
+Contract Source code: [Code link](https://github.com/safemint-org/contracts)
+
+
 ## INTRODUCTION
 
 * INSPIRATION
