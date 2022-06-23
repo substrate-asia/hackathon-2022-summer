@@ -1,0 +1,33 @@
+specVersion: 1.0.0
+name: gear-L5
+version: 1.0.0
+runner:
+  node:
+    name: '@subql/node'
+    version: '>=1.0.0'
+  query:
+    name: '@subql/query'
+    version: '*'
+description: >-
+  This project can be used as a starting point for developing your SubQuery
+  project
+repository: 'https://github.com/subquery/subql-starter'
+schema:
+  file: ./schema.graphql
+network:
+  chainId: '0x4dc0fa8f5f729edd58a03531367896e82d1126c9db73957db006890b813507fe'
+  endpoint: 'wss://node-workshop.gear.rs:443'
+  chainTypes:
+    file: "./dist/chaintypes.js"
+dataSources:
+  - kind: substrate/Runtime
+    startBlock: 208400
+    mapping:
+      file: ./dist/index.js
+      handlers:
+        - handler: handleBlock
+          kind: substrate/BlockHandler
+        - handler: handleEvent
+          kind: substrate/EventHandler
+        - handler: handleCall
+          kind: substrate/CallHandler
