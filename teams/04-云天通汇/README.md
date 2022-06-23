@@ -22,15 +22,15 @@ Here is a very rough preliminary estimate. (Since we need to evaluate before mak
 **Blockchain side**
 
 `Gear message format research`
-- [&#10004] Understanding the message format of Gear;
-- [&#10004] Understand the principle of substrate EVM frontier implementation;
-- [&#10004] Evaluate the conversion steps needed based on the results of the above two parts.
+- [x] Understanding the message format of Gear;
+- [x] Understand the principle of substrate EVM frontier implementation;
+- [x] Evaluate the conversion steps needed based on the results of the above two parts.
 
 `SubQuery adaptation`
-- [&#10004] Study the source code of subql to find the insertion points for adaptation;
-- [&#10004] Implement the data structure declaration (TypeScript) that subql can use;
-- [&#10004] Implement Gear's event adapter;
-- [&#10004] Introduce the adapter into the project as a lib;
+- [x] Study the source code of subql to find the insertion points for adaptation;
+- [x] Implement the data structure declaration (TypeScript) that subql can use;
+- [x] Implement Gear's event adapter;
+- [x] Introduce the adapter into the project as a lib;
 - [ ] Write Gear test contract for testing (Currently Gear's Wasm smart contract support is still under development. After Gear's evaluation, Wasm parsing is still unstable and needs to wait for stability to be developed.)
  
 
