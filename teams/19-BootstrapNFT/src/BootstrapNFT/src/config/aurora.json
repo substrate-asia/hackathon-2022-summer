@@ -1,0 +1,49 @@
+{
+    "network": "aurora",
+    "chainId": 1313161555,
+    "defaultPrecision": 2,
+    "rpcUrl": "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    "wsUrl": "wss://rinkeby.infura.io/ws/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    "subgraphUrl": "http://124.222.87.17:8000/subgraphs/name/balancer-labs/balancer-subgraph",
+    "subgraphBackupUrl": "",
+    "nftSubgraphUrl": "http://45.77.30.9:7000/subgraphs/name/nft-fractional",
+    "explorer": "https://testnet.aurorascan.dev/",
+    "exchangeUrl": "https://rinkeby.balancer.exchange",
+    "addresses": {
+        "bFactory": "0xB0479e200244346AAc22ffa82aD7DE10dcF928A7",
+        "crpFactory": "0x609a34a4c5358E23226535149D29A751B2B464FE",
+        "bActions": "0x0BA3629dB81993A7d96f8fBEC7e8FCea25f76D4e",
+        "dsProxyRegistry": "0x7D2B624124eeff888CDE3b3e5ebe004cD4fE249E",
+        "proxy": "0xE75c0b65b7CbE75A1cBc5dd1985EC8BaA7f2d3AF",
+        "weth": "0x0695DA5B80e5D50C6F412c2c398657e2c87a7e27",
+        "multicall": "0xC90C43199c0e5F8F04f63fbcc90CE05aF5ffa225",
+        "vault": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+        "sorMulticall": "0xBF945Bf1DeaF7C82473523104D13e0651455254e",
+        "exchangeProxy": "0xd9c9C66A9E785D073202a90e6C095b2452c11BA2"
+    },
+    "connectors": {
+        "injected": {
+            "id": "injected",
+            "name": "MetaMask"
+        },
+        "walletconnect": {
+            "id": "walletconnect",
+            "name": "WalletConnect",
+            "options": {
+                "rpc": {
+                    "4": "https://eth-rinkeby.alchemyapi.io/v2/C467LJc7Aa761LLxlcxXvhIG9HzDTtKw"
+                }
+            }
+        },
+        "walletlink": {
+            "id": "walletlink",
+            "name": "Coinbase",
+            "options": {
+                "appName": "Pool management - Balancer",
+                "darkMode": true,
+                "chainId": 4,
+                "ethJsonrpcUrl": "https://eth-rinkeby.alchemyapi.io/v2/C467LJc7Aa761LLxlcxXvhIG9HzDTtKw"
+            }
+        }
+    }
+}

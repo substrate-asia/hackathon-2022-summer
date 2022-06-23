@@ -1,0 +1,17 @@
+input[type="checkbox"] {
+  appearance: none;
+  border-width: 1px;
+}
+
+input[type="checkbox"]:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("./assets/icon/check.svg");
+}
+
+.nft-list {
+  min-height: calc(100vh - 65px);
+}
