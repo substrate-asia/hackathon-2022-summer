@@ -1,41 +1,4 @@
-# Substrate Wasm Contract Support (with Gear)
-
-## Challenge
-
-SubQuery has a goal of providing support for all execution environments in Substrate/Polkadot, including on chain data, smart contracts in EVM, and smart contracts in WebAssembly (Wasm). This will allow all application developers to leverage the same excellent infrastructure tools across the ecosystem to build the next generation of applications.
-
-## Basic Information
-Project Name: **Gear Data Processor**
-
-Date:
-__05/21/2022__ - May 21, 2022
-
-## Overall Project Description
-
-This project creates a new instance of a data processor for SubQuery, similar to the existing Substrate processor. It could support Gear Wasm for the block, event and extrinsic processing. It is to connect to the Gear Wasm contract platform (and ideally work on other Wasm contract platforms as well) and process messages from the Substrate Frontier EVM processor in a similar manner to Processing messages from the Wasm implementation. Users can then use these messages in the handler, just like a traditional SubQuery project.
-
-## Plan and Completion
-
-
-Here is a very rough preliminary estimate. (Since we need to evaluate before making detailed plans, this will require team discussion and research.)
-
-**Blockchain side**
-
-`Gear message format research`
-- [x] Understanding the message format of Gear;
-- [x] Understand the principle of substrate EVM frontier implementation;
-- [x] Evaluate the conversion steps needed based on the results of the above two parts.
-
-`SubQuery adaptation`
-- [x] Study the source code of subql to find the insertion points for adaptation;
-- [x] Implement the data structure declaration (TypeScript) that subql can use;
-- [x] Implement Gear's event adapter;
-- [x] Introduce the adapter into the project as a lib;
-- [ ] Write Gear test contract for testing (Currently Gear's Wasm smart contract support is still under development. After Gear's evaluation, Wasm parsing is still unstable and needs to wait for stability to be developed.)
-
-**community contribution**
-- [x] Due to the update of Gear system and API, some of the API test samples provided by GearFans before have been outdated, we have updated some of the test samples, details can be referred to: https://github.com/only4sim/GearFansexample
-
+# SubQuery - Gear Data Processor
 
 ## Preparation
 
