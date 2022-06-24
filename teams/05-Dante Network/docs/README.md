@@ -2,7 +2,8 @@
 
 ## Video
 
-* [Video: Introduction and Demos](https://youtu.be/_JYxEMSPkpM)
+* [Video: Introduction and Basic functions](https://youtu.be/_JYxEMSPkpM)
+* [Algorithm Prototypes](https://www.youtube.com/watch?v=N5Kjo1xW_X0)
 
 ## Demo to try
 
