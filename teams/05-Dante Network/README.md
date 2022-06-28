@@ -33,7 +33,7 @@ Contretely, Dante protocol stack is implemented as the following:
 Details of our project are as below: 
 * [Github Organization](https://github.com/dantenetwork)
 * [Technology white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Network%EF%BC%9AThe%20_Internet%20protocol%20stack_%20of%20Web3.pdf)
-* [Pitch deck  & white paper](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Pitch%20Deck.pdf)
+* [Pitch deck](https://github.com/dantenetwork/Pitch-Deck/blob/main/Dante%20Pitch%20Deck.pdf)
 * [Video](https://youtu.be/_JYxEMSPkpM)
 
 ## Plan to Develop
@@ -70,10 +70,10 @@ We will complete the most basic functions of the stack, provide a multi-ecologic
     - Check the ink! sdk for application smart contract developing [here](./src/ink!/ink-sdk/) and [here](./src/ink!/message-ink/)
     - Check the solidity sdk for application smart contract developing [here](./src/Moonbeam/sc-dev-solidity-sdk/)
   - Complete all content of the `Demos` part.
-    - Try the demos manually [here](./docs/interoperation-demo/)
-    - Check the smart contracts deploy information [here](./docs/README.md)
+    - Try the demos manually [here](./docs/README.md)
 - Videos:
-  - Check the video [here](./docs/README.md)
+  - [Introduction and basic functions](https://youtu.be/_JYxEMSPkpM)
+  - [Algorithm prototypes](https://www.youtube.com/watch?v=N5Kjo1xW_X0)
 
 
 ## Technology Team
