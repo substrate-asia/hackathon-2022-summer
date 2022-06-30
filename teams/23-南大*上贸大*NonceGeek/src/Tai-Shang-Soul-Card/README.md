@@ -16,13 +16,15 @@
 
 > Demo Online: https://soulcard.surge.sh/
 >
-> SoulCard Online: https://6kpljk5akas4va4dqs55akterpcb4ifyw3tr5e6mvxexrgedwi.arweave.net/8p60q6BQJcqDg4S70Cpki8QeILi25x-6TzK3JeJiDss
+> Dynamic SoulCard Example: 
 >
-> DAO Homepage Online: https://soulcard_dao_home_example.surge.sh/
+> https://faasbyleeduckgo.gigalixirapp.com/dynamic/soulcard?addr=0x73c7448760517E3E6e416b2c130E3c6dB2026A1d&dao_addr_1=0xC994B5384C0d0611De2ecE7d6fF1aD16C34A812F&role_1=Dungeon%20Master
+>
+> SoulCard On Arweave: https://arweave.net/qcCsz8uT6EXaKHjubhetRo_RiEP7aJmVbb21_56W3rk
 >
 > Contract Example Online:
 >
-> [0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D](https://moonbeam.moonscan.io/address/0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D#code)
+> [https://moonbase.moonscan.io/address/0xFD2eAE748407bFf503212599d0992b6d26Fb310a#code](https://moonbeam.moonscan.io/address/0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D#code)
 
 
 ## 0x00 Quick Introdcution

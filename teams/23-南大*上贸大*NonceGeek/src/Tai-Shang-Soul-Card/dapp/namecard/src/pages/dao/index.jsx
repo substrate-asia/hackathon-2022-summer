@@ -16,10 +16,14 @@ export default function index(props) {
   const [infos, setInfos] = useStorage("infos")
   const [info, setInfo] = useState({
     name: '',
-    mission: '',
-    gist_id: '1a301c084577fde54df73ced3139a3cb',
-    soulcard_contract_addr: '0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D',
-    soulcard_homepage: 'https://soulcard_dao_home_example.surge.sh/'
+    logo:'',
+    description: '',
+    template_gist_id: '1a301c084577fde54df73ced3139a3cb',
+    erc721_contract_for_verify_member:{
+      network:'moonbeam',
+      addr:''
+    },
+    homepage: ''
   })
   useEffect(()=>{
     setInfos({...infos, ...info})
@@ -28,21 +32,29 @@ export default function index(props) {
     const name = event.target.value
     setInfo({ ...info, name })
   }
-  const missionChange = (event) => {
-    const mission = event.target.value
-    setInfo({ ...info, mission })
+  const logoChange = (event)=>{
+    const logo = event.target.value
+    setInfo({ ...info, logo })
+  }
+  const descriptionChange = (event) => {
+    const description = event.target.value
+    setInfo({ ...info, description })
   }
   const gistIdChange = (event) => {
-    const gist_id = event.target.value
-    setInfo({ ...info, gist_id })
+    const template_gist_id = event.target.value
+    setInfo({ ...info, template_gist_id })
   }
-  const soulcardContractAddrChange = (event) => {
-    const soulcard_contract_addr = event.target.value
-    setInfo({ ...info, soulcard_contract_addr })
+  const addrChange = (event) => {
+    const addr = event.target.value
+    setInfo({ ...info, erc721_contract_for_verify_member:{...info.erc721_contract_for_verify_member,addr} })
   }
-  const soulcardHomepageChange = (event) => {
-    const soulcard_homepage = event.target.value
-    setInfo({ ...info, soulcard_homepage })
+  const networkChange = (event)=>{
+    const network = event.target.value
+    setInfo({ ...info, erc721_contract_for_verify_member:{...info.erc721_contract_for_verify_member,network} })
+  }
+  const homepageChange = (event) => {
+    const homepage = event.target.value
+    setInfo({ ...info, homepage })
   }
   const addInfoByIPFS = async (infos) => {
     const info = JSON.stringify(infos)
@@ -117,22 +129,30 @@ export default function index(props) {
             <input type="text" value={info.name} onChange={nameChange} />
           </div>
           <div className={styles.formItem}>
-            <p>Describe your misson</p>
-            <textarea style={{ height: '120px' }} name="" id="" placeholder="you can only use 50 words" value={info.mission} onChange={missionChange}></textarea>
+            <p>Description</p>
+            <textarea style={{ height: '120px' }} name="" id="" placeholder="you can only use 50 words" value={info.description} onChange={descriptionChange}></textarea>
+          </div>
+          <div className={styles.formItem}>
+            <p>Logo</p>
+            <input type="text" value={info.logo} onChange={logoChange} />
           </div>
           <div className={styles.formItem}>
             <p>Add your template gist id</p>
-            <input type="text" value={info.gist_id} onChange={gistIdChange} />
-          </div>
-          <div className={styles.formItem}>
-            <p>Add your SoulCard Contract Address</p>
-            <input type="Email" value={info.soulcard_contract_addr} onChange={soulcardContractAddrChange} />
-            <button className={styles.button}>Quick Deploy</button>
+            <input type="text" value={info.template_gist_id} onChange={gistIdChange} />
           </div>
           <div className={styles.formItem}>
             <p>Add your soulcard homepage</p>
-            <input type="Email" value={info.soulcard_homepage} onChange={soulcardHomepageChange} />
+            <input type="text" value={info.homepage} onChange={homepageChange} />
             <button className={styles.button}>Quick Deploy</button>
+          </div>
+          <div className={styles.formItem}>
+            <p>Add your SoulCard Contract Address</p>
+            <input type="text" value={info.erc721_contract_for_verify_member.addr} onChange={addrChange} />
+            {/* <button className={styles.button}>Quick Deploy</button> */}
+            <select name="" id="" value={info.erc721_contract_for_verify_member.network} onChange={networkChange}>
+              <option>eth</option>
+              <option>moonbeam</option>
+            </select>
           </div>
         </div>
       </main>

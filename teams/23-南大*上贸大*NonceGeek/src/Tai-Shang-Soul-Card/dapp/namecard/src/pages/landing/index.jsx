@@ -1,20 +1,34 @@
-import styles from "./landing.less"
-import logo from "@/assets/images/logo.png"
-import arrowDown from "@/assets/images/arrowDown.png"
-import arrowRight from "@/assets/images/arrowRight.png"
-import metaMask from "@/assets/images/metaMask.png"
-import { Modal, Checkbox } from 'antd';
 import React, { useState, useEffect } from 'react'
-import { CloseOutlined } from '@ant-design/icons';
-import Stars from '@/components/Stars'
-import Cards from '@/components/Cards'
-import Web3 from "web3";
-import Web3Modal from "web3modal";
+
+import { Modal, Checkbox } from 'antd'
+import { CloseOutlined } from '@ant-design/icons'
+import Web3 from "web3"
+import Web3Modal from "web3modal"
+
 import { useStorage } from "@/hooks/useStorage.ts"
 import { get_user } from "@/request/fass.js"
+
+import styles from "./landing.less"
+
+import Cards from '@/components/Cards'
+
+import logo from "@/assets/images/logo.png"
+import arrowRight from "@/assets/images/arrowRight.png"
+import metaMask from "@/assets/images/metaMask.png"
+import stars from "@/assets/images/landing/stars.png"
+import articleWave from "@/assets/images/landing/article-wave.png"
+import bgP2 from "@/assets/images/landing/bg-p2.png"
+import bgP3 from "@/assets/images/landing/bg-p3.png"
+import bgP4 from "@/assets/images/landing/bg-p4.png"
+import bgP5 from "@/assets/images/landing/bg-p5.png"
+import finger from "@/assets/images/landing/finger.png"
+import p3Card1 from "@/assets/images/landing/p3-card1.png"
+import p3Card2 from "@/assets/images/landing/p3-card2.png"
+
 let web3Modal
 let provider
-let selectedAccount = '';
+let selectedAccount = ''
+
 export default function index(props) {
   const [infos, setInfos] = useStorage("infos")
   const [visible, setVisible] = useState(false);
@@ -22,6 +36,7 @@ export default function index(props) {
   const [visible3, setVisible3] = useState(false);
   const [visible4, setVisible4] = useState(false);
   const [mask, setMask] = useState(false);
+
   web3Modal = new Web3Modal({
     cacheProvider: false,
     disableInjectedProvider: false,
@@ -117,55 +132,125 @@ export default function index(props) {
       props.history.push('/detail');
     }
   }
+
+  const p3C2Style = {
+    transform: 'rotate(6deg) translate(-1.5rem, 3rem)',
+    zIndex: 0,
+  }
+
+  const p5Style = {
+    transform: 'translatex(8rem)',
+  }
   return (
     <>
-      <header>
-        <div className={styles.logo}>
-          <img src={logo} alt="" />
-          <h2>SoulCard</h2>
+      {/* 随后删除 p-0 */}
+      <header className="mx-auto w-main h-24 p-0 flex justify-between items-center">
+        <div className='flex items-center'>
+          <img className="w-logo-sm" src={logo} alt="" />
+          <h2 className="ml-3 mb-0 text-3xl text-white font-Audiowide">SoulCard</h2>
         </div>
-        <div className={styles.nav}>
-          {/* <ul>
-            <li>
-            <a href="https://todo"><span>Introduction</span></a>
-            </li>
-            <li>
-              <a href="https://noncegeek.com"><span>About us</span></a>
-            </li>
-          </ul> */}
-          <button onClick={() => setVisible(true)}>
-            <span>
-              Register/Login
-            </span>
-            <img src={arrowRight} alt="" />
+        <button className="border-2 border-white rounded px-5 py-2 bg-black text-white font-Inter text-xs cursor-pointer" onClick={() => setVisible(true)}>
+          <span>
+            Register/Login
+          </span>
+          <img className="ml-2.5" src={arrowRight} alt="" />
+        </button>
+      </header>
+      <div id="p1" className="pt-6 w-full h-80vh relative font-Audiowide">
+        <img className='absolute top-72 left-0 w-3/5' src={articleWave} alt="" />
+        <div className="mx-auto w-main relative flex flex-col items-start">
+          <img className='absolute top-0 right-0' src={stars} alt="" />
+          <div className='text-5xl pt-12'>
+            Create
+            <span className='ml-6 bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent'>SoulCard</span>
+          </div>
+          <div className='mt-8 text-rg text-white'>
+            to show you in CryptoWorld, to touch cool guys in WEB3
+          </div>
+        </div>
+        <div className='mt-96 w-full flex justify-center'>
+          <button
+            className='px-5 py-2 border-1 border-black rounded bg-gradient-to-r from-lg-green2-start to-lg-green2-end text-black text-xl cursor-pointer'
+            onClick={() => setVisible(true)}
+          >
+            Create your Soul!
           </button>
         </div>
-      </header>
-      <main>
-        <div className={styles.text}>
-          <span className={styles.textLeft}>
-            Create
-          </span>
-          <span className={styles.textRight}>SoulCard</span>
-
+      </div>
+      <div id="p2" className='mt-16 flex flex-col'>
+        <img className='w-full' src={bgP2} alt="" />
+        <div className='mt-12 mx-auto w-1/2 rounded-xl bg-gradient-to-r from-lg-green2-start to-lg-green2-end p-px'>
+          <div className='rounded-xl bg-black text-xl p-10 font-Audiowide'>
+            Showcase your different abilities in different fields of interest and create value with like-minded guys.
+          </div>
         </div>
-        <div className={styles.describe}>
-          <p> to show you in CryptoWorld, to touch cool guys in WEB3
-          </p>
+      </div>
+      <div id="p3" className='mt-48 w-full relative'>
+        <img className='absolute right-0 top-0' src={bgP3} alt="" />
+        <div className='w-main mx-auto flex'>
+          <button className='px-5 py-2 rounded-full bg-gradient-to-r from-lg-green2-start to-lg-green2-end text-black text-xl cursor-pointer'>
+            Create SoulCard
+          </button>
+          <button className='ml-4 p-px rounded-full border-0 bg-gradient-to-r from-lg-green2-start to-lg-green2-end text-white text-xl cursor-pointer'>
+            <div className='px-5 py-2  rounded-full bg-namecard'>Create DAO</div>
+          </button>
         </div>
-      </main>
-      <footer>
-        <button className={styles.free} onClick={
-          () => setVisible(true)
-        }>
-          Create your Soul!
-        </button>
-        {/* <button className={styles.free} onClick={()=>{
-           props.history.push('/home');
-        }}>
-          Go to Homepage
-        </button> */}
-      </footer>
+        <div className="mt-16 w-main mx-auto flex">
+          <div className='w-2/5 flex flex-col'>
+            <div className='w-full flex flex-col'>
+              <div className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent font-Audiowide text-3xl font-bold leading-tight'>Create SoulCards in different fields</div>
+              <div className="mt-4 text-rg text-white">select the fields you interested in and......</div>
+            </div>
+            <div className="flex-1 flex items-center">
+              <div className='mt-3 bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent font-Audiowide text-3xl font-bold'>Start Now</div>
+              <img className='ml-6' src={finger} alt="" />
+            </div>
+          </div>
+          <div className="w-3/5 flex">
+            <div className='flex flex-col items-center z-10'>
+              <img className='' src={p3Card1} alt="" />
+              <span className='text-white text-2xl font-bold'>I'm a <span className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent'>Coder</span></span>
+            </div>
+            <div className='flex flex-col items-center' style={p3C2Style}>
+              <img className='' src={p3Card2} alt="" />
+              <span className='mt-6 text-white text-2xl font-bold'> &#38; <span className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent'>Desinger</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="p4" className='mt-48 w-full'>
+        <div className="w-main mx-auto flex">
+          <div className='pt-16 w-2/5 flex flex-col'>
+            <div className='w-full flex flex-col'>
+              <div className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent font-Audiowide text-3xl font-bold leading-tight'>Create a DAO and work with cool guys</div>
+              <div className="mt-4 text-rg text-white">you can......</div>
+            </div>
+            <div className="flex-1 flex items-center">
+              <div className='mt-3 bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent font-Audiowide text-3xl font-bold'>Start Now</div>
+              <img className='ml-6' src={finger} alt="" />
+            </div>
+          </div>
+          <div className="w-3/5 flex flex-col items-center">
+            <img className='' src={bgP4} alt="" />
+            <span className='text-white text-rg'>Our mission is explore new possibilities in Web 3.0.</span>
+            <span className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent text-3xl'>　Let's do something amazing !</span>
+          </div>
+        </div>
+      </div>
+      <div id="p5" className='mt-64 w-full'>
+        <div className="text-center font-Audiowide text-white text-4xl">Join our community</div>
+        <div className="mt-28 pb-32 w-main mx-auto flex">
+          <div className='w-2/5 pr-8 flex justify-center items-center'>
+            <div className='flex items-center'>
+              <span className='bg-gradient-to-r from-lg-green2-start to-lg-green2-end bg-clip-text text-transparent font-Audiowide text-3xl font-bold leading-tight'>Jump to the official website</span>
+              <img className='w-16' src={finger} alt="" />
+            </div>
+          </div>
+          <div className="w-3/5 flex flex-col items-center">
+            <img className='w-full' style={p5Style} src={bgP5} alt="" />
+          </div>
+        </div>
+      </div>
       <Modal
         centered
         visible={visible}
@@ -327,7 +412,6 @@ or join in a DAO or project.</p>
           </div>
         </div>
       </Modal>
-      <Stars></Stars>
       <Cards></Cards>
     </>
   )

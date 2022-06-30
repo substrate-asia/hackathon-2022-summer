@@ -14,36 +14,19 @@ contract SoulCard is Ownable, ERC721Enumerable {
   using Counters for Counters.Counter;
   Counters.Counter public _tokenIds;
 
-  uint256 public waitingForApprove = 0;
-  mapping(uint256 => address) public _pending_owners;
   mapping(uint256 => string) public _tokenURIs;
+  mapping(uint256 => string) public username;
 
   constructor(string memory tokenName, string memory tokenSymbol) public ERC721(tokenName, tokenSymbol) {}
 
-  function claim(string memory arLink) public returns (uint256) {
+  function claim(string memory username, string memory arLink) public returns (uint256) {
+
     _tokenIds.increment();
     uint256 tokenId = _tokenIds.current();
-
-    _pending_owners[tokenId] = _msgSender();
-    _tokenURIs[tokenId] = arLink;
-    waitingForApprove++;
-    return tokenId;
-  }
-
-  function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
-    require(_exists(tokenId), 'ERC721URIStorage: URI query for nonexistent token');
-
-    return _tokenURIs[tokenId];
-  }
-  // function approve_claim(uint256 tokenId) public onlyOwner{
-  function approve_claim(uint256 tokenId) public{
-    _safeMint(_pending_owners[tokenId], tokenId);
-
-    _approve(_pending_owners[tokenId], tokenId);
+    _safeMint(_msgSender(), tokenId);
 
     // Set the tokenURI to correct format
-    string memory arLink = _tokenURIs[tokenId];
-    string memory name = string(abi.encodePacked('SoulCard #', tokenId.toString()));
+    string memory name = string(abi.encodePacked('SoulCard #', tokenId.toString(), ' belongs to ', username));
     string memory description = string(abi.encodePacked('SoulCard #', tokenId.toString()));
 
     string memory realURI = string(
@@ -56,21 +39,26 @@ contract SoulCard is Ownable, ERC721Enumerable {
               name,
               '", "description":"',
               description,
-              '", "external_url":"',
+              '", "external_url":"',           
+              arLink,
+              '", "animation_url":"',
               arLink,
               '", "attributes": [], "owner":"',
               (uint160(ownerOf(tokenId))).toHexString(20),
-              '", "image": "',
-              arLink,
-              '"}'
+              '", "image": "https://bafkreidihkq2wggccxhlted36ecckwkee7htax4rrzewi7w2y6js2z42ja.ipfs.nftstorage.link/"}'
             )
           )
         )
       )
     );
-
-   delete _pending_owners[tokenId];
     _tokenURIs[tokenId] = realURI;
+    return tokenId;
+  }
+
+  function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
+    require(_exists(tokenId), 'ERC721URIStorage: URI query for nonexistent token');
+
+    return _tokenURIs[tokenId];
   }
 
   function safeTransferFrom(

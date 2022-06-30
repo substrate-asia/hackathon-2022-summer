@@ -14,6 +14,7 @@ export default function index(props) {
     name: '',
     role: '',
     email: '',
+    avatar:'',
     about_me: '',
     abilities: ''
   })
@@ -31,6 +32,10 @@ export default function index(props) {
   const emailChange = (event) => {
     const email = event.target.value
     setInfo({ ...info, email })
+  }
+  const avatarChange = (event) =>{
+    const avatar = event.target.value
+    setInfo({ ...info, avatar })
   }
   const aboutMeChange = (event) => {
     const about_me = event.target.value
@@ -69,6 +74,10 @@ export default function index(props) {
           <div className={styles.formItem}>
             <p>E-Mail</p>
             <input type="Email" value={info.email} onChange={emailChange} />
+          </div>
+          <div className={styles.formItem}>
+            <p>Avatar</p>
+            <input type="url" value={info.avatar} onChange={avatarChange} />
           </div>
           <div className={styles.formItem}>
             <p>About Me</p>

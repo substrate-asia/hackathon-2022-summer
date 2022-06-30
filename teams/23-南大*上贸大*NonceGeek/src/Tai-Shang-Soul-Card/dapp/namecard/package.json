@@ -30,10 +30,10 @@
     "ipfs-http-client": "^56.0.3",
     "react": "17.x",
     "react-dom": "17.x",
+    "surge": "^0.21.5",
     "umi": "^3.5.23",
     "web3": "^1.7.3",
-    "web3modal": "^1.9.7",
-    "surge": "^0.21.5"
+    "web3modal": "^1.9.7"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

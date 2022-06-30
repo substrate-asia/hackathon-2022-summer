@@ -1,13 +1,10 @@
 # SoulCard Contract
 
-* SoulCard Contract Example On MoonScan -- Just for Demo, not security:
+* SoulCard Contract Example On MoonScan:
 
-> [0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D](https://moonbeam.moonscan.io/address/0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D#code)
+> [https://moonbase.moonscan.io/address/0xFD2eAE748407bFf503212599d0992b6d26Fb310a#code](https://moonbeam.moonscan.io/address/0x91607e5C9aD97b8AA7C7c6ACC35FA366D074532D#code)
 
-* DAO Homepage Example by scaffold-eth:
+- See SoulCard in OpenSea: 
 
-> Repo:
-> https://github.com/WeLightProject/Soul-Card-DAO-Homepage-Example
-> Online Demo:
-> https://soulcard_dao_home_example.surge.sh/
+> https://testnets.opensea.io/collection/soulcard-v4
 

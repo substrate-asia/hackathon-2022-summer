@@ -21,11 +21,12 @@ export default defineConfig({
   },
   fastRefresh: {},
   proxy:{},
-  chainWebpack(config){
+  chainWebpack(config:any){
     config.module // 配置 file-loader
       .rule('otf')
       .test(/.otf$/)
       .use('file-loader')
       .loader('file-loader');
   },
+  mfsu: {},
 });
